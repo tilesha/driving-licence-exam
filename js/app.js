@@ -1,5 +1,5 @@
 'use strict';
-import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.9.0';
+import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.9.1';
 
 // Static GitHub Pages app: no network beyond loading bundled files, no accounts/analytics.
 const $ = s => document.querySelector(s);
@@ -386,13 +386,13 @@ $('#menu-btn').addEventListener('click',()=>{
 $('#close-dialog').addEventListener('click',()=>$('#question-dialog').close());
 $('#finish-early').addEventListener('click',()=>{$('#question-dialog').close();requestFinish();});
 $('#next-btn').addEventListener('click',next);
-window.setInterval(tick,250);
+window.setInterval(tick,100);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick();});
 window.addEventListener('pageshow',tick);
 
 (async()=>{
  try{
-  const response=await fetch('data/questions.json?v=1.9.0');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const response=await fetch('data/questions.json?v=1.9.1');if(!response.ok)throw new Error(`HTTP ${response.status}`);
   const all=await response.json();
   questions=all.filter(q=>q.id!==153&&q.correct_option>=1&&q.correct_option<=4&&q.choices?.length===4&&q.question_text?.trim()&&q.choices.every(o=>o.text?.trim()));
   byId=new Map(questions.map(q=>[q.id,q]));

@@ -389,9 +389,14 @@ h2 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.27; letter-spacing: -.0
 @media (max-width: 359px) { .time-picks { gap: 4px; } .time-picks button { font-size: 12px; } }
 
 /* Accessible, compact three-second auto-next feedback in fixed footer. */
+@property --progress {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 .auto-next-ui { display:flex; align-items:center; justify-content:center; gap: 8px; white-space:nowrap; }
 .auto-next-ui[hidden] { display:none !important; }
-.auto-next-ring { --progress: 100%; display:grid; place-items:center; width:42px; height:42px; flex:0 0 42px; border-radius:50%; background:conic-gradient(#16803b var(--progress),#e4e8e5 var(--progress)); position:relative; color:#135e31; font-variant-numeric:tabular-nums; font-weight:800; }
+.auto-next-ring { --progress: 100%; display:grid; place-items:center; width:42px; height:42px; flex:0 0 42px; border-radius:50%; background:conic-gradient(#16a34a var(--progress),#e2e8f0 var(--progress)); position:relative; color:#166534; font-variant-numeric:tabular-nums; font-weight:800; transition:--progress 120ms linear; }
 .auto-next-ring::before { content:''; background:#f2f3f7; border-radius:50%; position:absolute; inset:4px; }
 .auto-next-ring span { z-index:1; position:relative; font-size:16px; }
 .auto-next-caption { display:flex; flex-direction:column; color:#146633; font-size:11px; line-height:1.15; font-weight:650; }
@@ -501,7 +506,7 @@ h2 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.27; letter-spacing: -.0
   .review-count { min-width: 26px; }
   .review-inner { padding: 4px 13px 12px; }
 }
-@media (prefers-reduced-motion: reduce) { .review-chevron { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .review-chevron, .auto-next-ring { transition: none; } }
 
 /* v1.9 modern blue interface */
 body { background: #f8fafc; color: #0f172a; }
