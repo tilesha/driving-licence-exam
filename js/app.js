@@ -6,7 +6,7 @@ const $ = s => document.querySelector(s);
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let questions=[], byId=new Map(), state=freshState(), view='home', selectedCount=40, selectedSeconds=QUESTION_SECONDS, storageAvailable=true;
 let historyView=null;
-const AUTO_NEXT_DELAY_MS=5000; // Correct answer: show feedback for five seconds, then advance.
+const AUTO_NEXT_DELAY_MS=3000; // Correct answer: show feedback for three seconds, then advance.
 const formatTime = seconds => `${String(Math.floor(seconds/60)).padStart(2,'0')}:${String(seconds%60).padStart(2,'0')}`;
 const durationLabel = seconds => seconds<60?`${seconds} seconds`:seconds%60===0?`${seconds/60} minute${seconds===60?'':'s'}`:`${seconds} seconds`;
 const questionOf = id => byId.get(id);
@@ -55,7 +55,7 @@ function home(){
  `<p class="lead">You have mastered every question in the available bank.</p><button id="reset-cycle" class="button-secondary block-action" type="button">Reset progress and start again</button>`}</section>
  <div class="home-actions"><button id="history" type="button" class="button-secondary">📊 Exam history (${state.history.length})</button>
  <button id="reset" type="button" class="button-reset">↺ Reset all progress</button></div>
- <div class="notice"><strong>Timer:</strong> Choose ${MIN_QUESTION_SECONDS}–${MAX_QUESTION_SECONDS} seconds for each question before starting. The time limit stays fixed for that paper. When time runs out, it is marked unanswered and the exam moves automatically to the next question (or results after the last). After a correct answer, a 5-second countdown automatically advances unless you tap Cancel. Wrong answers stay until you tap Next. <strong>Learning rules:</strong> A question is <strong>Mastered after 3 correct answers on separate papers</strong> (not necessarily consecutive). Until then it repeats alongside new questions. Wrong, skipped and timed-out questions are prioritized next time; mistakes do not erase earlier correct answers. Mastered questions are excluded. Question 153 is absent from the original PDF and deliberately skipped.<p class="notice-foot">${storageAvailable?'Progress is saved in this browser using localStorage. Clearing Safari website data may erase it.':'⚠️ Browser storage is unavailable; progress may not survive a reload.'}</p></div>`;
+ <div class="notice"><strong>Timer:</strong> Choose ${MIN_QUESTION_SECONDS}–${MAX_QUESTION_SECONDS} seconds for each question before starting. The time limit stays fixed for that paper. When time runs out, it is marked unanswered and the exam moves automatically to the next question (or results after the last). After a correct answer, a 3-second countdown automatically advances unless you tap Cancel. Wrong answers stay until you tap Next. <strong>Learning rules:</strong> A question is <strong>Mastered after 3 correct answers on separate papers</strong> (not necessarily consecutive). Until then it repeats alongside new questions. Wrong, skipped and timed-out questions are prioritized next time; mistakes do not erase earlier correct answers. Mastered questions are excluded. Question 153 is absent from the original PDF and deliberately skipped.<p class="notice-foot">${storageAvailable?'Progress is saved in this browser using localStorage. Clearing Safari website data may erase it.':'⚠️ Browser storage is unavailable; progress may not survive a reload.'}</p></div>`;
  $('#resume')?.addEventListener('click',()=>renderExam(true));
  $('#discard')?.addEventListener('click',()=>{if(state.active){$('#discard-dialog').showModal();$('#cancel-discard').focus();}});
  $('#reset')?.addEventListener('click', resetProgress);
@@ -182,7 +182,11 @@ function answer(choice){
  save();renderExam(false);
 }
 function optionHtml(q,o,record=null,interactive=true){
- const correct=record&&o.number===q.correct_option;
+ // A navigation skip is not user input. Keep the question locked as an
+ // incorrect attempt without revealing an answer the user did not choose.
+ // Wrong submitted answers and timeouts still reveal the correction.
+ const revealCorrect=record&&record.reason!=='skipped';
+ const correct=revealCorrect&&o.number===q.correct_option;
  const wrong=record&&record.choice===o.number&&!record.correct;
  const label=record&&correct?'Correct answer':record&&wrong?'Your incorrect answer':`Option ${o.number}`;
  return `<${interactive?'button':'div'} ${interactive?'type="button"':''} class="answer ${correct?'correct':''} ${wrong?'wrong':''}" ${interactive?`data-choice="${o.number}" ${record?'disabled':''}`:''} aria-label="${escapeHtml(label)}">
@@ -203,7 +207,7 @@ function renderExam(scroll=false){
  <div class="question-layout ${q.road_sign_image?'has-sign':'text-only'}">
  ${q.road_sign_image?`<button type="button" class="question-visual sign-trigger" id="sign-trigger" aria-label="View road sign or diagram larger"><img class="road-sign ${q.id>=139?'diagram':''}" src="${escapeHtml(q.road_sign_image)}" alt="Road sign or diagram for question ${q.id}" loading="eager"></button>`:''}
  <div class="answer-panel"><div class="answers">${q.choices.map(o=>optionHtml(q,o,record)).join('')}</div>
- ${record?`<div class="feedback ${record.correct?'':'wrong'}" role="status">${record.correct?'✓ නිවැරදි පිළිතුර!':record.reason==='timeout'?'⌛ කාලය අවසන් — නිවැරදි පිළිතුර කොළ පැහැයෙන්':record.reason==='skipped'?'↪ Skipped — correct answer highlighted':'✕ වැරදි පිළිතුර — නිවැරදි පිළිතුර කොළ පැහැයෙන්'}<small>${record.correct?(state.progress[q.id]?.status==='mastered'?`Mastered! Correct ${MASTERY_CORRECT_REQUIRED}/${MASTERY_CORRECT_REQUIRED} times.`:`Correct ${state.progress[q.id]?.correctCount||1}/${MASTERY_CORRECT_REQUIRED} times. This question will return in future papers.`):`This question will return for practice. Correct so far: ${state.progress[q.id]?.correctCount||0}/${MASTERY_CORRECT_REQUIRED}.`}</small></div>`:''}
+ ${record?`<div class="feedback ${record.correct?'':'wrong'}" role="status">${record.correct?'✓ නිවැරදි පිළිතුර!':record.reason==='timeout'?'⌛ කාලය අවසන් — නිවැරදි පිළිතුර කොළ පැහැයෙන්':record.reason==='skipped'?'↪ Skipped — no answer submitted':'✕ වැරදි පිළිතුර — නිවැරදි පිළිතුර කොළ පැහැයෙන්'}<small>${record.correct?(state.progress[q.id]?.status==='mastered'?`Mastered! Correct ${MASTERY_CORRECT_REQUIRED}/${MASTERY_CORRECT_REQUIRED} times.`:`Correct ${state.progress[q.id]?.correctCount||1}/${MASTERY_CORRECT_REQUIRED} times. This question will return in future papers.`):`This question will return for practice. Correct so far: ${state.progress[q.id]?.correctCount||0}/${MASTERY_CORRECT_REQUIRED}.`}</small></div>`:''}
  </div></div></section>`;
  document.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>answer(Number(b.dataset.choice))));
  const signTrigger=$('#sign-trigger');
@@ -264,9 +268,11 @@ function tick(){
   $('#auto-next-ring').style.setProperty('--progress',`${remaining/AUTO_NEXT_DELAY_MS*100}%`);
   $('.timer-stack').setAttribute('aria-label',`Next question in ${seconds} seconds. Press Cancel to stay here.`);
  }else{
-  $('#time-display').textContent=cancelled?'Auto-next off':record?'Answered':formatTime(remainingSeconds());
+  const completedLabel=record?.reason==='skipped'?'Skipped':record?.reason==='timeout'?'Time expired':'Answered';
+  $('#time-display').textContent=cancelled?'Auto-next off':record?completedLabel:formatTime(remainingSeconds());
   $('#time-display').classList.toggle('urgent',!record&&remainingSeconds()<=20);
-  $('.timer-stack').setAttribute('aria-label',cancelled?'Auto-next cancelled. Press Next to continue.':record?'Question answered. Press Next to continue.':'Time remaining for current question');
+  const completedAria=record?.reason==='skipped'?'Question skipped. Press Next to continue.':record?.reason==='timeout'?'Question time expired. Press Next to continue.':'Question answered. Press Next to continue.';
+  $('.timer-stack').setAttribute('aria-label',cancelled?'Auto-next cancelled. Press Next to continue.':record?completedAria:'Time remaining for current question');
  }
 }
 function questionMenu(){

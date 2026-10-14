@@ -80,6 +80,19 @@ def main():
   assert p.locator('.option-picture').count()==0
   assert_no_overflow(p,'mobile exam')
   embed_displayed_assets(p);p.screenshot(path=str(PREVIEW_DIR/'iphone_exam.png'),full_page=True)
+  # A navigation skip is incorrect but is not a user-selected answer. Going
+  # back must not reveal/highlight the official answer as if it was selected.
+  skipped_id=state(p)['active']['ids'][0]
+  p.locator('#next-btn').click();p.locator('#prev-btn').click()
+  skipped=state(p)['active']['answers'][str(skipped_id)]
+  assert skipped['reason']=='skipped' and skipped['correct'] is False and skipped['choice'] is None
+  assert p.locator('.answer.correct').count()==0
+  assert p.locator('#time-display').inner_text()=='Skipped'
+  assert p.locator('.timer-stack').get_attribute('aria-label')=='Question skipped. Press Next to continue.'
+  # Continue the existing score test with a fresh paper.
+  p.locator('#home-btn').click();p.locator('#discard').click();p.locator('#confirm-discard').click()
+  p.locator('[data-count="custom"]').click();p.locator('#custom-count').fill('3')
+  p.locator('#start').click();p.locator('.answer').first.wait_for()
   first=state(p)['active']['ids'][0];correct=next(q['correct_option'] for q in DATA if q['id']==first)
   p.locator(f'[data-choice="{1 if correct!=1 else 2}"]').click()
   assert p.locator('.answer.correct').count()==1 and p.locator('.answer.wrong').count()==1

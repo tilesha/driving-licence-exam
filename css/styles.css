@@ -389,7 +389,7 @@ h2 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.27; letter-spacing: -.0
 .seconds-field .muted { font-size: 13px; }
 @media (max-width: 359px) { .time-picks { gap: 4px; } .time-picks button { font-size: 12px; } }
 
-/* v1.6: Accessible, compact five-second auto-next feedback in fixed footer. */
+/* Accessible, compact three-second auto-next feedback in fixed footer. */
 .auto-next-ui { display:flex; align-items:center; justify-content:center; gap: 8px; white-space:nowrap; }
 .auto-next-ui[hidden] { display:none !important; }
 .auto-next-ring { --progress: 100%; display:grid; place-items:center; width:42px; height:42px; flex:0 0 42px; border-radius:50%; background:conic-gradient(#16803b var(--progress),#e4e8e5 var(--progress)); position:relative; color:#135e31; font-variant-numeric:tabular-nums; font-weight:800; }

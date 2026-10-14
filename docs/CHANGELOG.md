@@ -1,3 +1,8 @@
+## Unreleased
+
+- Reduced the correct-answer circular auto-next countdown from 5 seconds to 3 seconds.
+- Returning to a navigation-skipped question no longer reveals the correct answer, and its timer status reads `Skipped`.
+
 ## v1.8.0 — Second source-based ten-pass QA
 
 - Repeated ten distinct validation categories on v1.7 against the original PDF.

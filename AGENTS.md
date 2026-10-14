@@ -73,7 +73,7 @@ Instructions for AI coding assistants, contributors and QA engineers working on 
 ## v1.6 — Unfinished paper and answer auto-advance
 
 - **Never use native `window.confirm()` for the unfinished-paper discard action.** Use the dedicated accessible `#discard-dialog` with safe-default focus on **Keep my paper**. Cancel/Escape must preserve the whole active exam and learning progress; explicit confirmation discards only the active paper, not accumulated learning/history.
-- **Correct answer only:** immediately lock/highlight the answer and start a **5-second circular auto-next timer** in the fixed footer. The original configurable question deadline stops mattering after answering. At expiry, go to the next question, or complete the exam if it was the last question.
+- **Correct answer only:** immediately lock/highlight the answer and start a **3-second circular auto-next timer** in the fixed footer. The original configurable question deadline stops mattering after answering. At expiry, go to the next question, or complete the exam if it was the last question.
 - **Cancel auto-next:** user stays on the same answered question indefinitely until tapping Next (or another manual navigation action). Cancellation is persisted on the active paper to survive refresh; do not restart the auto-next countdown after reload.
 - Wrong answers display feedback indefinitely until manual Next; unanswered question timeouts still auto-advance according to the user-configured question duration.
 - Manual Next/Previous/question-menu navigation cancels pending auto-next; opening the road sign viewer or question menu also cancels to prevent surprise navigation.

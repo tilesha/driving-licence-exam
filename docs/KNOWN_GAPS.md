@@ -41,7 +41,7 @@ A learning question requires **three correct answers on three distinct papers** 
 
 Reset confirmation, Cancel, persistent reset/reload and legacy-key cleanup were tested in isolated Chromium. **Real iPhone Safari confirmation-dialog usability and GitHub Pages hosting checks remain pending.** Reset intentionally deletes progress permanently from this browser only; there is no recovery, cloud sync or export/import.
 
-- **Version 1.6:** Correct-answer five-second cooldown and discard confirmation are browser-simulation verified; live iPhone Safari validation remains pending, including background/foreground behavior and ring layout.
+- The correct-answer three-second cooldown and discard confirmation need live iPhone Safari validation, including background/foreground behavior and ring layout.
 
 
 ### Following the 10-pass Sinhala text audit (v1.7)

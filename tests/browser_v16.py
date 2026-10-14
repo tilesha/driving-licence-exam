@@ -1,4 +1,4 @@
-"""Browser QA for v1.6 custom discard modal and 5s correct-answer auto-next."""
+"""Browser QA for custom discard modal and 3s correct-answer auto-next."""
 from pathlib import Path
 import importlib.util
 import json
@@ -39,8 +39,8 @@ with sync_playwright() as pw:
  start(p,2)
  first,ans=correct(p)
  assert p.locator('.answer.correct').count()==1
- assert p.locator('#auto-next-ui').is_visible(), 'Correct answer must display five-second circular UI'
- assert p.locator('#auto-next-count').inner_text()=='5'
+ assert p.locator('#auto-next-ui').is_visible(), 'Correct answer must display three-second circular UI'
+ assert p.locator('#auto-next-count').inner_text()=='3'
  m.assert_no_overflow(p,'390px auto-next footer')
  m.embed_displayed_assets(p)
  p.screenshot(path=str(OUT/'iphone_correct_countdown.png'))

@@ -75,7 +75,7 @@ See [docs/CHANGELOG.md](docs/CHANGELOG.md) for the 3-correct mastery rule, confi
 
 ## Version 1.6 — Updated exam navigation
 
-- A correct response shows a 5-second circular countdown and then automatically shows the next question. At the last question it opens Results. **Cancel** disables automatic navigation for that question until Next is tapped.
+- A correct response shows a 3-second circular countdown and then automatically shows the next question. At the last question it opens Results. **Cancel** disables automatic navigation for that question until Next is tapped.
 - Incorrect answers wait for manual Next; unanswered question deadline still triggers automatic advance.
 - Discarding an unfinished exam shows an in-page dialog with **Keep my paper** and **Yes, discard paper**. It removes only that unfinished paper and keeps previously earned learning progress.
 
