@@ -217,7 +217,10 @@ function renderExam(scroll=false){
    cancelAutoNext(); // Opening the image must not allow a background auto-jump.
    $('#sign-dialog').showModal();
  });
- $('#prev-btn').disabled=a.index===0;
+ // Previous navigation is intentionally unavailable. Users move forward with
+ // Next; completed questions remain reviewable from the question-number menu.
+ $('#prev-btn').disabled=true;
+ $('#prev-btn').title='Previous navigation disabled';
  $('#next-btn').disabled=false;
  $('#next-btn').setAttribute('aria-label',a.index===a.ids.length-1?'Submit paper':'Next question');
  $('#next-btn').title=a.index===a.ids.length-1?'Finish paper':'Next question';
@@ -237,7 +240,6 @@ function next(){
  const a=state.active;markSkipped();clearAutoNext();
  if(a.index<a.ids.length-1){a.index++;save();renderExam(true);}else finish();
 }
-function previous(){if(state.active&&state.active.index>0)navigateTo(state.active.index-1);}
 function finish(force=false){
  if(!state.active)return;
  const a=state.active;
@@ -355,7 +357,6 @@ $('#home-btn').addEventListener('click',home);
 $('#menu-btn').addEventListener('click',questionMenu);
 $('#close-dialog').addEventListener('click',()=>$('#question-dialog').close());
 $('#finish-early').addEventListener('click',()=>{$('#question-dialog').close();finish(true);});
-$('#prev-btn').addEventListener('click',previous);
 $('#next-btn').addEventListener('click',next);
 window.setInterval(tick,250);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick();});
