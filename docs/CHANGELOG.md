@@ -1,10 +1,3 @@
-## v1.10.0 — Slide-to-next countdown
-
-- Replaced the circular correct-answer indicator with a responsive classic iPhone-inspired `slide to next →` bar.
-- Restored the correct-answer delay to exactly five seconds with a blue progress fill, GPU-transformed shimmer, visible 5→1 count and accessible Cancel button.
-- Reused the persisted absolute deadline and cancellation state so refresh, tab switching and rapid/manual navigation cannot create duplicate transitions.
-- Added a reduced-motion presentation without shimmer while retaining readable progress and countdown state.
-
 ## v1.9.0 — Modern blue interface
 
 - Reduced the correct-answer circular auto-next countdown from 5 seconds to 3 seconds.

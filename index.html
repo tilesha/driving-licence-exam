@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#2563EB">
   <meta name="description" content="Practice Sri Lanka driving licence questions with a timed, random Sinhala quiz and automatic wrong-answer review.">
   <title>Driving Licence Practice | රියදුරු බලපත්‍ර පුහුණුව</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.10.0">
-  <script type="module" src="js/app.js?v=1.10.0"></script>
+  <link rel="stylesheet" href="css/styles.css?v=1.9.1">
+  <script type="module" src="js/app.js?v=1.9.1"></script>
 </head>
 <body>
   <div id="app" class="app-shell">
@@ -22,11 +22,8 @@
         <div class="timer-stack" role="timer" aria-label="Time remaining for current question">
           <span class="timer-caption" id="timer-caption">Time</span><strong id="time-display">00:30</strong>
           <div id="auto-next-ui" class="auto-next-ui" hidden aria-live="off">
-            <div class="slide-track" id="auto-next-slider">
-              <span class="slide-fill" id="auto-next-fill" aria-hidden="true"></span>
-              <span class="slide-shimmer">slide to next →</span>
-              <span class="slide-count"><strong id="auto-next-count">5</strong><small id="auto-next-seconds">5s</small></span>
-            </div>
+            <span class="auto-next-ring" id="auto-next-ring" aria-hidden="true"><span id="auto-next-count">3</span></span>
+            <span class="auto-next-caption">Next in <strong id="auto-next-seconds">3s</strong></span>
             <button id="cancel-auto-next" class="auto-next-cancel" type="button">Cancel</button>
           </div>
         </div>

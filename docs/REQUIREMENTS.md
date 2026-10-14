@@ -47,6 +47,6 @@ The Results screen keeps the review section closed on initial display, including
 
 ### v1.6 interaction changes
 
-- Correct answer: lock, highlight, show the five-second `slide to next →` animation with progress fill, shimmer and 5→1 countdown, then automatically advance unless Cancel is selected. Cancel stops the animation, persists across refresh and preserves the current question until manual Next. On the final question, auto-advance shows Results.
+- Correct answer: lock, highlight, show 3-second ring, automatically advance unless Cancel is selected. Cancel preserves the current question until manual Next. On the final question, auto-advance shows Results.
 - Incorrect answer: show correction without a forced countdown; move forward manually. Timed out unanswered question: automatically advance immediately.
 - Discard unfinished paper: in-page confirmation with Cancel as the safe default; keep answered learning credits.
