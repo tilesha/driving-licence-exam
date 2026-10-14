@@ -15,6 +15,8 @@ index.html + css/styles.css
 
 Static files are served by GitHub Pages; browser uses relative URL `data/questions.json`. The page imports `js/app.js` as an ES module, and this imports `js/quiz-core.mjs`. No backend API, third-party dependencies or external domain calls are used.
 
+Deployable CSS, JavaScript modules and question data use a shared release query parameter (for example, `?v=1.8.1`) to bypass stale mobile-browser asset caches after a release. Updating this parameter does not affect the stable `sl-driving-quiz-v3` localStorage key, so saved progress and unfinished papers remain available.
+
 ## Question JSON contract
 
 Each record: `id` (original PDF number), `source_page`, `question_text` (Unicode Sinhala), optional `road_sign_image`, `correct_option` (1–4), four `choices` each with `number`, `text` (Unicode Sinhala), `marked_correct_by_pdf`, and `transcription_status`. A separate CSV in `docs/` records OCR quality and the unreliable PDF text layer for manual review.

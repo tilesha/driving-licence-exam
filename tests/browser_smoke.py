@@ -18,7 +18,7 @@ CORE=re.sub(r'\bexport\s+(?=(?:const|function)\b)','',(ROOT/'js/quiz-core.mjs').
 APP=re.sub(r'^import .*?;\s*','',(ROOT/'js/app.js').read_text(encoding='utf-8'),count=1,flags=re.M)
 HTML=(ROOT/'index.html').read_text(encoding='utf-8')
 HTML=re.sub(r'<link rel="stylesheet"[^>]*>',lambda _:f'<style>{CSS}</style>',HTML)
-HTML=HTML.replace('<script type="module" src="js/app.js"></script>','')
+HTML=re.sub(r'<script type="module" src="js/app\.js(?:\?v=[^"]+)?"></script>','',HTML)
 HTML=HTML.replace('</body>',f'<script>{CORE}\n{APP}</script></body>')
 
 def page_with_app(ctx, progress=None):

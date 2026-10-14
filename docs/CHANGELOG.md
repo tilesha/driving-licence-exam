@@ -3,6 +3,7 @@
 - Reduced the correct-answer circular auto-next countdown from 5 seconds to 3 seconds.
 - Returning to a navigation-skipped question no longer reveals the correct answer, and its timer status reads `Skipped`.
 - Removed the footer Previous button while retaining Next and question-menu review.
+- Added release-version cache busting for CSS, JavaScript modules and question data without changing saved browser progress.
 
 ## v1.8.0 — Second source-based ten-pass QA
 

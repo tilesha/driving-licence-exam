@@ -32,6 +32,7 @@ No build step, npm install, tokens or environment variables are necessary. See `
 - Immediate green/red correct/incorrect feedback, and a **configurable 10–300 seconds per question** (default 30s). Presets: 15s, 30s, 1m, 2m; custom seconds supported. Unanswered questions automatically advance on timeout; the final timeout automatically opens results. Wrong, timed-out and not-yet-mastered questions return on future attempts.
 - Clean forward-only footer navigation with Next and no Previous control, plus a question-number menu for reviewing completed questions, finish paper, and recent history. The compact **Results** page hides incorrect answers by default; open **Review incorrect answers**, then tap an individual question to reveal your answer and the correct answer.
 - Automatically store/resume using `localStorage` on the same browser/device. Progress saved by earlier versions is migrated to the 3-correct rule, using available history and otherwise crediting previously mastered questions with at least 1/3. No export/import.
+- Release-version query parameters on CSS, JavaScript modules and question data prevent mobile browsers from remaining on stale builds. They do not change or clear the `sl-driving-quiz-v3` progress key.
 - Responsive portrait, landscape and desktop design; attempt at accidental pinch zoom reduction via CSS.
 
 ## Important constraints
