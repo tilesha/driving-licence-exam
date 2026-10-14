@@ -21,6 +21,7 @@
 | QA-09 | Refresh or close browser mid-question, reopen | Resume available and time does not reset. |
 | QA-10 | Hit Next while unanswered, then review it from the number menu | No Previous control is rendered; Next marks the question skipped and advances on first click. Reviewing it keeps it incorrect/locked without revealing or highlighting the correct answer, and the timer reads `Skipped`. |
 | QA-11 | Use question menu and jump | Current unanswered counted wrong; chosen question visible. |
+| QA-11A | Start a paper, note answer positions, then refresh/resume | Choices are shuffled from source order per new paper but retain the same order throughout that paper; scoring still follows the source-marked option number. |
 | QA-12 | Review history | Previous score visible, answers hidden initially; opening Review incorrect answers and a specific question reveals the correct answer. |
 | QA-13 | Reset progress | Tapping Reset displays irreversible warning; Cancel keeps data; Confirm clears mastery, retry queue, exam history, unfinished attempt and timer preference, makes 171 questions available again. |
 | QA-14 | Load text-only and sign-image questions | Text-only no empty placeholder, sign questions show correct illustration. |

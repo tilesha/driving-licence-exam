@@ -74,6 +74,9 @@ def main():
   assert state(p)['active']['questionSeconds']==30
   assert p.locator('#time-display').inner_text() in ('00:30','00:29')
   assert p.locator('.answer').count()==4
+  displayed_order=p.locator('[data-choice]').evaluate_all('(els)=>els.map(el=>Number(el.dataset.choice))')
+  saved_order=state(p)['active']['choiceOrders'][str(state(p)['active']['ids'][0])]
+  assert displayed_order==saved_order
   assert p.locator('.option-text').count()==4
   assert p.locator('.question-text').count()==1
   assert p.locator('.question-picture').count()==0
@@ -129,6 +132,7 @@ def main():
   assert not p.locator('#review-accordion').evaluate('(el)=>el.open')
   p.locator('#go-home').click()
   snapshot=storage(p);p.close();p=page_with_app(ctx,snapshot)
+  assert state(p)['active'] is None
   assert p.locator('#history').count()==1
   p.locator('[data-count="custom"]').click();p.locator('#custom-count').fill('4');p.locator('#start').click()
   s=state(p);assert first in s['active']['ids'],'Wrong question missing in next attempt'

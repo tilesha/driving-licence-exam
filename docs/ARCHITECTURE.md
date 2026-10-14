@@ -15,7 +15,7 @@ index.html + css/styles.css
 
 Static files are served by GitHub Pages; browser uses relative URL `data/questions.json`. The page imports `js/app.js` as an ES module, and this imports `js/quiz-core.mjs`. No backend API, third-party dependencies or external domain calls are used.
 
-Deployable CSS, JavaScript modules and question data use a shared release query parameter (for example, `?v=1.8.1`) to bypass stale mobile-browser asset caches after a release. Updating this parameter does not affect the stable `sl-driving-quiz-v3` localStorage key, so saved progress and unfinished papers remain available.
+Deployable CSS, JavaScript modules and question data use a shared release query parameter (currently `?v=1.8.2`) to bypass stale mobile-browser asset caches after a release. Updating this parameter does not affect the stable `sl-driving-quiz-v3` localStorage key, so saved progress and unfinished papers remain available.
 
 ## Question JSON contract
 
@@ -23,7 +23,7 @@ Each record: `id` (original PDF number), `source_page`, `question_text` (Unicode
 
 ## Persistent state contract
 
-`sl-driving-quiz-v3` stores `{version:3, progress:{[id]:{status,correctCount,attempts,lastAttemptAt}}, history:[], active:null|{ids,index,answers,openedAt,startedAt,questionSeconds}}`.
+`sl-driving-quiz-v3` stores `{version:3, progress:{[id]:{status,correctCount,attempts,lastAttemptAt}}, history:[], active:null|{ids,index,answers,openedAt,startedAt,questionSeconds,choiceOrders}}`. `choiceOrders[id]` is a persisted permutation of the question's source choice numbers. Rendering follows that permutation, while answer scoring continues to compare the selected source number with `correct_option`.
 
 - `progress.status`: `wrong` (retry priority), `seen` (incomplete learning, generally 1–2 correct successes), `mastered` (3/3 correct; exclude). `correctCount` is capped at 3; wrong/skipped/timeout does not erase prior correct credits.
 - `active.answers[id]`: `{choice,correct,reason,at}` where `reason` is `answer`, `timeout` or `skipped`.

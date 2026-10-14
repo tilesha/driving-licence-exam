@@ -1,5 +1,5 @@
 'use strict';
-import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize } from './quiz-core.mjs?v=1.8.1';
+import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.8.2';
 
 // Static GitHub Pages app: no network beyond loading bundled files, no accounts/analytics.
 const $ = s => document.querySelector(s);
@@ -12,6 +12,12 @@ const durationLabel = seconds => seconds<60?`${seconds} seconds`:seconds%60===0?
 const questionOf = id => byId.get(id);
 const current = () => state.active ? questionOf(state.active.ids[state.active.index]) : null;
 const hasAnswer = id => Boolean(state.active?.answers?.[id]);
+const orderedChoices = q => {
+ const order=state.active?.choiceOrders?.[q.id];
+ if(!Array.isArray(order))return q.choices;
+ const choicesByNumber=new Map(q.choices.map(choice=>[choice.number,choice]));
+ return order.map(number=>choicesByNumber.get(number)).filter(Boolean);
+};
 
 function save(){
  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));storageAvailable=true;}
@@ -206,7 +212,7 @@ function renderExam(scroll=false){
  <h2 class="question-text" lang="si">${escapeHtml(q.question_text)}</h2>
  <div class="question-layout ${q.road_sign_image?'has-sign':'text-only'}">
  ${q.road_sign_image?`<button type="button" class="question-visual sign-trigger" id="sign-trigger" aria-label="View road sign or diagram larger"><img class="road-sign ${q.id>=139?'diagram':''}" src="${escapeHtml(q.road_sign_image)}" alt="Road sign or diagram for question ${q.id}" loading="eager"></button>`:''}
- <div class="answer-panel"><div class="answers">${q.choices.map(o=>optionHtml(q,o,record)).join('')}</div>
+ <div class="answer-panel"><div class="answers">${orderedChoices(q).map(o=>optionHtml(q,o,record)).join('')}</div>
  ${record?`<div class="feedback ${record.correct?'':'wrong'}" role="status">${record.correct?'✓ නිවැරදි පිළිතුර!':record.reason==='timeout'?'⌛ කාලය අවසන් — නිවැරදි පිළිතුර කොළ පැහැයෙන්':record.reason==='skipped'?'↪ Skipped — no answer submitted':'✕ වැරදි පිළිතුර — නිවැරදි පිළිතුර කොළ පැහැයෙන්'}<small>${record.correct?(state.progress[q.id]?.status==='mastered'?`Mastered! Correct ${MASTERY_CORRECT_REQUIRED}/${MASTERY_CORRECT_REQUIRED} times.`:`Correct ${state.progress[q.id]?.correctCount||1}/${MASTERY_CORRECT_REQUIRED} times. This question will return in future papers.`):`This question will return for practice. Correct so far: ${state.progress[q.id]?.correctCount||0}/${MASTERY_CORRECT_REQUIRED}.`}</small></div>`:''}
  </div></div></section>`;
  document.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>answer(Number(b.dataset.choice))));
@@ -360,12 +366,14 @@ window.addEventListener('pageshow',tick);
 
 (async()=>{
  try{
-  const response=await fetch('data/questions.json?v=1.8.1');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const response=await fetch('data/questions.json?v=1.8.2');if(!response.ok)throw new Error(`HTTP ${response.status}`);
   const all=await response.json();
   questions=all.filter(q=>q.id!==153&&q.correct_option>=1&&q.correct_option<=4&&q.choices?.length===4&&q.question_text?.trim()&&q.choices.every(o=>o.text?.trim()));
   byId=new Map(questions.map(q=>[q.id,q]));
   if(questions.length!==171)throw new Error(`Expected 171 usable questions, found ${questions.length}.`);
-  state=normalizeState(loadSaved(),questions);save();home();
+  state=normalizeState(loadSaved(),questions);
+  ensureChoiceOrders(state,questions); // Migrate an unfinished pre-shuffle paper once, then persist its order.
+  save();home();
  }catch(e){
   header('Error');$('#main').innerHTML=`<h2>Unable to load the questions</h2><p class="notice warning">Use a web server or GitHub Pages, not a file:// URL. Check data/questions.json is uploaded alongside the website.</p><p>${escapeHtml(e.message)}</p>`;
   console.error(e);

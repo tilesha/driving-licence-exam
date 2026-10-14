@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { freshState,resetAllStoredProgress,STORAGE_KEY,LEGACY_STORAGE_KEY,OLDEST_STORAGE_KEY,normalizeState,counts,selectQuestions,startPaper,recordAnswer,summarize,QUESTION_SECONDS,MIN_QUESTION_SECONDS,MAX_QUESTION_SECONDS,getQuestionSeconds,MASTERY_CORRECT_REQUIRED } from '../js/quiz-core.mjs';
+import { freshState,resetAllStoredProgress,STORAGE_KEY,LEGACY_STORAGE_KEY,OLDEST_STORAGE_KEY,normalizeState,counts,selectQuestions,startPaper,recordAnswer,summarize,QUESTION_SECONDS,MIN_QUESTION_SECONDS,MAX_QUESTION_SECONDS,getQuestionSeconds,MASTERY_CORRECT_REQUIRED,ensureChoiceOrders } from '../js/quiz-core.mjs';
 const data=JSON.parse(readFileSync(new URL('../data/questions.json',import.meta.url),'utf8'));
 const questions=data.slice(0,12);
 const seeded=()=>0.271828;
@@ -41,6 +41,20 @@ test('Preferences persist, in-progress timers do not change, and legacy timers d
 test('Selects requested unique random questions',()=>{
  const s=freshState(),ids=selectQuestions(s,questions,10,seeded);
  assert.equal(ids.length,10);assert.equal(new Set(ids).size,10);
+});
+
+test('Answer choices shuffle once per paper and retain their saved order',()=>{
+ const s=freshState();startPaper(s,questions,4,seeded,1000);
+ for(const id of s.active.ids){
+  const expected=questions.find(q=>q.id===id).choices.map(choice=>choice.number).sort();
+  assert.deepEqual([...s.active.choiceOrders[id]].sort(),expected);
+ }
+ const saved=JSON.parse(JSON.stringify(s.active.choiceOrders));
+ ensureChoiceOrders(s,questions,()=>0.999);
+ assert.deepEqual(s.active.choiceOrders,saved);
+ const old={...s,active:{...s.active,choiceOrders:undefined}};
+ ensureChoiceOrders(old,questions,()=>0);
+ assert.equal(Object.keys(old.active.choiceOrders).length,old.active.ids.length);
 });
 test('Three separate correct papers are required for mastery',()=>{
  const s=freshState();assert.equal(MASTERY_CORRECT_REQUIRED,3);

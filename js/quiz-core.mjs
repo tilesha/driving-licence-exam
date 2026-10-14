@@ -23,6 +23,20 @@ export function resetAllStoredProgress(storage){
 export function shuffle(items,random=Math.random){
  const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;
 }
+export function ensureChoiceOrders(state,questions,random=Math.random){
+ if(!state.active)return null;
+ const byId=new Map(questions.map(q=>[q.id,q]));
+ const existing=state.active.choiceOrders&&typeof state.active.choiceOrders==='object'?state.active.choiceOrders:{};
+ const choiceOrders={};
+ for(const id of state.active.ids){
+  const numbers=(byId.get(id)?.choices||[]).map(choice=>choice.number);
+  const saved=existing[id];
+  const valid=Array.isArray(saved)&&saved.length===numbers.length&&new Set(saved).size===numbers.length&&saved.every(number=>numbers.includes(number));
+  choiceOrders[id]=valid?[...saved]:shuffle(numbers,random);
+ }
+ state.active.choiceOrders=choiceOrders;
+ return choiceOrders;
+}
 const correctCountOf = entry => Math.max(0,Math.min(MASTERY_CORRECT_REQUIRED,Math.trunc(Number(entry?.correctCount)||0)));
 
 // V2 only had a mastered flag. Infer past successes from saved result history
@@ -120,7 +134,8 @@ export function recordAnswer(state,id,choice,correctOption,reason='answer',times
 export function startPaper(state,questions,count,random=Math.random,now=Date.now(),questionSeconds=QUESTION_SECONDS){
  if(!Number.isInteger(questionSeconds)||questionSeconds<MIN_QUESTION_SECONDS||questionSeconds>MAX_QUESTION_SECONDS)throw new Error(`Choose between ${MIN_QUESTION_SECONDS} and ${MAX_QUESTION_SECONDS} seconds per question.`);
  if(state.active)throw new Error('Finish or discard your current paper first.');
- state.active={ids:selectQuestions(state,questions,count,random),index:0,answers:{},openedAt:{},startedAt:now,questionSeconds};
+ state.active={ids:selectQuestions(state,questions,count,random),index:0,answers:{},openedAt:{},startedAt:now,questionSeconds,choiceOrders:{}};
+ ensureChoiceOrders(state,questions,random);
  return state.active;
 }
 export function summarize(state,now=Date.now()){
