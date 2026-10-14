@@ -19,7 +19,7 @@
 | QA-07 | Have more wrong questions than selected count | Review selection rotates oldest mistakes fairly across attempts. |
 | QA-08 | Select 30s, then let one question run over 30 seconds | Marked timeout/incorrect, automatically advances to the next question, and retained for the next paper. Last question automatically finishes and opens results. |
 | QA-09 | Refresh or close browser mid-question, reopen | Resume available and time does not reset. |
-| QA-10 | Hit Next while unanswered, then review it from the number menu | Previous remains disabled; Next marks the question skipped and advances on first click. Reviewing it keeps it incorrect/locked without revealing or highlighting the correct answer, and the timer reads `Skipped`. |
+| QA-10 | Hit Next while unanswered, then review it from the number menu | No Previous control is rendered; Next marks the question skipped and advances on first click. Reviewing it keeps it incorrect/locked without revealing or highlighting the correct answer, and the timer reads `Skipped`. |
 | QA-11 | Use question menu and jump | Current unanswered counted wrong; chosen question visible. |
 | QA-12 | Review history | Previous score visible, answers hidden initially; opening Review incorrect answers and a specific question reveals the correct answer. |
 | QA-13 | Reset progress | Tapping Reset displays irreversible warning; Cancel keeps data; Confirm clears mastery, retry queue, exam history, unfinished attempt and timer preference, makes 171 questions available again. |

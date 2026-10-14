@@ -80,11 +80,11 @@ def main():
   assert p.locator('.option-picture').count()==0
   assert_no_overflow(p,'mobile exam')
   embed_displayed_assets(p);p.screenshot(path=str(PREVIEW_DIR/'iphone_exam.png'),full_page=True)
-  # Previous is intentionally disabled. A skipped question can still be
+  # Previous is intentionally absent. A skipped question can still be
   # reviewed from the number menu without revealing an answer the user did not select.
   skipped_id=state(p)['active']['ids'][0]
   p.locator('#next-btn').click()
-  assert p.locator('#prev-btn').is_disabled()
+  assert p.locator('#prev-btn').count()==0
   p.locator('#menu-btn').click();p.locator('[data-jump="0"]').click()
   skipped=state(p)['active']['answers'][str(skipped_id)]
   assert skipped['reason']=='skipped' and skipped['correct'] is False and skipped['choice'] is None

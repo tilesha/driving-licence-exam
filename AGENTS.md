@@ -76,7 +76,7 @@ Instructions for AI coding assistants, contributors and QA engineers working on 
 - **Correct answer only:** immediately lock/highlight the answer and start a **3-second circular auto-next timer** in the fixed footer. The original configurable question deadline stops mattering after answering. At expiry, go to the next question, or complete the exam if it was the last question.
 - **Cancel auto-next:** user stays on the same answered question indefinitely until tapping Next (or another manual navigation action). Cancellation is persisted on the active paper to survive refresh; do not restart the auto-next countdown after reload.
 - Wrong answers display feedback indefinitely until manual Next; unanswered question timeouts still auto-advance according to the user-configured question duration.
-- Previous footer navigation remains disabled. Manual Next/question-menu navigation cancels pending auto-next; opening the road sign viewer or question menu also cancels to prevent surprise navigation.
+- The footer has no Previous control. Manual Next/question-menu navigation cancels pending auto-next; opening the road sign viewer or question menu also cancels to prevent surprise navigation.
 - Store the pending deadline (`active.autoAdvance`) in the existing localStorage state; do not create a new browser storage key, reset unrelated data, or use stale `setTimeout` callbacks.
 
 

@@ -217,10 +217,6 @@ function renderExam(scroll=false){
    cancelAutoNext(); // Opening the image must not allow a background auto-jump.
    $('#sign-dialog').showModal();
  });
- // Previous navigation is intentionally unavailable. Users move forward with
- // Next; completed questions remain reviewable from the question-number menu.
- $('#prev-btn').disabled=true;
- $('#prev-btn').title='Previous navigation disabled';
  $('#next-btn').disabled=false;
  $('#next-btn').setAttribute('aria-label',a.index===a.ids.length-1?'Submit paper':'Next question');
  $('#next-btn').title=a.index===a.ids.length-1?'Finish paper':'Next question';
