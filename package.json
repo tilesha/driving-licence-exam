@@ -1,0 +1,14 @@
+{
+  "name": "sri-lanka-driving-licence-practice",
+  "version": "1.8.0",
+  "private": true,
+  "type": "module",
+  "description": "Static Sinhala driving licence practice web app for GitHub Pages.",
+  "scripts": {
+    "test": "node --test tests/quiz-core.test.mjs",
+    "serve": "python -m http.server 8000",
+    "audit": "python tools/validate_content.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,11 @@
+﻿pass_no,pass_name,checked,passed,warnings,notes
+1,Source question numbering,171,171,0,Question 153 excluded; questions 173–176 absent in source
+2,All question and answer text fields,855,855,0,171 questions × 5 text snippets
+3,Original PDF page and ID mapping,171,171,0,26-page supplied PDF
+4,Sinhala Unicode normalization and codepoints,855,855,0,NFC and prohibited glyph checks
+5,OCR versus source-guided corrected transcript,855,855,0,333 updated text snippets across 155 questions; source-based corrections in CSV
+6,Remaining suspicious OCR artifacts,855,855,0,Heuristic warnings only; not a Sinhala spelling certification
+7,Answer positions and choice distinctness,171,171,0,No answer keys changed from blue-marked source PDF
+8,Road sign and diagram image integrity,71,71,0,Text-only questions correctly have no image
+9,Two OCR recognition strategies and low-confidence triage,855,855,59,"59 legacy OCR segments originally below 85 confidence; low confidence is warning, not necessarily wrong"
+10,Site bundle and Sinhala font fallback,9,9,0,Source + tests + docs + Sinhala font fallback; JS tests run separately

@@ -1,0 +1,5303 @@
+[
+  {
+    "id": 1,
+    "source_page": 1,
+    "road_sign_image": "assets/signs/q001.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉරට්ටේ දිනවල වාහන ඇතුල්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඔත්තේ දිනවල වාහන නැවැත්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉරට්ටේ දිනවල වාහන නැවැත්වීම තහනම්",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඔත්තේ දිනවල වාහන ඇතුල්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 2,
+    "source_page": 1,
+    "road_sign_image": "assets/signs/q002.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් නවතිනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එකිනෙක හරහා ගමන් කරන මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අනිවාර්ය වටරවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වටරවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 3,
+    "source_page": 1,
+    "road_sign_image": "assets/signs/q003.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගය ඉඩදෙනු",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "අනිවාර්ය ත්‍රිකෝණාකාර මංසන්ධිය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරියෙන් මාර්ගය ඉඩදෙනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ප්‍රධාන මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 4,
+    "source_page": 1,
+    "road_sign_image": "assets/signs/q004.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "සතුන්ගේ අභය භූමිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ගවයන් ඇති කරන ගොවිපළ ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ගවයන් හෝ වෙනත් සතුන් මාර්ගය හරහා ගමන් කිරීමට ඉඩ ඇති ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ගවයන් සඳහා මාර්ගය මාරුවීමට වෙන් කළ ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 5,
+    "source_page": 1,
+    "road_sign_image": "assets/signs/q005.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දකුණු පැත්තට ද්විත්ව වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "U හැඩයට හැරවිය හැකි ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණු පැත්තට වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "දකුණු පැත්තට වැළමිට වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 6,
+    "source_page": 1,
+    "road_sign_image": "assets/signs/q006.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් හතරමං හන්දිය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ප්‍රමුඛතා මාර්ගය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ප්‍රමුඛතා මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මංසන්ධි කොටුව",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 7,
+    "source_page": 1,
+    "road_sign_image": "assets/signs/q007.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වම් පැත්තෙන් රථවාහන ප්‍රධාන මාර්ගයට එක්වන සන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "පළමුවෙන් වම් පැත්තට විහිදෙන විසම සන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වම් පැත්තෙන් එන රථවාහන සඳහා ප්‍රමුඛතාවය දෙනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "Y හැඩයේ මංසන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 8,
+    "source_page": 2,
+    "road_sign_image": "assets/signs/q008.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ළමයින් මාරුවන ස්ථානය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අන්ධ මිනිසුන් මාරුවන ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ළමයින් මාරුවන ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "පාසල ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 9,
+    "source_page": 2,
+    "road_sign_image": "assets/signs/q009.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පදිකයින් මාරුවන ස්ථානය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පොලිස් ස්ථානය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉන්ධන පිරවුම්හල",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහන නවත්වන ස්ථානය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 10,
+    "source_page": 2,
+    "road_sign_image": "assets/signs/q010.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දකුණු පැත්තට ද්විත්ව වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් දකුණට හරවනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණු පැත්තට වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "දකුණු පැත්තට වැලමිට වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 11,
+    "source_page": 2,
+    "road_sign_image": "assets/signs/q011.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "තහනම් සංඥාවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සීමාකාරී සංඥාවකි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "විධාන සංඥාවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "අනතුරු හැඟවීමේ සංඥාවකි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 12,
+    "source_page": 2,
+    "road_sign_image": "assets/signs/q012.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "සියළුම වාහන සඳහා පාර වසා ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඔත්තේ දිනවල වාහන නැවැත්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නැවැත්වීම හා පැටවීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහන නැවැත්වීම තහනම්",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 13,
+    "source_page": 2,
+    "road_sign_image": "assets/signs/q013.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඇක්සලයක් මත පැටවිය හැකි බර සීමාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වේග සීමාවේ අවසානය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වේග සීමාවේ ආරම්භය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වේග සීමාව",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 14,
+    "source_page": 2,
+    "road_sign_image": "assets/signs/q014.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පදිකයින් සඳහා වෙන් කළ මාර්ගයේ ආරම්භය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පදිකයින් සඳහා ඉඩදෙන්න",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පදිකයින් මාරු වන ස්ථානය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "පදික මාරුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 15,
+    "source_page": 3,
+    "road_sign_image": "assets/signs/q015.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගය ලිස්සන සුළු ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉහළට අවදානම් බෑවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "කාර් රථ ලිස්සන සුලු ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "පහතට අවදානම් බෑවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 16,
+    "source_page": 3,
+    "road_sign_image": "assets/signs/q016.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "Y හැඩයේ මංසන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියේදී මාර්ගය පටුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ප්‍රධාන මාර්ගයට දෙපසින් රථ වාහන පිවිසෙන මං සන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ද්විත්ව රථ මාර්ගයේ ආරම්භය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 17,
+    "source_page": 3,
+    "road_sign_image": "assets/signs/q017.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මෝටර් කාරය අනිවාර්යයෙන්ම ඉදිරියට යා යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "ත්‍රී රෝද රථයට කෙළින්ම ඉදිරියට යා හැකිය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ත්‍රී රෝද රථයට දකුණට හැරවීම හෝ කෙළින්ම ඉදිරියට යා හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මෝටර් කාරයට කෙළින්ම ඉදිරියට යාමට හෝ දකුණට හැරවිය හැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රූපයෙන් පෙන්වා ඇති මං සන්ධියේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 18,
+    "source_page": 3,
+    "road_sign_image": "assets/signs/q018.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "තීරණය, සංඥා කිරීම සහ ක්‍රියා කිරීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "නිරීක්ෂණය, තීරණය කිරීම සහ ක්‍රියා කිරීම",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "සංඥා කිරීම, තීරණය කිරීම සහ ක්‍රියා කිරීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉහත සියල්ල නිවැරදිය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙහි තිබෙන මංසන්ධියේදී වමට හැරවීමට අදහස් කරන්නේ නම් පිළිවෙළින් A, B හා C වලදී කළ යුතු වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 19,
+    "source_page": 3,
+    "road_sign_image": "assets/signs/q019.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රතු හා කහ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රතු",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "කොළ හා කහ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කොළ",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පෙන්වා ඇති රථ වාහන මාර්ග සංඥා ලාම්පුවල ඊළඟට දැල්වෙන වර්ණය කුමක්ද?",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 20,
+    "source_page": 3,
+    "road_sign_image": "assets/signs/q020.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් හා පසුපසින් පැමිණෙන වාහන නවතිනු",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "පසුපසින් පැමිණෙන වාහන නවතිනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නවතිනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් පැමිණෙන වාහන නවතිනු",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පෙන්වා ඇති පොලිස් නිලධාරියාගේ විධානය කුමක්ද?",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 21,
+    "source_page": 4,
+    "road_sign_image": "assets/signs/q021.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ධාවන තීරු සළකුණු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මධ්‍ය රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණට හැරීම හැර හරහා යෑම තහනම් කරන ආයත රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගය හරහා ගමන් කිරීම තහනම් කිරීමේ ආයත රේඛාව",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ගය මත සලකුණු කර ඇති මෙම මාර්ග සළකුණෙන් දැක්වෙන්නේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 22,
+    "source_page": 4,
+    "road_sign_image": "assets/signs/q022.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වෑන් රථයට අවශ්‍ය නම් වමට හැරවිය හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වෑන් රථය අනිවාර්යයෙන් දකුණට හැරවිය යුතුයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "මෝටර් කාරයට අවශ්‍ය නම් දකුණට හැරවිය හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මෝටර් කාරයට අවශ්‍ය නම් වමට හැරවිය හැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහන ආලෝක සංඥා තිබෙන මෙම මංසන්ධියේ දී,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 23,
+    "source_page": 4,
+    "road_sign_image": "assets/signs/q023.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගය ඉඩදෙනු රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගය බෙදී යන ස්ථානයක පිහිටුවන නැවතුම් රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නවතිනු සංඥාවෙහි පිහිටුවන නැවතුම් රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වටරවුමක පිහිටුවන මාර්ගය ඉඩදෙනු රේඛාව",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ගය මත හරස් අතට සළකුණු කර ඇති මෙම සළකුණෙන් අදහස් කරන්නේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 24,
+    "source_page": 4,
+    "road_sign_image": "assets/signs/q024.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ප්‍රධාන මාර්ගයේ වාහන නොමැති නම් නතර කළයුතු නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අනිවාර්යයෙන් නතර කළ යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "දකුණට හරවන්නේ නම් පමණක් නතර කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වමට හැරවීමේදී නතර කළ යුතු නැත",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රූපයේ පෙන්වා තිබෙන T හැඩයේ මංසන්ධියට ඇතුළුවන මෙම රියදුරා තම වාහනය,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 25,
+    "source_page": 4,
+    "road_sign_image": "assets/signs/q025.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගය ඉඩදෙනු රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රථවාහන සංඥා එළියකදී හෝ පොලීසියෙන් පාලනය වන අන්තර් ඡේදනයකදී නැවතීමේ රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නවතිනු සංඥාවේ පිහිටුවන නෑවතුම් රේඛාව",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වටරවුමක පිහිටුවනු ලබන මාර්ගය ඉඩදෙනු රේඛාව",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ගය මත හරස් අතට සලකුණු කර ඇති මෙම සලකුණෙන් අදහස් කරන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 26,
+    "source_page": 4,
+    "road_sign_image": "assets/signs/q026.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් මාර්ගය වසා ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දුම්රිය හරස් මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ආරක්ෂා කර නොමැති දුම්රිය හරස් මාර්ගය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ආරක්ෂා කර නොමැති දුම්රිය හරස් මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 27,
+    "source_page": 5,
+    "road_sign_image": "assets/signs/q027.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "අනිවාර්ය වට රවුම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඇතුල්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "බස් හා ලොරි සඳහා පාර වසා ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගය වසා ඇත",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 28,
+    "source_page": 5,
+    "road_sign_image": "assets/signs/q028.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ලිස්සන සුළු මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "වංගු සහිත මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අනතුරුදායක මංසන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් මාර්ගය පටුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 29,
+    "source_page": 5,
+    "road_sign_image": "assets/signs/q029.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "Y හැඩයේ මංසන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් මාර්ගය පටුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ද්විත්ව රථ මාර්ගයේ අවසානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "පටු පාලම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 30,
+    "source_page": 5,
+    "road_sign_image": "assets/signs/q030.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "අනිවාර්ය වටරවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අනිවාර්ය වටරවුම",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වටරවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වටරවුම",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 31,
+    "source_page": 5,
+    "road_sign_image": "assets/signs/q031.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වම් පැත්තට හරවා නවත්වන්න",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වම් පැත්තට හැරවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වම් පැත්තට හැරවීම සඳහා ප්‍රමුඛතාවය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් වම් පැත්තට හැරවිය යුතුය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 32,
+    "source_page": 5,
+    "road_sign_image": "assets/signs/q032.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "තොරතුරු සංඥාවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අනතුරු හැගවීමේ සංඥාවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "තහනම් සංඥාවකි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "විධාන සංඥාවකි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 33,
+    "source_page": 5,
+    "road_sign_image": "assets/signs/q033.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වම් පැත්තට ද්විත්ව වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වම් පැත්තට වැලමිටි වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වම් පැත්තට වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "U හැඩයට හැරවිය හැකි ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 34,
+    "source_page": 6,
+    "road_sign_image": "assets/signs/q034.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "සියලුම වාහන සඳහා මාර්ගය වසා ඇත",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගය වසා ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "කාර් සහ යතුරු පැදි සඳහා මාර්ගය වසා ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කාර් සහ යතුරු පැදි ඇතුල්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 35,
+    "source_page": 6,
+    "road_sign_image": "assets/signs/q035.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වටරවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රථ වාහන නවත්වන ස්ථානය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නවතිනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් නවතිනු",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 36,
+    "source_page": 6,
+    "road_sign_image": "assets/signs/q036.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ද්විත්ව රථ මාර්ගය ආරම්භය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියේදී මාර්ගය පටුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ද්විත්ව රථ මාර්ගය අවසානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "පටු පාලම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 37,
+    "source_page": 6,
+    "road_sign_image": "assets/signs/q037.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වේග සීමාව",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "සාමාන්‍ය වේගය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අවම වේගය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "නගර සීමාව තුළ වේග සීමාව",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 38,
+    "source_page": 6,
+    "road_sign_image": "assets/signs/q038.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් මංසන්ධියක්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඔත්තේ දිනවල නැවැත්වීම හා පැටවීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉරට්ටේ දිනවල නැවැත්වීම හා පැටවීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "නැවැත්වීම හා පැටවීම තහනම්",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 39,
+    "source_page": 6,
+    "road_sign_image": "assets/signs/q039.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "කොළ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "කහ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "රතු සහ කහ",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "කහ සහ කොළ",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පෙන්වා ඇති රථ වාහන මාර්ග සංඥා ලාම්පු වල ඊළඟට දැල්වෙන වර්ණය කුමක්ද?",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 40,
+    "source_page": 6,
+    "road_sign_image": "assets/signs/q040.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් එන වාහන වලට ප්‍රමුඛතාවය අවසන්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඇතුල්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහන ඉස්සර කිරීම තහනම්",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉරට්ටේ දිනවල නැවැත්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 41,
+    "source_page": 7,
+    "road_sign_image": "assets/signs/q041.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ප්‍රධාන මාර්ගය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් මාර්ගය ඉඩදෙනු",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ත්‍රිකෝණාකාර මංසන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගය ඉඩදෙනු",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 42,
+    "source_page": 7,
+    "road_sign_image": "assets/signs/q042.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "කලුගල් කඩන ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අවදානම් බෑවුම ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මාර්ගය අලුත්වැඩියා කරන ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ගල් පර්වත කැබලි වැටෙන ස්ථානය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 43,
+    "source_page": 7,
+    "road_sign_image": "assets/signs/q043.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉරට්ටේ දිනවල වාහන ඇතුල්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉරට්ටේ දිනවල වාහන නැවැත්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඔත්තේ දිනවල වාහන නැවැත්වීම තහනම්",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඔත්තේ දිනවල වාහන ඇතුල්වීම තහනම්",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ග සංඥාවෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 44,
+    "source_page": 7,
+    "road_sign_image": "assets/signs/q044.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පසුපසින් පැමිණෙන වාහන නවතිනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් හා පසුපසින් පැමිණෙන වාහන නවතිනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරියට එනු",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "නවතිනු",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "පෙන්වා ඇති පොලිස් නිලධාරියාගේ විධානය කුමක්ද?",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 45,
+    "source_page": 7,
+    "road_sign_image": "assets/signs/q045.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉඩදීමේ රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රථ වාහන ආලෝක සංඥා හෝ පොලිසියෙන් පාලනය වන මාර්ගය බෙදී යන ස්ථානයක පිහිටුවන නැවතුම් රේඛාව",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "නැවතීමේ සංඥාව අසල නැවතීමේ රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "“වටවංගුව” අසල ඉඩදීමේ රේඛාව",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ගය මත හරස් අතට සළකුණු කර ඇති මෙම සළකුණෙන් අදහස් කරන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 46,
+    "source_page": 7,
+    "road_sign_image": "assets/signs/q046.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගය බෙදීයන ස්ථානයක පිහිටුවන නැවතුම් රේඛාවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වට රවුමක පිහිටුවන මාර්ගය ඉඩදෙනු රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නවතිනු සංඥාවේ පිහිටු වන නැවතීමේ රේඛාවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගය ඉඩදෙනු රේඛාවයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මාර්ගය මත හරස් අතට සළකුණු කර ඇති මෙම සළකුණෙන් අදහස් කරන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 47,
+    "source_page": 8,
+    "road_sign_image": "assets/signs/q047.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මංතීරු සලකුණ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගය හරහා ගමන් කිරීම තහනම් කිරීමේ ආයත රේඛාව",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණට හැරවීම හැර හරහා යාම තහනම් කිරීමේ ආයත රේඛාව",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "මධ්‍ය රේඛාව",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මාර්ගය මත සළකුණු කර ඇති මෙම මාර්ග සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 48,
+    "source_page": 8,
+    "road_sign_image": "assets/signs/q048.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ද්විත්ව මාර්ගය ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පටු පාලමකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරියේ මාර්ගය පටු බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "පටු පාලම ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 49,
+    "source_page": 8,
+    "road_sign_image": "assets/signs/q049.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පදිකයන් මාරුවන ස්ථානය ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "පදික මාරුව ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මගීන් මාරුවන ස්ථානයක් ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ළමයින් මාරුවන ස්ථානය ඉදිරියෙන් බවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 50,
+    "source_page": 8,
+    "road_sign_image": "assets/signs/q050.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඔත්තේ දින වල ඇතුල්වීම තහනම් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඔත්තේ දින වල නැවැත්වීම තහනම් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඇතුල්වීම තහනම් බවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "විරුද්ධ දිශාවෙන් වාහන පැමිණිය නොහැකි බවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 51,
+    "source_page": 8,
+    "road_sign_image": "assets/signs/q051.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ප්‍රධාන පාර ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ත්‍රිකෝණාකාර මංසන්ධිය ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරියෙන් ඉඩ දෙනු යන අදහසයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගය ඉඩ දෙනු යන අදහසයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් පෙන්වා ඇත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 52,
+    "source_page": 8,
+    "road_sign_image": "assets/signs/q052.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහන ඇතුල්වීම සීමා කර ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් ඉඩ දෙනු යන අදහසයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ප්‍රමුඛතා මාර්ගය බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ප්‍රමුඛතා මාර්ගයේ අවසානය බවයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 53,
+    "source_page": 8,
+    "road_sign_image": "assets/signs/q053.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් ප්‍රධාන මාර්ගයට ඇතුළුවන බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් එන වාහන වලට ප්‍රමුඛතාවය දියයුතු බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරියට යන වාහන වලට ප්‍රමුඛතාවය දිය යුතු බවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් පැමිණෙන වාහනයෙන් ප්‍රවේශම් වන්න යන අදහසයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 54,
+    "source_page": 9,
+    "road_sign_image": "assets/signs/q054.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දුම්රිය ඉදිරියෙන් පැමිණිය හැකි බැවින් ප්‍රවේශම් වන්න යන්නයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දුම්රියෙන් ප්‍රවේශම් විය යුතු බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ආරක්ෂා කර නොමැති දුම්රිය හරස් මාර්ගයක් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ආරක්ෂා කර නොමැති දුම්රිය හරස් මාර්ගය ඉදිරියෙන් බවයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 55,
+    "source_page": 9,
+    "road_sign_image": "assets/signs/q055.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් මාර්ගය අවසානය බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වැලමිට වංගුව ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "U හැඩයට සිටින සේ හැරවීම තහනම් යන අදහසයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "දකුණු පැත්තට හැරවීම තහනම් යන අදහසයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සළකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 56,
+    "source_page": 9,
+    "road_sign_image": "assets/signs/q056.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වට රවුම ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "විදුලි ආලෝක සංඥාව යන අදහසයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නවතිනු යන අදහසයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉඩදෙනු යන අදහසයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 57,
+    "source_page": 9,
+    "road_sign_image": "assets/signs/q057.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "නාගරික ප්‍රදේශයකට ඇතුල්වන බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එම ප්‍රදේශය තුළ පැදවිය හැකි උපරිම වේගය බවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "එම ප්‍රදේශය තුළ පැදවිය හැකි සාමාන්‍ය වේගය බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "සඳහන් වේග සීමාවේ අවසානය බවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැනුම්දෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 58,
+    "source_page": 9,
+    "road_sign_image": "assets/signs/q058.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "තහනම් සංඥාවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අනතුරු හැගවීමේ සංඥාවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පාලක සංඥාවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "තොරතුරු සංඥාවකි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සංඥාව",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 59,
+    "source_page": 9,
+    "road_sign_image": "assets/signs/q059.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දුම්රිය මාර්ගය ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රෝහලක් ඉදිරියෙන් ඇති බවකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පල්ලියක් ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "එකිනෙක හරහා ගමන් කරන මාර්ග ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 60,
+    "source_page": 9,
+    "road_sign_image": "assets/signs/q060.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දකුණට හැරවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වමට වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "දකුණට වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වමට හැරවිය යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 61,
+    "source_page": 10,
+    "road_sign_image": "assets/signs/q061.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "Y හැඩයේ මංසන්ධිය ඉදිරියෙන් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් ප්‍රධාන මාර්ගය ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වම් පැත්තෙන් එන වාහනවලට ප්‍රමුඛතාවය දෙන ලෙස දැනුම් දීමකි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වම් පැත්තෙන් එන රථ වාහන ප්‍රධාන මාර්ගයට එක් වන සන්ධිය ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 62,
+    "source_page": 10,
+    "road_sign_image": "assets/signs/q062.png",
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් දකුණට හැරවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දකුණු පැත්තට වැලමිටි වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරියෙන් U හැඩයට හැරවීමට හැකිය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වම් පැත්තට වැලමිටි වංගුව ඉදිරියෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 63,
+    "source_page": 10,
+    "road_sign_image": "assets/signs/q063.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඔත්තේ දින වල වාහන නැවැත්වීම තහනම් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගය වසා ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහන නැවැත්වීම තහනම් බවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් වට රවුමක් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 64,
+    "source_page": 10,
+    "road_sign_image": "assets/signs/q064.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉරට්ටේ දින වල වාහන නැවැත්වීම තහනම් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහන ඇතුල් වීම තහනම් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහන නැවැත්වීම තහනම් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහන නැවැත්වීම සහ පැටවීම තහනම් බවයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 65,
+    "source_page": 10,
+    "road_sign_image": "assets/signs/q065.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් ආපසු හරවන්න",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වම් පැත්තට හරවන්න",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මේ පැත්තෙන් පසු කර යන්න",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් වම් පැත්තට හරවන්න",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 66,
+    "source_page": 10,
+    "road_sign_image": "assets/signs/q066.png",
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් දකුණු පැත්තට හැරවිය යුතුයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "වාහන නවතා තැබීමට පුළුවන් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරියෙන් අනතුරක් ඇති බැවින් හෙමින් ධාවනය කරන්න යන්නයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "“නවතිනු” සංඥාවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෙම සලකුණෙන් දැක්වෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 67,
+    "source_page": 10,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "නිල් පසුබිමෙහි සුදු වර්ණයෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රතු පසුබිමෙහි සුදු වර්ණයෙනි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "කහ පසුබිමෙහි කළු වර්ණයෙනි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "සුදු පසුබිමෙහි රතු වර්ණයෙනි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ශ්‍රී ලංකාවේ මාර්ග නීති සංග්‍රහයේ අනතුරු හැඟවීමේ සංඥා දක්වා ඇත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 68,
+    "source_page": 11,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඔබට දකුණින් පැමිණෙන රථවාහන වලට ඉඩදිය යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "ඔබට වම්පසින් හෝ ආසන්නව පැමිණෙන රථවාහන වලට ඉඩදිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අධික රථවාහන තදබදය සහිත දිශාවෙන් පැමිණෙන රථවාහන වලට ඉඩදිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඔබට වම්පසින් හෝ ආසන්නව දකුණින් පැමිණෙන රථවාහන වලට ඉඩදිය යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වටරවුමක මූලික නීතිය වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 69,
+    "source_page": 11,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගයේ මැද තීරුව හෝ දකුණු පස මං තීරුවය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගයේ දකුණු පසමං තීරුවය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මාර්ගයේ වම් පස මං තීරුවය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගයේ මැද මං තීරුවය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "එක් දිශාවකට මං තීරු තුනක් සහිත මාර්ගයක ඔබගේ වාහනය ඉදිරියට ගමන් කරන අවස්ථාවකදී ඔබ විසින් තෝරා ගත යුතු මං තීරු වනුයේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 70,
+    "source_page": 11,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඔබට ඉදිරියෙන් ධාවනය වන වාහනයේ රියදුරු තැන හදිසියේ නතර කළහොත්, එම වාහනය පසුකර යාමට ඔබට වැඩි වේලාවක් ලැබෙන නිසාය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඔබට ඉදිරියෙන් ධාවනය වන වාහනයේ රියදුරු තැන හදිසියේ නතර කළහොත්, ඔබට ඔබගේ වාහනය ආරක්ෂාකාරී ලෙස නතර කර ගැනීමට හැකිවන නිසාය.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ඔබට ඉදිරියෙන් ධාවනය වන වාහනයට ඉස්සර කිරීමට වැඩි ඉඩක් ලැබෙන නිසාය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඔබට ඉදිරියෙන් ධාවනය වන වාහනය පසුපසින් ධාවනය කිරීම වඩාත් පහසුවන නිසාය.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබගේ වාහනය හා ඔබට ඉදිරියෙන් ධාවනය වන වාහනය අතර ප්‍රමාණවත් දුරක් තබා ගත යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 71,
+    "source_page": 11,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනය අබල තත්වයකට පත්ව නවතා තිබියදී පමණි.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "වාහනයක් හදිසි තත්ත්වයක් නිසා ධාවනය කරන බව දැක්වීම සඳහාය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "හන්දියකදී වාහනයක් කෙළින්ම ධාවනය කිරීමට අදහස් කරන අවස්ථාවේදීය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ප්‍රමුඛතාවය ලබා ගැනීමටය.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක අවදානම හැඟවීමේ ලාම්පු (Hazard Lamps) පාවිච්චි කිරීම කළ යුත්තේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 72,
+    "source_page": 11,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඔබ පසුකර යාමට ඉඩ දීමට කැමැත්තක් නොදක්වන්නේ නම් ඔබගේ වාහනයේ දකුණු පස සංඥා දැල්විය යුතුය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඔබගේ වාහනය අඩු ගියරයකට යොදා නතර කිරීමට සූදානම් විය යුතුය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඔබගේ වාහනය වේගය වැඩි නොකර පසුකරන්නාට ඔබගේ වාහනය පසුකර යාමට ඉඩ දිය යුතුය.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඔබ පසු කර යාමට ඉඩ දීමට කැමැත්තක් නොදක්වන්නේ නම් ඔබට වාහනයේ වේගය වැඩි කළ හැක.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වෙනත් වාහනයක් විසින් ඔබගේ වාහනය පසු කර යන අවස්ථාවකදී,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 73,
+    "source_page": 11,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඔබ කෙළින්ම ඉදිරියට ගමන් කරන්නේ නම් ඔබට මංසන්ධි කොටුව තුළට ඇතුල් විය හැක.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දකුණට හැරවීමේදී හැර පිටවීමට ඇති මාර්ගය අවහිර නම් මංසන්ධි කොටුව තුළට ඇතුල් නොවිය යුතුය.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "දකුණට හැරවීමට හැර ඕනෑම අවස්ථාවකදී ඔබට මංසන්ධි කොටුව තුළට ඇතුල් චිය හැක.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඕනෑම අවස්ථාවක ඔබට මංසන්ධි කොටුව තුළට ඇතුල් විය හැක.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මංසන්ධි කොටුවේ සලකුණු කර ඇති ස්ථානයකදී,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 74,
+    "source_page": 12,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මං සන්ධියක සිට මීටර් 25 ක සීමාවෙන් පිටතය.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "බස් රථ නැවතුමක සිට මීටර් 20 ක සීමාවෙන් පිටතය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පදිකයින් මාරුවන ස්ථානයක දඟර ප්‍රදේශය හෝ එහි සිට මීටර් 10 ක සීමාවෙන් පිටතය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ගිනි නිවන ජලනලයක සිට මීටර් 10 ක සීමාවෙන් පිටතය.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක් නතර කර තැබිය හැකි ස්ථානයක් වන්නේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 75,
+    "source_page": 12,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ආරෝග්‍ය ශාලාවක් ඉදිරියේදී හෝ එයට ළඟාවන අවස්ථාවකදීය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "උසාවියක් ඉදිරියේදී හෝ එයට ලඟාවන අවස්ථාවකදීය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මාර්ගය මත පිහිටා ඇති කඩඉරි නොකැපෙනසේය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "පදික මාරුවකදී හෝ එයට ළඟාවන අවස්ථාවකදීය.",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ඔබ වෙනත් වාහනයකට ඉස්සර නොකළ යුත්තේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 76,
+    "source_page": 12,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "අනතුරට පත් වාහනය කඩිනමින් මාර්ගයෙන් ඉවත්කර පොලිසියට වාර්තා කළ යුතුය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහනයේ පිහිටීම මාර්ගය මත සලකුණු කර අනතුරට පත් පුද්ගලයන් රැගෙනයාම සඳහා වාහනය පාවිච්චි කළ හැක.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "අනතුරට පත් වාහනය පොලිස් නිලධාරියෙකු පැමිණෙන තෙක් ඉවත් නොකළ යුතුය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "හැකි විගස වාහනය මාර්ගයෙන් ඉවතට ගෙන එහි කාර්මික දෝෂ තිබේදැයි පරීක්ෂා කළ යුතුය.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබගේ වාහනය මාර්ග අනතුරකට භාජනය වුවහොත්,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 77,
+    "source_page": 12,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රථ වාහන තදබදය අවම දිශාවට මුහුණලාය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රථ වාහන ගමනාගමනයට ප්‍රතිවිරුද්ධ දිශාවට මුහුණලාය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "රථ වාහන තදබදය අධික දිශාවට මුහුණලාය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "රථ වාහන ගමනාගමනය ඇති දිශාවට මුහුණලාය.",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "රාත්‍රී කාලයේදී ඔබ වාහනය සැමවිටම නතර කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 78,
+    "source_page": 12,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඔබ ඉදිරියෙන් ධාවනය වන වාහනය දකුණට හරවන බවට සංඥා දක්වා ඇති අවස්ථාවකදීය.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "ඔබ ඉදිරියෙන් ධාවනය වන වාහනය ඉතා අඩු වේගයකින් ධාවනය කරන අවස්ථාවදීය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණු පසින් ඉස්සර කිරීම ආරක්ෂාකාරී නොවන බව ඔබට හැඟී යන අවස්ථාවකදීය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඔබට ප්‍රතිවිරුද්ධ දිශාවෙන් ඉතා අධික වාහන තදබදයක් පවතින අවස්ථාවදීය.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබට වම්පසින් වාහනයක් පසුකර යා හැක්කේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 79,
+    "source_page": 12,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "අනතුරක් වළක්වා ගැනීමට ගතවන කාලය වැඩිවේ",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "අනතුරක් වළක්වා ගැනීමට ගතවන කාලය අඩුවේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අනතුරක් වළක්වා ගැනීම කෙරෙහි බලපෑමක් නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "අනතුරක් වැළැක්වීමට ඇති හැකියාව වැඩි කරයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මත්පැන් හෝ මත්ද්‍රව්‍ය භාවිතා කර ඇති විටකදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 80,
+    "source_page": 13,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පොලිස් සංඥා. රථ වාහන ආලෝක සංඥා. මාර්ග සංඥා. මාර්ගය මත පිහිටුවන සලකුණු",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගය මත පිහිටුවන සංඥා, පොලිස් සංඥා, රථ වාහන ආලෝක සංඥා , මාර්ග සංඥා",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මාර්ග සංඥා, මාර්ගය මත පිහිටුවන ඉරි, පොලිස් සංඥා, රථ වාහන ආලෝක සංඥා",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "රථ වාහන ආලෝක සංඥා, මාර්ග සංඥා, මාර්ග මත පිහිටුවන ඉරි, පොලිස් සංඥා",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රථ වාහන නීති පිළිපදින විටදී ප්‍රමුඛත්වය දිය යුතු නිවැරදි ආකාරය වනුයේ කුමක්ද?",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 81,
+    "source_page": 13,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "අන් අය ඔබ වෙනුවෙන් නතර වී සිටිය යුතු බවය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඔබ පැමිණෙන බවය.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ඔබට ප්‍රමුඛත්වය ලබා දියයුතු බවය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඔබ සෙමින් ධාවනය වන වාහනයක් ඉස්සර කරන බවය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ප්‍රවලනය වන (නිවෙන දැල්වෙන) ප්‍රධාන ලාම්පු වලින් හැඟවෙන්නේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 82,
+    "source_page": 13,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "උසාවියක් ඉදිරියේදීය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගයක් මත කඩඉරි සලකුණු ඇති තැන්වලදීය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අවදානම් වංගුවකදීය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ආරෝග්‍ය ශාලාවක් ඉදිරියේදීය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ වෙනත් වාහනයකට ඉස්සර නොකල යුත්තේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 83,
+    "source_page": 13,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ත්‍රීවිල් රථ සඳහා",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉඩම් වාහන සඳහා",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මෝටර් සයිකල් සඳහා",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ලොරි සඳහා",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "අධිවේගී මාර්ගය පරිහරණය සඳහා තහනම් කර නොමැති වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 84,
+    "source_page": 13,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනය නිවැරදි මං තීරුවට ගැනීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සංඥා යෙදීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නිරීක්ෂණය කිරීම",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "අවස්ථාවට ගැළපෙන පරිදි වේගය පාලනය කිරීම",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ වාහනයක් පසුකර යාමට අදහස් කරන්නේ නම් ගත යුතු පළමුවැනි ක්‍රියා මාර්ගය කුමක්ද?",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 85,
+    "source_page": 13,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "සිතීමේ දුරෙහි සහ තිරිංග යෙදීමේ දුර යන දෙකෙන් අඩු දුරයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සිතීමේ දුරෙහි සහ තිරිංග දුරෙහි වෙනසයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "සිතීමේ දුරෙහි සහ තිරිංග යෙදීමේ දුරෙහි එකතවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "සිතීමේ දුරෙහි සහ තිරිංග යෙදීමේ දුර යන දෙකෙන් වැඩි දුරයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක් නතර කිරීමේදී නැවැත්වීමේ දුර ලෙස හඳුන්වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 86,
+    "source_page": 13,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මහා මාර්ගයේ මගී තදබදයක් නොමැති නම් තමාට රිසි සේ ධාවනය කළ හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉක්මනින් මගීන් පැමිණීමට පෙර මගීන් මාරුවන ස්ථානය පසුකර යාම සඳහා වේගය වැඩි කළ යුතුයි.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහනය නතර කර ගැනීමට බලාපොරොත්තුවෙන් වේගය පාලනය කර ධාවනය කළ යුතුයි.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "නලාව ශබ්ද කර තමා එන බව මගීන්ට දන්වා නොනවත්වාම යා යුතුයි.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනය මහා මාර්ගයේ පදවාගෙන යන ඔබ මගීන් මාරුවන ස්ථානයක් ඉදිරියෙන් ඇති බවට මාර්ග සංඥාවක් දුටු විගසම",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 87,
+    "source_page": 14,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරි වාහනයේ රියදුරු ඉස්සර කිරීමට සංඥා කළ විට එය කිරීම අවශ්‍ය නැත.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරි මාර්ගය පැහැදිලිව පෙනෙන්නේ දැයි පරීක්ෂා කළ යුතුයි.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මහා මාර්ගය ඉඩ තිබෙන ස්ථානයක්දැයි පරීක්ෂා කළ යුතුයි.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මහා මාර්ගය හොඳින් නිරීක්ෂණය කර ඉස්සර කිරීමට හැකිදැයි පරීක්ෂා කර තීරණය කළ යුතුයි.",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ඉදිරියෙන් යන වාහනය ඉස්සර කිරීමට ඔබට අවශ්‍ය නම්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 88,
+    "source_page": 14,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "තමා කැමති මං තීරුවක් භාවිතා කළ හැක.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මාර්ගයේ වම් පස තීරුවේය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණු පැත්තට ගෙන යා යුතුයි.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගයේ මධ්‍ය රේඛාවට ආසන්නම ධාවන තීරුවේය.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ ඉදිරියේදී දකුණට හැරවිය යුතු නම් ගමන් කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 89,
+    "source_page": 14,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගයේ වම් පස තීරුවේය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "මං තීරු භාවිතා කිරීමට අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මාර්ගයේ මැද තීරුවේය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගයේ දකුණු පැත්තේය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ ඉදිරියේදී වම් පැත්තේ නතර කළ යුතු බව දන්නේ නම් වාහනය ගමන් කරවිය යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 90,
+    "source_page": 14,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ප්‍රධාන පාරේ වාහන තදබදයක් නොමැති නම් වමෙන් ඇතුලු විය හැක.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දකුණු පැත්ත බලා වාහන නොමැති නම් මාර්ගයට ගැනීම සුදුසුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වම් පැත්ත බලා වාහන නොමැතිනම් මාර්ගයට ගැනීම සදුසුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගයේ දෙපසම සාර්ථකව නිරීක්ෂණය කිරීමෙන් පසු මාර්ගයට ගැනීම සුදුසුයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "අතුරු මාර්ගයකින් ප්‍රධාන මාර්ගයට ඔබ පිවිසෙන විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 91,
+    "source_page": 14,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පසු පසින් එන වාහනය ගැන සැලකිලිමත් වීම අවශ්‍ය නැත.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහනයේ වේගය අඩු කර වම් පසින් ධාවනය කර ඉස්සර කිරීමට ඉඩ දීමයි.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වම්පස සිග්නල් ලාම්පු දල්වා ඔහුට යන ලෙස දැන්වීමය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනය තවත් පාර මැදට ගෙන ඔහුට ඉස්සර වීමට අවශ්‍යම ඉඩ නොදී ගමන් කිරීමයි.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබට පසුපසින් පැමිණෙන වාහනයට ඔබව ඉස්සර කිරීමට අවශ්‍ය බව හැඟී ගියහොත් ඔබ විසින් කළ යුතු වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 92,
+    "source_page": 14,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "නාගරික ප්‍රදේශවලදී පමණක් දුරකතනය ගෙන ප්‍රතිචාර දැක්විය නොහැක.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එක් අතකින් සුක්කානම හසුරුවාගෙන අනිත් අතින් දුරකතනය ගෙන ප්‍රතිචාර දැක්විය යුතුය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දුරකතනයට ප්‍රතිචාර දැක්වීමට අවශ්‍ය නම් වාහනය අයින් කර නවතා තබා දුරකතනයට ප්‍රතිචාර දැක්විය යුතුය.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ජංගම දුරකතනය රැගෙන යාම නොකළ යුතුයි.",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ වාහනය පදවාගෙන යන අවස්ථාවකදී ඔබගේ ජංගම දුරකතනය නාද වුවහොත්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 93,
+    "source_page": 15,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "විරුද්ධ දිශාවෙන් වාහන නොමැති නම් මාර්ගයේ දකුණු පැත්තෙන් ගමන් කළ හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සියලුම වාහන ඉස්සර කර ගෙන ගොස් බාධකය ඇති තැනට පිවිසීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මාර්ගයේ නතර වී ඇති අවසාන වාහනයට පසු පසින් නතර කර සිටීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "නලාව ශබ්ද කර තමාට ඉක්මනින් යා යුතු බව දැන්වීමයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ වාහනය පදවාගෙන යන අවස්ථාවකදී මාර්ගයේ ඉදිරියේ බාධකයක් නිසා වාහන පේළියක් එක් වාහනයක් පිටුපස එක් එක් වාහන නතර කර තිබෙන විට ඔබ විසින් කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 94,
+    "source_page": 15,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "නතර කර ඇති වාහන ගැන සැලකිලිමත් වීම අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මගීන් පාර මාරු වීමට ප්‍රථම හැකි ඉක්මනින් බස් රථය ඉස්සර කර යෑමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "බස් රථයට පසුපසින් ඔබද නතර කර සිටීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මගීන් මාරු වේ යැයි බලාපොරොත්තුවෙන් නතර කර ගැනීමට හැකි වන සේ වේගය අඩුකර ධාවනය කිරීමයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ඔබ වාහනය පදවාගෙන යන අවස්ථාවක ඉදිරියේ මාර්ගය අයිනේ බස් රථයක් නතර කර මගීන් බසිමින් සිටී නම් ඔබ කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 95,
+    "source_page": 15,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වේගය වැඩි කර හැකි ඉක්මනින් මං සන්ධිය පසු කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සෑම අවස්ථාවකදීම සංඥා ලාම්පු වලට අවනතව ධාවනය කළ යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "මං සන්ධිය අසලදී නතර කර ගැනීමට සූදානම් විය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් ගමන් කරන වාහනය කරන දේ තමාද කළ යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ වාහනය පදවාගෙන යන අවස්ථාවකදී ඉදිරියේ රථවාහන ආලෝක සංඥා සහිත මං සන්දියක් ඇති බව දැනගත් විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 96,
+    "source_page": 15,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ නලාව හැකි පමණ පාවිච්චි කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහන තදබදය අඩු නිසා වේගයෙන් ධාවනය කළ හැකිය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පෙනීම සීමා සහිත බැවින් වඩා සුපරීක්ෂාකාරීව ධාවනය කළ යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ප්‍රධාන පහන් හොඳින් ඇති විට සැලකිලිමත්වීම අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රාත්‍රී කාලයේදී වාහනයක් ධාවනය කිරීමේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 97,
+    "source_page": 15,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දකුණට හැරවීමේදී පමණක් පොලිස් නිලධාරියාගේ අණට අවනත විය යුතුය.",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පොලිස් නිලධාරී මහතාගේ අණ අනුවය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "සංඥා එළියෙන් දැක්වෙන අණ පරිදිය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඔබට රිසි පරිදිය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "සංඥා එළි සහිත මංසන්ධියකදී පොලිස් නිලධාරී මහතෙකු වාහන පාලනය කරයි නම්, ඔබ ක්‍රියා කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 98,
+    "source_page": 15,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "හැකි උපරිම මට්ටමින් මාර්ගය අවහිර නොවන පරිදි වාහනය නතර කිරීමය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "වාහනයේ පහන් දල්වා නතර කළ හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ආපදාවකට ලක් වූ තැනම නතර කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "හැකිතාක් දුරට වාහනය ධාවනය කර යාමය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ පදවන වාහනය අතර මගදී ආපදාවකට ලක්වුවහොත් ඔබ කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 99,
+    "source_page": 16,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ ටයර් හොඳින් ඇති විට සැලකිලිමත්වීම අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අඩු ගියරයක හෙමින් පැදවීමය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වැඩි ගියරයක වේගයෙන් පැදවීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වැඩි ගියරයක හෙමින් පැදවීමය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වැසි සහිත කාලගුණයක් ඇති අවස්ථාවක, වාහනය පදවන විටදී, සෑම විටම කළ යුත්තේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 100,
+    "source_page": 16,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "හැකි තරම් වේගයෙන් පැදවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අඩු ගියරයක පැදවිය යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වැඩි ගියරයක පැදවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ගියර් නොමැතිව (නියුටල්) තත්වයේ පැදවිය යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "බෑවුම් සහිත මාර්ගයක වාහනය ධාවනය කිරීමේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 101,
+    "source_page": 16,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දොර අගුළු හොඳින් වසා තැබීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "නවතා තැබීමේ තිරිංග නිසි පරිදි යෙදීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "දිවා කාලයේදී වුවද නැවතුම් පහන් දල්වා තැබීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරි රෝද දකුණට හරවා නවතා තැබීමයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "තැනිතලා බිමක වාහන නවතා තැබීමේදී ඔබ කළ යුතු වැදගත් කාරණයක් වනුයේ,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 102,
+    "source_page": 16,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයක රොගී පුද්ගලයන් ගෙන යන අවස්ථාවකදී",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "හතර මං සංධියකදී ඉදිරියට ගමන් කරන විටය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අවදානම් ස්ථානයකදී වාහනයකට ඉස්සර කරන විටය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මහා මාර්ගයේ ආපදාවකට ලක් වූ වාහනයක් නවතා තබන විටදීය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "අවදානම් හැඟවිමේ පහන් දැල්විය යුතු වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 103,
+    "source_page": 16,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉන්ධන ලබා ගැනීමේදී එන්ජිම ගැන සැලකිලිමත්වීම අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහනයේ එන්ජිම පණ ගන්වා තිබියදී ඉන්ධන පිරවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉන්ධන පුරවන අවස්ථාවේදී එන්ජිම නවතා තැබිය යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "එන්ජිමේ තෙල් නියමිත ප්‍රමාණයට ඇත්දැයි අනිවාර්යයෙන් පරීක්ෂා කළ යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෝටර් වාහනයකට ඉන්ධන පිරවීමේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 104,
+    "source_page": 16,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "අනන්‍යතා පත්‍රය (VIC) පිළිබඳ සැලකිලිමත්වීම අවශ්‍යම නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සෑම විටම වාහනය තුළ තබා ගත යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "නිවසේ ආරක්ෂිත ස්ථානයක සුරක්ෂිතව තැබිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනය අයිතිකරු ළඟ තබා ගත යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "නව අංක තහඩු ක්‍රමය යටතේ ලබා දෙනු ලබන වාහන අනන්‍යතා පත්‍රය (VIC)",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 105,
+    "source_page": 16,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරි වාහනයේ පහන් අවපාත කලහොත් පමණක් පහන් අවපාත කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහනයේ ප්‍රධාන පහන් අවපාත කිරීමය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වාහනයේ ප්‍රධාන පහන් නිවා දැමීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනයේ නලාව ක්‍රියා කර වීමය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ රාත්‍රී කාලයේදී වාහනයක් පදවාගෙන යන විට වෙනත් වාහනයක් ඉදිරියෙන් පැමිණෙන අවස්ථාවකදී ඔබ විසින් කළ යුතු වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 106,
+    "source_page": 17,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "3, 4 වැනි වැඩි ගියරයක් තෝරා ගැනීම මගින් වැඩි බලයක් ලබාදීම",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "3, 4 වැනි වැඩි ගියරයක් තෝරා ගැනීම මගින් වැඩි වේගයක් ලබාදීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "1, 2 වැනි අඩු ගියරයක් තොරා ගැනීම මගින් වැඩි බලයක් ලබාදීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "1, 2 වැනි අඩු ගියරයක් තෝරා ගැනීම මගින් අඩු බලයක් ලබාදීම",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක් ඉස්සර කිරීමේදී අනුගමනය කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 107,
+    "source_page": 17,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දකුණට හැරවීමට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "අධික වේගයෙන් ධාවනය කිරීම සඳහාය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වෙනත් වාහනයක් පසුකර යෑමට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වෙනත් වාහනයක් පසුකර යාමට හෝ දකුණට හැරවීමට හෝ අනතුරක් වළක්වා ගැනීමටය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ධාවන තීරු තුනකින් යුතු මාර්ගයක තුන් වන තීරුව භාවිතා කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 108,
+    "source_page": 17,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රතු, සුදු හා කලු පැහැය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රතු, සුදු හා නිල් පැහැය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "සුදු පසුතලයේ රතු පැහැය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කහ පසුතලයේ කළු පැහැය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "මහා මාර්ගෝපදේශ සංග්‍රහයේ අනතුරු හැඟවීමේ සංඥා වල වර්ණය වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 109,
+    "source_page": 17,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වමෙන් එන වාහන වලටය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දකුණෙන් එන වාහන වලටය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණෙන් සහ වමෙන් එන වාහන වලටය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරියෙන් එන වාහන වලටය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ප්‍රධාන මාර්ගයට ඇතුළු වීමේදී ඔබ ඉඩදිය යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 110,
+    "source_page": 17,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ පහන් නිවා දැමීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වහාම ප්‍රධාන පහන් ආලෝකය වැඩි කර ගැනීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහනයේ වේගය අඩු කර ගැනීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනයේ වේගය අඩු කර ගැනීම හෝ නවත්වා ගැනීමට ක්‍රියා කිරීමයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "රාත්‍රී කාලයේදී ධාවනයේදී ඉදිරියෙන් එන වාහනයේ ප්‍රධාන පහන් ආලෝකය අඩු (අවපාත) නොකළ විට ඔබ කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 111,
+    "source_page": 17,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉර කපා දකුණට හැරවිය හැක. ඉස්සර කිරීම කළ නොහැක",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "ඉර කපා දකුණට හැරවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉර කපා දකුණට හැරවීම හා ඉස්සර කිරීම කළ හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉර කපා ඉස්සර කිරීම කළ හැක, දකුණට හැරවිය නොහැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "සුදු පාට තනි ආයත රේඛාවක් මාර්ගයේ මැද සලකුණු කර ඇති විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 112,
+    "source_page": 17,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වැඩි ගියරයක් තොරා ගැනීම මගින් වැඩි බලයක් ලබාදීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "තමාට රිසි සේ වාහනය පිටුපසට පැදවිය හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහනය පාර අයිනට සමාන්තරව නවත්වා අතුරු මාර්ගයේ අවම දුරින් පිටුපසට පැදවීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වාහනය පාර අයිනට සමාන්තරව නොවන සේ නවත්වා අතුරු මාර්ගයේ අවම දුරින් පිටුපසට පැදවීමයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක් පිටුපසට පැදවීමේදී අනුගමනය කළ යුතු ක්‍රියා මාර්ගය පිළිවෙළින්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 113,
+    "source_page": 18,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පාසලක් ඉදිරියෙන් ඇති අවස්ථාවකය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රෝහලක් ඉදිරියෙන් ඇති අවස්ථාවකය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පාර මැද ඇති සුදු පාට කඩ ඉර ඇති අවස්ථාවකය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කන්දක් මුදුනින් ඇති අවස්ථාවකය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ඉස්සර කිරීම නොකළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 114,
+    "source_page": 18,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ග තදබද ඇති විට පමණක් සැලකිලිමත් විය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පදිකයෙකු සිටීදැයි පරීක්ෂා කිරීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "කහ ඉරට මෙපිටින් වාහනය නවත්වා ගැනීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනයේ වේගය අඩු කර ගැනීමයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "පදික මාරුව හඟවන සංඥා පුවරුව දුටු විට කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 115,
+    "source_page": 18,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රතු පාට පහන් දැල්වේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "කොළ පාට පහන් දැල්වේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "කහ පාට පහන් දැල්වේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කහ පාට සමඟ රන පාට පහන් දැල්වේ",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "යාමට සූදානම් වීම සඳහා ආලෝක සංඥා වල",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 116,
+    "source_page": 18,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ආලෝක සංඥා මගින් පාලනය නොකරයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දකුණින් එන අයට ඉඩ දිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වමෙන් එන අයට ඉඩ දිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ආලෝක සංඥා විධානයට අවනත විය යුතුය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වට වංගුවක් කරා එන විට ඉදිරියෙන් කහ පැහැ පහන දැල්වුවහොත්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 117,
+    "source_page": 18,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වට වංගුව කෙරෙහි ඔබගේ වැඩි අවධානය ලබා දීම සඳහා යොදා ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "කෙලින්ම ඉදිරියට යා යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වට වංගුවේ නීතිය අනුගමනය කළ යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වට වංගුවේ නීතිය එවිට ක්‍රියාත්මක වන්නේ නැත",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වටවංගුවක් කරා එන විට ඉදිරියෙන් කහ පැහැ ආලෝක සංඥාව නිවෙමින්, දැල්වෙමින් පැවතුනහොත්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 118,
+    "source_page": 18,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාමුවා හැර අනෙකුත් සියලුම වීදුරු අඳුරු කළ හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සියලුම වීදුරු අඳුරු කළ නොහැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරි දොර දෙකෙහි වීදුරු හා ඉදිරි වාමුවාවේ උසින් පහෙන් හතර පංගුවක් යට කොටසින් අඳුරු කළ නොහැක",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "සියලුම වීදුරු අඳුරු කළ හැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහන වල අඳුරු පැහැ ගන්වනු ලබන වීදුරු සඳහා දැනට ඇති රෙගුලාසි වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 119,
+    "source_page": 18,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "කොළ නිවී රතු හා කහ එකවර දැල්වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "කොළ තිබියදී කහ පැහැය දැල්වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "කොළ නිවී ගොස් රතු පැහැය දැල්වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කොළ නිවී ගොස් කහ පැහැය දැල්වීමයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "රථ වාහන ආලෝක සංඥා වල කොළ බල්බය දැල්වේ නම් ඊළඟ අවස්ථාව වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 120,
+    "source_page": 19,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රතු නිවී කොළ හා කහ එකවර දැල්වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "රතු නීවී ගොස් කහ බල්බය දැල්වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "රතු එසේම තිබියදී කහ බල්බය දැල්වීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "රතු නිවී ගොස් කොළ දැල්වීමයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රථ වාහන ආලෝක සංඥාවල රතු බල්බය දැල්වේ නම් ඊළඟ අවස්ථාව වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 121,
+    "source_page": 19,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පැය 36",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පැය 12",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පැය 24",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "පැය 48",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රිය අනතුරකින් පොලිස් ස්ථානයට වාර්තා කිරීම සඳහා දී ඇති සහන කාල සීමාවේ උපරිමය",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 122,
+    "source_page": 19,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "කිසිම හේතුවක් නිසාවත් වාහන ඉවත් කළ නොහැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එම වාහනය එම ස්ථානයේම තැබිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අන් වාහන වලට අවහිර වීම වලකා මාර්ගයෙන් අයින් කිරීම සඳහා අවසර ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "එම වාහනයේ පිහිටීම සලකුණු කොට රෝගීන් ප්‍රවාහනය කිරීම සඳහා අවසර ඇත",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වාහනයක් මාර්ගයේ අනතුරකට පත් වූ විටක",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 123,
+    "source_page": 19,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ආසන්නයේ ඇති ගරාජයට ධාවනය කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහනය ගමනාන්තය දක්වා ප්‍රවේශමෙන් ධාවනය කිරීම සුදුසුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "විශේෂ අවධානයක් යොමු කිරීම අවශ්‍ය නොවේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනය වහාම නතර කර දෝෂය කුමක් දැයි තහවුරු කරගත යුතුය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වාහනයක් ධාවනයේදී මීටර් පුවරුවේ රතු බල්බයක් දැල්වේ නම්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 124,
+    "source_page": 19,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "එහි සියලුම අංග මනා කාර්මික තත්ත්වයෙන් යුතු බව, රක්ෂණ සහතිකය, ආදායම් බලපත්‍රය සමඟ අවශ්‍ය ලේඛන තිබිය යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "වලංගු ආදායම් බලපත්‍රය හා රක්ෂණ සහතිකය පමණක් තිබිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "සුක්කානම, තිරිංග හා ටයර් පමණක් මනා තත්වයෙන් යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "රියදුරාට පාලනය කර ගත හැකි නම් කුමන වාහනයක් වුවද ධාවනය කළ හැකිය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මහාමාර්ගයේ ධාවනය කිරීමට සුදුසු වාහනයක් යනු",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 125,
+    "source_page": 19,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මංසන්ධියක් නිතරම වාහන තදබද ඇතිබව දැන්වීමට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මංසන්ධියෙන් දකුණට හැරවීම හැර ඕනෑම අවස්ථාවක ඇතුලු වීමට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මංසන්ධිය කෙරෙහි අවධානය වැඩි කිරීමට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කොළ පැහැති ආලෝකය දැල්වුවත් මංසන්ධි කොටුවෙන් පිටවීමට නොහැකි නම් දකුණට හරවන වාහන හැර අනිත් කිසිදු වාහනයක් ඇතුලු නොකිරීමට",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ආලෝක සංඥා මගින් පාලනය වන මංසන්ධි කොටුව සලකුණු කර ඇත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 126,
+    "source_page": 19,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "දකුණු පාදය තිරිංග පෙඩලයේ හා වම් පාදය බිම් තහඩුවේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දකුණු පාදය බිම් තහඩුවේ සහ වම් පාදය ක්ලච් පෙඩලයේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණු පාදය ඇක්සලෙරේටරයේ සහ වම් පාදය ක්ලච් පෙඩලයේ",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "දකුණු පාදය තිරිංග පෙඩලයේ සහ වම් පාදය ක්ලච් පෙඩලයේ",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ස්වයංක්‍රීය ගියර නොවන වාහනයක් තැනිතලා බිමක ගමන් ආරම්භක ක්‍රියාවලියේ අවසාන මොහොතේදී දෙපා තිබිය යුතු අයුරු",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 127,
+    "source_page": 20,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වම් පාදය ක්ලච් පෙඩලයේ සහ දකුණු පාදය තිරිංග පෙඩලයේ",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "දකුණු පාදය බිම් තහඩුවේ සහ වම් පාදය ක්ලච් පෙඩලයේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "දකුණු පාදය තිරිංග පෙඩලයේ සහ වම් පාදය බිම් තහඩුවේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වම් පාදය ක්ලච් පෙඩලයේ යාන්තමට සහ දකුණු පාදය ඇක්සලරේටරයේ",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පහලට බෑවුමකදී පිටුපසට පදවන ස්වයංක්‍රීය ගියර් නොවන වාහනයකදී දෙපා තිබිය යුතු අයුරු",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 128,
+    "source_page": 20,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වම් පාදය ක්ලච් පැඩලයේ හා දකුණු පාදය තිරිංග පැඩලයේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වම් පාදය බිම් තහඩුවේ සහ දකුණු පාදය ඇක්සලරේටරයේ",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වම් පාදය ක්ලච් පෙඩලයේ යාන්තමට සහ දකුණු පාදය ඇක්සලරේටරයේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වම් පාදය තිරිංග පෙඩලයේ යාන්තමට සහ දකුණු පාදය ඇක්සලරේටරයේ",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ස්වයංක්‍රීය ගියර් නොවන වාහනයක් සාමාන්‍ය තැනිතලා නිදහස් මාර්ගයේ ධාවනයේදී දෙපා තිබිය යුතු අයුරු",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 129,
+    "source_page": 20,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වම් පාදය බිම් තහඩුවේ සහ දකුණු පාදය තිරිංග පෙඩලයේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වම් පාදය ක්ලච් පෙඩලයේ සහ දකුණු පාදය තිරිංග පෙඩලයේ යාන්තමට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වම් පාදය බිම් තහඩුවේ සහ දකුණු පාදය ඇක්සලරේටරයේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වම් පාදය ක්ලච් පෙඩලයේ යාන්තමට සහ දකුණු පාදය ඇක්සලරේටරයේ",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ස්වයංක්‍රීය ගියර නොවන වාහනයක් මාර්ග තදබදය ඇති අවස්ථාවක ධාවනයේදී දෙපා තිබිය යුතු අයුරු",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 130,
+    "source_page": 20,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ වේගය අනුව ක්‍රියාවලිය වෙනස්වේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සංඥා යොදා මාර්ගය හොදින් නිරීක්ෂණය කර වාහනය නිවැරදිව පාලනය කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහනයේ වේගය වැඩි කර සංඥා යොදා මාර්ගය හොදින් නිරීක්ෂණය කර වාහනය නිවැරදිව පාලනය කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගය හොඳින් නිරීක්ෂණය කර සංඥා යොදා වාහනය නිවැරදිව පාලනය කිරීමය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වාහනයක් පසුකර යාමේදී නිවැරදි ක්‍රමය වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 131,
+    "source_page": 20,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනය නිවැරදිව මාර්ග තීරුවට ගැනීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "තමාගේ වේගය නිසි ප්‍රමාණයට සකසා ගැනීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "සංඥා දැමීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "කණ්ණාඩියෙන් පිටුපස බැලීමය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වෙනත් වාහනයකට ඉස්සර කිරීමේදී මුලින්ම කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 132,
+    "source_page": 20,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පිටු පිසන් එන වාහන ගැන සැලකිලිමත් වීම අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වහාම ඉතා පැහැදිලි ලෙස ඔබ ඉස්සර කිරීමට සූදානම් බව හඟවන සංඥා දැමීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වහාම ඉතා පැහැදිලි ලෙස වේගය අඩු කරන සංඥාව දැමීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වහාම ඉතා පැහැදිලි ලෙස තමන් වම් අයිනට ඒමට සූදානම් බව හඟවන සංඥාව දෑමීමයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වෙනත් වාහනයකට ඉස්සර කිරීමට සූදානම් වන විට තවත් අයෙක් ඔබට ඉස්සර කිරීමට එන බව හැඟුණ හොත් මුලින්ම කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 133,
+    "source_page": 21,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මහා මාර්ගයේ අයින පෙන්නුම් කරන ආසන්න රේඛාවය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එම ස්ථානයේ වාහන නවතා තැබිය හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "එම ස්ථානයේ වාහන නවතා තැබිය නොහැක",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වම්පස රෝද දෙක පදික වේදිකාව මත සිටින සේ නවතා තැබිය හැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පදික වේදිකාව අයිනේ දික් අතට මාර්ගයේ කහ ඉරක් ඇඳ තිබුණහොත්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 134,
+    "source_page": 21,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මහා මාර්ගයේ අයින පෙන්නුම් කරන ආසන්න රේඛාවය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එම ස්ථානයේ වාහන නවතා තෑැබිය හැක",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "එම් ස්ථානයේ වාහන නවතා තැබිය නොහැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වම්පස රෝද දෙක පදික වේදිකාව මත සිටින සේ නවතා තැබිය හැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පදික වේදිකාව අයිනේ දිග අතට සුදු ඉරක් ඇඳ තිබුණහොත්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 135,
+    "source_page": 21,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "සියලුම වාහන පැ. කි. මී. 50",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "යතුරු පැදි, මෝ/කාර්, ද්විකාර්ය, වෙළඳ වාහන, ත්‍රීරෝද රථය පිළිවෙළින් පැ.සැ. 50, පැ.සැ. 50, පැ.සැ. 40",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "යතුරු පැදි, මෝ/කාර්, ද්විකාර්ය පැ.කි.මී. 70, වෙළඳ වාහන පැ.කි.මී. 60, ත්‍රීරෝද රථ පැ.කි.මී. 40",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "යතුරු පැදි, මෝ/කාර්, ද්විකාර්ය පැ.කි.මී. 50, වෙළඳ වාහන පැ.කි.මී. 50, ත්‍රීරෝද රථ පැ.කි.මී. 40",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "නාගරික සීමාව තුළදී අනුමත උපරිම වේග සිමාවන්",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 136,
+    "source_page": 21,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "පදික මාරුව හරහා පමණක් පදිකයන්ට මාරු විය හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "මීටර් 25 ක් ඇතුළත ඕනෑම ස්ථානයකින් පදිකයන්ට මාරු විය හැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මීටර් 50 ක් ඇතුළත ඔනාම ස්ථානයකින් පදිකයන්ට මාරු විය නොහැක",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "මීටර් 50 ක් ඇතුලත ඕනෑම ස්ථානයකින් පදිකයන්ට මාරුවිය හැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පදික මාරුවක් ඇති විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 137,
+    "source_page": 21,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රතු එළිය වැටීමට ප්‍රථම වේගයෙන් ධාවනය කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඊළඟට කොළ පාට එළිය දැල්වෙන බැවින් යෑමට සූදානම් විය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඊළඟට රතු එළිය දැල්වෙන බැවින් නැවැත්විය යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඊළඟට කොළ පාට එළිය දැල්වෙන බැවින් ඉදිරියට ගමන් කළ යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රථ වාහන ආලෝක සංඥා වල කහ එළිය පමණක් දැල්වේ නම්,",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 138,
+    "source_page": 21,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනය හැමවිටම මාර්ගය මැදින් ගමන් කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පැමිණි වේගයෙන්ම නලාව ශබ්ද කරගෙන යාමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "නතර කිරීමට බලාපොරොත්තුවෙන් වේගය අඩු කර වරක් නලාව ශබ්ද කර ගෙන යාමය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වාහනයේ නලාව ශබ්ද නොකර වේගයෙන් යාමය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ ගමන් කරන මාර්ගයේ ඉදිරිය නොපෙනෙන වංගුවක් ඇති විට ඔබ කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 139,
+    "source_page": 22,
+    "road_sign_image": "assets/signs/q139.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහන නැවැත්විය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සංඥාව දැක්විය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "කණ්ණාඩිය බැලිය යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වේගය අඩු කළ යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රූප සටහනට අනුව වාහනයක් හන්දියකදී හැරවීමේදී “අ” ස්ථානයේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 140,
+    "source_page": 22,
+    "road_sign_image": "assets/signs/q140.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "නලාව ශබ්ද කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "කණ්ණාඩිය බැලිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "සංඥාව දැක්විය යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වේගය වැඩි කළ යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රූප සටහනට අනුව වාහනයක් හන්දියකදී හැරවීමේ දී “ආ” ස්ථානයේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 141,
+    "source_page": 22,
+    "road_sign_image": "assets/signs/q141.png",
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "නලාව ශබ්ද කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "කණ්ණාඩිය බැලිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "සංඥාව දැක්විය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "රථය නියමිත ධාවන තීරුවට හැරවිය යුතුය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "රූප සටහනට අනුව වාහනයක් හන්දියකදී හැරවීමේදී “ඇ” ස්ථානයේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 142,
+    "source_page": 22,
+    "road_sign_image": "assets/signs/q142.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරියෙන් මංසන්ධියක් ඇති බැව් දැන්වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "පාර හරහා ගමන් කිරීම තහනම් කළ ආයත රේඛාවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පාරේ මැද සලකුණු කර ඇති මධ්‍යම රේඛාවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ධාවන තිරුව සලකුණු කර ඇති රේඛාවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රූප සටහන අනුව “A” දැක්වෙන කඩ ඉරෙන් අදහස් කෙරෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 143,
+    "source_page": 22,
+    "road_sign_image": "assets/signs/q143.png",
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "මාර්ගය බෙදා ඇති රේඛාවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "“නවතිනු” සංඥාවෙහි පිහිටුවන නැවතුම් රේඛාවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "මාර්ගය ඉඩ දෙනු රේඛාවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "පදිකයන්ට මාරු වීම සඳහා ඉඩ දෙන රේඛාවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රූප සටහන අනුව “B” දැක්වෙන කඩ ඉරෙන් අදහස් කෙරෙන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 144,
+    "source_page": 22,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වංගුවක අවදානම පෙන්වීම සඳහා යොදා ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සුදු ඉර කැපෙන සේ ඉස්සර කිරීම තහනම්ය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "දකුණට හැරවීම තහනම්ය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මාර්ගය බෙදීමට ඉර යොදා ඇත",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පාරේ මැද තනි සුදු ඉරක් ඇති විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 145,
+    "source_page": 22,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉරි කැපෙන සේ ඉස්සර කිරීම හෝ දකුණට හැරවීම තහනම්ය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "දකුණට හැරවීමට හැකිය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉස්සර කිරීමට පුළුවන",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "දකුණට හැරවීමට හා ඉස්සර කිරීම කළ හැක",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "පාරේ මැද එක ළගින් වූ සුදු ඉරි 2 ක් ඇති විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 146,
+    "source_page": 23,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරි පස බෆරය ගැලවීයාමට ඉඩ ඇත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "නීත්‍යනුකූල නොවේ",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "හදිසි අනතුරකදී අනෙක් පාර්ශවයට සිදු වන හානිය වැඩි වේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "රියදුරුගේ දර්ශණයට බාධා ඇති වේ",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෝටර් වාහනයක ඉදිරි පස බෆරය මත ලෝහමය ආරක්ෂක වැටක් සවි කිරීම",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 147,
+    "source_page": 23,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "නීතිමය අවශ්‍යතාවයක් නොවේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "නීතිමය අවශ්‍යතාවයකි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ඡායා පිටපතක් තබා ගැනීම ප්‍රමාණවත් වේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "අවශ්‍ය විටක ඉදිරිපත් කිරීමට හැකි වන පරිදි නිවසේ තබා ගැනීම වඩා ආරක්ෂාකාරී වේ",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "රියදුරු විසින් වාහනයක් පදවන සෑම විටම තම රියදුරු බලපත්‍රය තමා සන්තකයේ තබා ගැනීම",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 148,
+    "source_page": 23,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වම් පසින් ඉස්සර කිරිම සම්පූර්ණයෙන්ම තහනම්ය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරියෙන් ගමන් කරන වාහනය දකුණට හරවන බවට සංඥා කොට ඇති විටයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "වම් පසින් පසු කර යාම ආරක්ෂා සහිත බව හැගෙන විටයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉහත කුමන අවස්ථාවකදී වුවද වම්පසින් යා හැකිය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "තම වාහනයට ඉදිරියෙන් ගමන් කරන වාහනයකට වම් පසින් පසු කර යා හැකි වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 149,
+    "source_page": 23,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ දොර අගුලු හොඳින් දමා තිබීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "නවතා තැබීමේ තිරිංග නිසි පරිදි යෙදීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "දිවා කාලයේ වුවද නැවතුම් පහන් දල්වා තැබීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරි රෝද සම්පූර්ණයෙන්ම වමට හරවා තබා නවතා තැබීම",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහන නවතා තැබීමේදී ඔබ කළ යුතු වැදගත් කාර්යයක් වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 150,
+    "source_page": 23,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රෝගියෙකු ප්‍රවාහනය කරන අවස්ථාවේදී",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "හතර මං හන්දියක කෙළින් ඉදිරියට ගමන් කරන විටයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "අවදානම් ස්ථානයකදී වාහනයකට ඉස්සර කරන විටයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "මහා මාර්ගයේ ආපදාවකට ලක් වූ වාහනයක් නවතා තබන විටදී පමණකි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "අවදානම් හැඟවීමේ පහන් දැල්විය යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 151,
+    "source_page": 23,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ එන්ජිම ගැන සැලකිලිමත් වීම අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහනයේ එන්ජිම පණ ගන්වා තිබියදී ඉන්ධන පිරවිය යුතුයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉන්ධන පුරවන අවස්ථාවේ එන්ජිම නවතා තැබිය යුතුයි.",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "එන්ජිමේ තෙල් නියමිත ප්‍රමාණයට ඇත්දැයි අනිවාර්යයෙන් පරීක්ෂා කළ යුතුයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "මෝටර් වාහනයකට ඉන්ධන පිරවීමේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 152,
+    "source_page": 23,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වමෙන් හා දකුණෙන් එන වාහන වලට ඉඩ දීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වම් පසින් එන වාහන වලට ප්‍රමුඛත්වය දීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පොලිස් නිලධාරියෙකු පාලනය නොකරන්නේ නම් දකුණු පසින් පැමිණෙන වාහන වලට ඉඩ දීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරි පසට හා දකුණට ඉඩ දීමයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වට රවුමක පිළි පැදිය යුතු නීතිය වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 154,
+    "source_page": 24,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ටයරයේ තැනින් තැන වේගයෙන් ගෙවී යයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ටයරය දෙපැත්ත ඉක්මනින් ගෙවී යයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ටයරය ඉක්මනින් ගෙවී යයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ටයරය මැද ඉක්මනින් ගෙවී යයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයේ ටයරවල හුළං නියමිත ප්‍රමාණයට වඩා අඩුවූ විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 155,
+    "source_page": 24,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉහළ ගියර වල ධාවනය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "දුර්වල සුක්කානම් පාලනය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වංගුවලදී ත්වරණය කිරීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "රළු ලෙස තිරිංග යෙදීම සහ ත්වරණය කිරීම",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වාහනයක ඉන්ධන දහනය අධික වීමට වඩාත් බලපෑ හැක්කේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 156,
+    "source_page": 24,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ක්ලච් එක නිසි පරිදි ක්‍රියා නොකිරීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "ගියර් පෙට්ටියේ ඇති රෝද කැඩී තිබීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "එන්ජිමේ ක්‍රියාකාරීත්වය සුමට නොවීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනයේ ඩිපරන්සරය දෝෂ සහිත වීම",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ස්වයංක්‍රීය නොවන ගියර පෙට්ටියක් ඇති වාහනයක ගියර් මාරු කිරීමේ අපහසුතාවයක් ඇත්නම් වඩාත්ම හේතු වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 157,
+    "source_page": 24,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "බැටරි වයර් පරීක්ෂා කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "වාහනයේ බැටරිය පරීක්ෂා කළ යුතුයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඕල්ටනේටරයේ හෝ ඩයිනමෝව කැරකැවීමට ඇති බෙල්ට් එක පරීක්ෂා කළ යුතුය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "වාහනයේ විදුලි පද්ධතිය පරීක්ෂා කළ යුතුය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ පදවන වාහනයේ බැටරිය ආරෝපණය (චාජ් - Charge) නොවන බවට දන්වන බල්බය එක විට දැල්වුණේ නම් ඔබ විසින් මුලින්ම කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 158,
+    "source_page": 24,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "තිරිංග පද්ධතියේ තෙල් කාන්දුවක් තිබීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "බ්‍රේක් ඩ්‍රම්, ඩිස්ක් හෝ ලයිනර් දෝෂ සහිත වීම",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "තිරිංග පැඩලයේ නිදහස් චලනය පමණට වඩා වැඩිවීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "තිරිංග බල පද්ධතිය දෝෂ සහිත වීම",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඒකාකාරී නොවන හදිසියේ හිරවෙන තිරිංග එක් රෝදයක හෝ රෝද කිහිපයක තිබේ නම් එයින් පෙන්නුම් කරන්නේ.",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 159,
+    "source_page": 24,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "අවලම්භන පද්ධතිය දෝෂ සහිත බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ටයරයේ වායු පීඩනය පමණට වඩා අඩු බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ටයරයේ වායු පීඩනය පමණට වඩා වැඩි බවයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "සුක්කානම් පද්ධතිය දෝෂ සහිත බවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ටයරයක දෙපසට වඩා මැද කොටස අධිකව ගෙවීමෙන් පෙන්නුම් කරන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 160,
+    "source_page": 25,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "එන්ජිම තුළ ඇති වායු සංසරණ වේගය වැඩි කිරීම",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "චලනය වන කොටස් වල ගෙවීම් අවමකර ගැනීම සඳහා",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ඉන්ධන දහනයේදී එහි කාර්යක්ෂමතාවය වැඩි කිරීමට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "එන්ජිමෙහි කාර්යක්ෂමතාවය වැඩිකිරීමටය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "එන්ජිමකට ලිහිසි තෙල් භාවිතා කරනු ලබන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 161,
+    "source_page": 25,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනය වංගුවක ධාවනය කිරීමේදී රෝද වල වේගය සමාන කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ටයර් වලට හානියක් නොවී වැඩි බරක් ගෙනයාම පිණිසය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ටයර් වල අක්‍රමවත් ගෙවීම අඩුකිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "වාහනය වංගුවක ධාවනය කිරීමේදී රෝද වල වේගය වෙනස් කිරීමය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ඩිෆරන්සලයේ ක්‍රියාකාරීත්වය කුමක්ද?",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 162,
+    "source_page": 25,
+    "road_sign_image": null,
+    "correct_option": 1,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "සුක්කානම් පද්ධතියේ කොටස් ගෙවී තිබීමය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 2,
+        "text": "වෙනස් නිෂ්පාදන වර්ගවල ටයර සවිකර තිබීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරි රෝදවල ටයර වායු ප්‍රමාණය වෙනස් අගයන් වීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරි රෝද ටයරවල කට්ටා මෝස්තර වෙනස්වීමය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක් ධාවනය කිරීමේදී ඉදිරිපස දෙදරීමට හේතු විය හැක්කේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 163,
+    "source_page": 25,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "එන්ජිමේ තෙල් සංසරණය පහසු කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එන්ජිම තුළ ජලය සංසරණය ඇති කිරීමය",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "එන්ජිමේ භාවිතා කරන ජලය සිසිල් කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "රේඩියේටරය සිසිල් කිරීමය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක ජල පොම්පයේ ක්‍රියාකාරිත්වය වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 164,
+    "source_page": 25,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනය ආසන්නයේම ඇති ගරාජයට ගෙන යාමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ගමනාන්තය දක්වා ප්‍රවේශමෙන් ගමන් කිරීමය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "වාහනය වහාම නවත්වා තිරිංග තෙල් ඇතිදැයි පරීක්ෂා කිරීම",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "කාර්මිකයෙකු ගෙන්වා පරීක්ෂා කරන තුරු වාහනය නතර කර තැබීමය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනය පදවාගෙන යන අවස්ථාවක එක විටම තිරිංග පද්ධතියට සම්බන්ධ පාලන බල්බය දැල්වුණහොත් ඔබ විසින් කළ යුත්තේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 165,
+    "source_page": 25,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ටයර් වල එක පැත්තක් පමණක් වැඩියෙන් ගෙවේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ටයර් වල දෙපැත්ත ගෙවී මැද ඉතිරිවේ",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ටයර් වල මැද ගෙවී දෙපැත්ත ඉතිරිවේ",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ටයර් ගෙවීමට හුළං බලපාන්නේ නැත",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයේ ටයර් වල වායු පීඩනය අඩු වූ විට",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 166,
+    "source_page": 25,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ඉදිරි ටයර් ගෙවී ඇති විට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "සුක්කානම් පද්ධතියේ කොටසක් ගෙවී ඇති විට",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරි රෝද වල වායු පීඩනය වැඩි විට",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ඉදිරි රෝද වල වායු පීඩනය අඩු විට",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "සුක්කානම් පද්ධතියේ නිදහස් චලනය වැඩි වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 167,
+    "source_page": 26,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ එංජිම ගැන සැලකිලිමත් වීම අවශ්‍ය නැත",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එන්ජිම නවතා වතුර පිරවිය යුතුයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "එන්ජිම ධාවනය වෙමින් තිබියදී වතුර පිරවිය යුතුයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "ඉහත කරුණු දෙකම නිවැරදිය",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "ඔබ පදවාගෙන යන වාහනයේ එන්ජිම අධික ලෙස රත්වීම නිසා වතුර බොයිල් කිරීමක් ඇති වුවහොත් අඩු වතුර පිරවීමේදී",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 168,
+    "source_page": 26,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ සියලුම පහන් නිවා දැමීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ප්‍රධාන ස්විචය ක්‍රියා විරහිත කිරීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "පියුස් (විලායක) ගැලවීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "බැටරි වයර ගැලවිමයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "ඔබ පදවාගෙන යන වාහනයේ විදුලි දෝෂයක් නිසා වයර් පිළිස්සෙන ගඳක් ඇති වුවහොත් වහාම කළ යුතු වන්නේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 169,
+    "source_page": 26,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "ලිස්සා යන අවස්ථාවේදී අවදානම අඩු කළ නොහැක",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "එකවර තිරිංග යොදා වේගය පාලනය කළ යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "තිරිංග නොයොදා ලිස්සා යන දිශාවට විරුද්ධ දිශාවටම සුක්කානම හැරවිය යුතුය",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ගියර් මගින් පාලනය කර ලිස්සා යන දිශාවට ක්‍රමානුකූලව සුක්කානම පාලනය කළ යුතුය",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "වාහනයක් ලිස්සා යන අවස්ථාවේදී අවදානම අඩු කර ගැනීම සඳහා",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 170,
+    "source_page": 26,
+    "road_sign_image": null,
+    "correct_option": 4,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "තිරිංග පැඩලයේ දෝෂයක් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "බ්‍රේක් බයින්ඩ් (තිරිංග හිර වීමක්) ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "තිරිංග නිසි පරිදි ක්‍රියා කරන බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "තිරිංග තෙල් කාන්දු වීමක් ඇති බවයි",
+        "marked_correct_by_pdf": true
+      }
+    ],
+    "question_text": "තිරිංග තෙල් භාවිතා කරන වාහනයක තිරිංග පැඩලය පහතටම බැසීමක් සිදුවේ නම් ඉන් අදහස් වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 171,
+    "source_page": 26,
+    "road_sign_image": null,
+    "correct_option": 3,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "රෝද වල වායු පීඩනය එකිනෙකට වෙනස් බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ඉදිරි පස වම් පැත්තේ රෝදයේ තිරිංග තෙල් කාන්දු වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 3,
+        "text": "ඉදිරි පස දකුණු පැත්තේ රෝදයේ තිරිංග තෙල් කාන්දු වීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 4,
+        "text": "පසු පස රෝද වලට තිරිංග නොමැති බවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයට තිරිංග යෙදීමේදී වම් පැත්තට ඇදී යන්නේ නම්, එයින් අදහස් වනුයේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  },
+  {
+    "id": 172,
+    "source_page": 26,
+    "road_sign_image": null,
+    "correct_option": 2,
+    "answer_source": "blue-marked option in PDF",
+    "choices": [
+      {
+        "number": 1,
+        "text": "වාහනයේ ගියර් ලීවරයේ දෝෂයක් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 2,
+        "text": "ක්ලච් එක නිසි පරිදි ක්‍රියා නොකිරීමයි",
+        "marked_correct_by_pdf": true
+      },
+      {
+        "number": 3,
+        "text": "එන්ජිමේ වේගය නිසි පරිදි නොමැති වීමයි",
+        "marked_correct_by_pdf": false
+      },
+      {
+        "number": 4,
+        "text": "ගියර් පෙට්ටියේ දෝෂයක් ඇති බවයි",
+        "marked_correct_by_pdf": false
+      }
+    ],
+    "question_text": "වාහනයක් ධාවනය කිරීමේදී ගියර් මාරු කිරීමේ අපහසුතාවයක් ඇත්නම් වඩාත්ම විය හැක්කේ",
+    "transcription_status": "corrected_with_source_review_still_requires_full_proofreading"
+  }
+]

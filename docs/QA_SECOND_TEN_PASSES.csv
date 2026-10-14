@@ -1,0 +1,11 @@
+﻿pass_no,check,checked,passed,failed,warnings,details
+1,PDF page and source numbering,172,172,0,0,26 pages; numbered 1–172; Q153 incomplete in original PDF
+2,Question ID and source page mapping,171,171,0,0,"171 usable questions, no Q153, no invented questions 173–176"
+3,855 Sinhala Unicode text fields,855,855,0,0,"NFC Unicode, nonempty, no replacement/control markers"
+4,Four ordered unique choices per question,171,171,0,0,All 684 choices preserved as text
+5,PDF-marked key/option order unchanged,171,171,0,0,Preserves original PDF blue-highlighted answers; not external traffic-law verification
+6,Numbers retained from PDF (all fields),855,855,0,0,All digit sequences match source extraction; Q135 source abbreviation separately reviewed
+7,Road-sign and diagram image integrity,71,71,0,0,71 usable linked PNGs; text-only questions correctly omit sign
+8,Residual known OCR corruption patterns,855,855,0,0,0 occurrences of reviewed high-risk corruption patterns
+9,OCR confidence triage inventory,855,855,0,59,59 inherited low-confidence items identified as needing human verification; automated metadata inventory is complete
+10,GitHub Pages static build requirements,12,12,0,0,"HTML/CSS/JS, data, AGENTS.md, tests, docs, relative asset paths"

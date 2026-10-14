@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Practice Sri Lanka driving licence questions with a timed, random Sinhala quiz and automatic wrong-answer review.">
+  <title>Driving Licence Practice | රියදුරු බලපත්‍ර පුහුණුව</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <button id="home-btn" class="nav-text" type="button" hidden>වසන්න</button>
+      <h1 id="page-title">Driving Exam</h1>
+      <button id="menu-btn" class="icon-btn" type="button" aria-label="Open question navigation" hidden>☰</button>
+    </header>
+    <main id="main" class="main-content" aria-live="polite"><p class="loading">Loading questions…</p></main>
+    <footer id="exam-footer" class="exam-footer" hidden>
+      <div class="footer-inner">
+        <button id="prev-btn" class="arrow arrow-prev" type="button" aria-label="Previous question">➜</button>
+        <div class="timer-stack" role="timer" aria-label="Time remaining for current question">
+          <span class="timer-caption" id="timer-caption">කාලය</span><strong id="time-display">00:30</strong>
+          <div id="auto-next-ui" class="auto-next-ui" hidden aria-live="off">
+            <span class="auto-next-ring" id="auto-next-ring" aria-hidden="true"><span id="auto-next-count">5</span></span>
+            <span class="auto-next-caption">Next in <strong id="auto-next-seconds">5s</strong></span>
+            <button id="cancel-auto-next" class="auto-next-cancel" type="button">Cancel</button>
+          </div>
+        </div>
+        <button id="next-btn" class="arrow arrow-next" type="button" aria-label="Next question">➜</button>
+      </div>
+    </footer>
+    <dialog id="sign-dialog" class="sign-dialog" aria-label="Expanded road sign"><div class="sign-dialog-header"><strong>Road sign / diagram</strong><button id="close-sign" type="button" aria-label="Close enlarged image">✕</button></div><img id="sign-dialog-image" alt="Enlarged road sign or diagram"></dialog>
+    <dialog id="discard-dialog" class="reset-dialog confirm-dialog" aria-labelledby="discard-dialog-heading" aria-describedby="discard-dialog-description">
+      <div class="confirm-dialog-icon" aria-hidden="true">?</div>
+      <h2 id="discard-dialog-heading">Discard this paper?</h2>
+      <p id="discard-dialog-description">Your unfinished paper will be deleted, but answers you have already submitted will still count toward your learning progress.</p>
+      <div class="reset-actions">
+        <button id="cancel-discard" type="button" class="button-secondary">Keep my paper</button>
+        <button id="confirm-discard" type="button" class="button-danger">Yes, discard paper</button>
+      </div>
+    </dialog>
+    <dialog id="reset-dialog" class="reset-dialog" aria-labelledby="reset-dialog-heading" aria-describedby="reset-dialog-description">
+      <div class="reset-warning-icon" aria-hidden="true">!</div>
+      <h2 id="reset-dialog-heading">Are you sure you want to reset?</h2>
+      <p id="reset-dialog-description">This will permanently delete all your saved exam progress on this device: mastered and learning questions, incorrect-answer review, exam history, timer preference, and any unfinished exam.</p>
+      <p class="reset-warning-note"><strong>This cannot be undone.</strong> You will start again as a brand-new user with all 171 questions available.</p>
+      <div class="reset-actions">
+        <button id="cancel-reset" type="button" class="button-secondary" autofocus>Cancel — keep my progress</button>
+        <button id="confirm-reset" type="button" class="button-danger">Yes, reset everything</button>
+      </div>
+    </dialog>
+    <dialog id="question-dialog" class="question-dialog" aria-labelledby="question-dialog-heading">
+      <div class="dialog-header"><h2 id="question-dialog-heading">Questions</h2><button id="close-dialog" type="button" aria-label="Close question list">✕</button></div>
+      <p class="muted tiny">Tap a question number to jump. Leaving a question unanswered records it for practice again.</p>
+      <div id="question-grid" class="question-grid"></div>
+      <button id="finish-early" class="button-secondary dialog-finish" type="button">Submit paper now</button>
+    </dialog>
+  </div>
+</body>
+</html>
