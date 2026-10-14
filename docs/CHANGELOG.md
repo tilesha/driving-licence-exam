@@ -5,6 +5,7 @@
 - Removed the footer Previous button while retaining Next and question-menu review.
 - Added release-version cache busting for CSS, JavaScript modules and question data without changing saved browser progress.
 - Randomized answer-choice positions per new paper and persisted each order across navigation, reload and resume while preserving source answer keys.
+- Changed the exam-header exit control label to English `Close`.
 
 ## v1.8.0 — Second source-based ten-pass QA
 
