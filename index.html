@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#2563EB">
   <meta name="description" content="Practice Sri Lanka driving licence questions with a timed, random Sinhala quiz and automatic wrong-answer review.">
   <title>Driving Licence Practice | රියදුරු බලපත්‍ර පුහුණුව</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.8.3">
-  <script type="module" src="js/app.js?v=1.8.3"></script>
+  <link rel="stylesheet" href="css/styles.css?v=1.9.0">
+  <script type="module" src="js/app.js?v=1.9.0"></script>
 </head>
 <body>
   <div id="app" class="app-shell">
@@ -49,6 +49,21 @@
         <button id="cancel-reset" type="button" class="button-secondary" autofocus>Cancel — keep my progress</button>
         <button id="confirm-reset" type="button" class="button-danger">Yes, reset everything</button>
       </div>
+    </dialog>
+    <dialog id="submit-dialog" class="reset-dialog confirm-dialog" aria-labelledby="submit-dialog-heading" aria-describedby="submit-dialog-description">
+      <div class="confirm-dialog-icon" aria-hidden="true">✓</div>
+      <h2 id="submit-dialog-heading">Submit this paper?</h2>
+      <p id="submit-dialog-description">All questions you have not answered will be recorded as skipped and will return for practice.</p>
+      <div class="reset-actions">
+        <button id="cancel-submit" type="button" class="button-secondary">Keep practicing</button>
+        <button id="confirm-submit" type="button" class="button-primary dialog-primary">Submit paper</button>
+      </div>
+    </dialog>
+    <dialog id="message-dialog" class="reset-dialog confirm-dialog" aria-labelledby="message-dialog-heading">
+      <div class="confirm-dialog-icon" aria-hidden="true">i</div>
+      <h2 id="message-dialog-heading">Something went wrong</h2>
+      <p id="message-dialog-text"></p>
+      <button id="close-message" type="button" class="button-primary dialog-primary">Close</button>
     </dialog>
     <dialog id="question-dialog" class="question-dialog" aria-labelledby="question-dialog-heading">
       <div class="dialog-header"><h2 id="question-dialog-heading">Questions</h2><button id="close-dialog" type="button" aria-label="Close question list">✕</button></div>

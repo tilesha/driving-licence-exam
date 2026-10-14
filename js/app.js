@@ -1,5 +1,5 @@
 'use strict';
-import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.8.3';
+import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.9.0';
 
 // Static GitHub Pages app: no network beyond loading bundled files, no accounts/analytics.
 const $ = s => document.querySelector(s);
@@ -27,28 +27,39 @@ function loadSaved(){
  try{const saved=localStorage.getItem(STORAGE_KEY)||localStorage.getItem(LEGACY_STORAGE_KEY)||localStorage.getItem(OLDEST_STORAGE_KEY);return saved?JSON.parse(saved):null;}
  catch(e){storageAvailable=false;return null;}
 }
+function showMessage(message,title='Something went wrong'){
+ $('#message-dialog-heading').textContent=title;
+ $('#message-dialog-text').textContent=String(message||'Please try again.');
+ const dialog=$('#message-dialog');
+ if(!dialog.open)dialog.showModal();
+ $('#close-message').focus();
+}
 function header(title,exam=false){
  $('#page-title').textContent=title;
  $('#home-btn').hidden=!exam;
- $('#menu-btn').hidden=!exam;
+ $('#menu-btn').hidden=false;
+ $('#menu-btn').setAttribute('aria-label',exam?'Open question navigation':'Open home navigation');
  $('#exam-footer').hidden=!exam;
  $('#main').classList.toggle('is-exam',exam);
 }
 const stat=(n,label,extra='')=>`<div class="stat ${extra}"><strong>${n}</strong><small>${label}</small></div>`;
 const countAvailable=()=>counts(state,questions).available;
 function home(){
- view='home';historyView=null;header('Driving Exam');
+ view='home';historyView=null;header('Sri Lanka Driving Licence Exam');
  const c=counts(state,questions);const active=state.active;
  selectedCount=Math.min(Math.max(1,selectedCount),Math.max(1,c.available));
  selectedSeconds=getQuestionSeconds({questionSeconds:state.settings?.questionSeconds});
- $('#main').innerHTML=`<div class="home-hero"><p class="eyebrow">SRI LANKA • DRIVING LICENCE</p><h2>Practice driving theory</h2>
- <p class="lead">Choose your question count. Master a question by answering correctly 3 times across separate papers. Mistakes repeat, and new questions are mixed in.</p></div>
- <div class="stats">${stat(c.total,'Questions')}${stat(c.mastered,'Mastered','green')}${stat(c.available,'Available','red')}</div>
- <div class="insight-line"><span>🔁 <strong>${c.wrong}</strong> need review</span><span>📘 <strong>${c.learning}</strong> learning (1–2/3)</span><span>✦ <strong>${c.unseen}</strong> never seen</span></div>
- ${active?`<section class="card"><h3>Continue your paper</h3><p class="muted">Question ${active.index+1} of ${active.ids.length}. Saved on this device.</p>
- <button id="resume" class="button-primary" type="button">Resume exam →</button>
- <button id="discard" class="button-secondary block-action" type="button">Discard unfinished paper</button></section>`:''}
- <section class="card"><h3>Create random paper</h3>
+ const masteredPercent=c.total?Math.round(c.mastered/c.total*100):0;
+ $('#main').innerHTML=`<section class="home-hero"><p class="eyebrow">LEARN • PRACTICE • MASTER</p><h2>Ready to practise?</h2>
+ <p class="lead">Build confidence with focused Sri Lankan driving-licence questions. Your learning progress stays on this device.</p>
+ <button id="start-practice" class="button-primary hero-action" type="button">Start Practice</button></section>
+ <section class="progress-card" aria-labelledby="learning-progress-heading"><div class="section-heading"><div><p class="eyebrow">YOUR PROGRESS</p><h3 id="learning-progress-heading">Learning progress</h3></div><strong class="progress-percent">${masteredPercent}%</strong></div>
+ <div class="stats home-stats">${stat(c.mastered,'Mastered','green')}${stat(c.wrong,'Need review','red')}${stat(c.unseen,'Unseen','blue')}</div>
+ <div class="mastery-progress" role="progressbar" aria-label="Questions mastered" aria-valuemin="0" aria-valuemax="${c.total}" aria-valuenow="${c.mastered}"><span style="width:${masteredPercent}%"></span></div>
+ <p class="progress-note">${c.learning} learning · ${c.available} available · ${c.total} total questions</p></section>
+ ${active?`<section class="card resume-card"><div class="resume-copy"><span class="card-icon" aria-hidden="true">▶</span><div><p class="eyebrow">UNFINISHED PAPER</p><h3>Continue where you stopped</h3><p class="muted">Question ${active.index+1} of ${active.ids.length} · Saved on this device</p></div></div>
+ <div class="resume-actions"><button id="resume" class="button-primary" type="button">Resume Exam</button><button id="discard" class="button-secondary" type="button">Discard</button></div></section>`:''}
+ <section class="card settings-card" id="practice-settings" tabindex="-1"><div class="section-heading"><div><p class="eyebrow">PAPER SETTINGS</p><h3>Set up your practice</h3></div><span class="settings-badge" aria-hidden="true">⚙</span></div>
  ${c.available?`<label for="custom-count"><strong>How many questions?</strong> <span class="muted tiny">(1–${c.available} available)</span></label>
  <div class="count-picks">${[10,20,40].map(n=>`<button type="button" data-count="${n}" ${n>c.available?'disabled':''} class="${selectedCount===n?'active':''}">${n}</button>`).join('')}<button type="button" data-count="custom" class="${![10,20,40].includes(selectedCount)?'active':''}">Custom</button></div>
  <input id="custom-count" class="count-input" type="number" inputmode="numeric" min="1" max="${c.available}" value="${selectedCount}" aria-label="Number of questions">
@@ -57,11 +68,14 @@ function home(){
  <div class="seconds-field"><input id="custom-seconds" class="count-input" type="number" inputmode="numeric" min="${MIN_QUESTION_SECONDS}" max="${MAX_QUESTION_SECONDS}" step="1" value="${selectedSeconds}" aria-label="Seconds per question"><span class="muted">seconds per question</span></div>
  <div class="row time-row"><span class="muted">Selected time</span><strong id="time-selected">${durationLabel(selectedSeconds)}</strong></div>
  <div class="row time-row"><span class="muted">Total question time</span><strong id="time-total">${formatTime(selectedCount*selectedSeconds)} (mm:ss)</strong></div>
- <button id="start" class="button-primary" type="button" ${active?'disabled':''}>Start random paper →</button>`:
+ <button id="start" class="button-primary" type="button" ${active?'disabled':''}>Start Practice →</button>`:
  `<p class="lead">You have mastered every question in the available bank.</p><button id="reset-cycle" class="button-secondary block-action" type="button">Reset progress and start again</button>`}</section>
- <div class="home-actions"><button id="history" type="button" class="button-secondary">📊 Exam history (${state.history.length})</button>
- <button id="reset" type="button" class="button-reset">↺ Reset all progress</button></div>
- <div class="notice"><strong>Timer:</strong> Choose ${MIN_QUESTION_SECONDS}–${MAX_QUESTION_SECONDS} seconds for each question before starting. The time limit stays fixed for that paper. When time runs out, it is marked unanswered and the exam moves automatically to the next question (or results after the last). After a correct answer, a 3-second countdown automatically advances unless you tap Cancel. Wrong answers stay until you tap Next. <strong>Learning rules:</strong> A question is <strong>Mastered after 3 correct answers on separate papers</strong> (not necessarily consecutive). Until then it repeats alongside new questions. Wrong, skipped and timed-out questions are prioritized next time; mistakes do not erase earlier correct answers. Mastered questions are excluded. Question 153 is absent from the original PDF and deliberately skipped.<p class="notice-foot">${storageAvailable?'Progress is saved in this browser using localStorage. Clearing Safari website data may erase it.':'⚠️ Browser storage is unavailable; progress may not survive a reload.'}</p></div>`;
+ <nav class="home-actions" id="home-navigation" aria-label="Additional navigation"><button id="history" type="button" class="nav-card"><span aria-hidden="true">▤</span><span><strong>Exam History</strong><small>${state.history.length} saved attempt${state.history.length===1?'':'s'}</small></span></button>
+ <button id="settings" type="button" class="nav-card"><span aria-hidden="true">⚙</span><span><strong>Settings</strong><small>Questions and timing</small></span></button>
+ <button id="reset" type="button" class="nav-card danger"><span aria-hidden="true">↺</span><span><strong>Reset Progress</strong><small>Start learning again</small></span></button></nav>
+ <div class="notice compact-notice"><strong>How learning works:</strong> A question is mastered after 3 correct answers in separate papers. Wrong, skipped and timed-out questions return for practice. ${storageAvailable?'Progress is saved only in this browser.':'Browser storage is unavailable; progress may not survive a reload.'}</div>`;
+ $('#start-practice')?.addEventListener('click',()=>{$('#practice-settings')?.scrollIntoView({behavior:'smooth',block:'start'});$('#practice-settings')?.focus({preventScroll:true});});
+ $('#settings')?.addEventListener('click',()=>{$('#practice-settings')?.scrollIntoView({behavior:'smooth',block:'start'});$('#practice-settings')?.focus({preventScroll:true});});
  $('#resume')?.addEventListener('click',()=>renderExam(true));
  $('#discard')?.addEventListener('click',()=>{if(state.active){$('#discard-dialog').showModal();$('#cancel-discard').focus();}});
  $('#reset')?.addEventListener('click', resetProgress);
@@ -86,7 +100,7 @@ function home(){
  $('#start')?.addEventListener('click',()=>{
   if(!c.available||state.active)return;
   try{startPaper(state,questions,selectedCount,Math.random,Date.now(),selectedSeconds);save();renderExam(true);}
-  catch(error){alert(error.message);}
+  catch(error){showMessage(error.message);}
  });
 }
 function countChanged(){
@@ -120,7 +134,7 @@ function confirmResetProgress(){
  }catch(e){
   storageAvailable=false;
   console.error('Unable to clear saved progress:',e);
-  alert('Unable to clear browser progress. Please check Safari website storage and try again.');
+  showMessage('Unable to clear browser progress. Please check Safari website storage and try again.');
   return;
  }
  selectedCount=40;
@@ -242,10 +256,14 @@ function next(){
  const a=state.active;markSkipped();clearAutoNext();
  if(a.index<a.ids.length-1){a.index++;save();renderExam(true);}else finish();
 }
-function finish(force=false){
+function requestFinish(){
+ if(!state.active)return;
+ const dialog=$('#submit-dialog');
+ if(!dialog.open){dialog.showModal();$('#cancel-submit').focus();}
+}
+function finish(){
  if(!state.active)return;
  const a=state.active;
- if(force&&!confirm('Submit this paper now? All unanswered questions will be counted as incorrect.'))return;
  clearAutoNext();
  for(const id of a.ids){
   if(!a.answers[id])recordAnswer(state,id,null,questionOf(id).correct_option,'skipped');
@@ -304,6 +322,7 @@ function resultScreen(result,fromHistory=false){
  const rows=result.results||[];
  const misses=rows.filter(r=>!r.correct);
  const incorrectCount=result.count-result.correct;
+ const score=Math.round(100*result.correct/result.count);
  // Collapsed by default: do not overwhelm the results page with 38+ answers.
  // Both levels use native <details>/<summary> for keyboard, touch, and Safari support.
  const reviewSection=misses.length ? `<details id="review-accordion" class="review-accordion">
@@ -337,9 +356,9 @@ function resultScreen(result,fromHistory=false){
  $('#main').innerHTML=`<section class="result-overview" aria-label="Exam score">
   <p class="eyebrow">${fromHistory?'PREVIOUS ATTEMPT':'PRACTICE COMPLETE'}</p>
   <h2>Your results</h2>
-  <div class="result-score">${Math.round(100*result.correct/result.count)}<span>%</span></div>
+  <div class="result-score" style="--score:${score*3.6}deg" aria-label="Score ${score} percent"><div>${score}<span>%</span></div></div>
   <p class="muted result-subtitle">${result.correct} of ${result.count} correct · ${durationLabel(getQuestionSeconds(result))} per question</p>
-  <div class="stats result-stats">${stat(result.correct,'Correct','green')}${stat(incorrectCount,'Incorrect','red')}${stat(counts(state,questions).mastered,'Mastered')}</div>
+  <div class="stats result-stats">${stat(result.correct,'Correct','green')}${stat(incorrectCount,'Incorrect','red')}${stat(counts(state,questions).mastered,'Mastered')}${stat(misses.length,'Needs practice','blue')}</div>
  </section>
  <section class="result-review-section" aria-label="Review answers">
   ${reviewSection}
@@ -354,11 +373,18 @@ $('#confirm-discard').addEventListener('click',confirmDiscardPaper);
 $('#cancel-auto-next').addEventListener('click',cancelAutoNext);
 $('#cancel-reset').addEventListener('click',()=>$('#reset-dialog').close());
 $('#confirm-reset').addEventListener('click',confirmResetProgress);
+$('#cancel-submit').addEventListener('click',()=>$('#submit-dialog').close());
+$('#confirm-submit').addEventListener('click',()=>{$('#submit-dialog').close();finish();});
+$('#close-message').addEventListener('click',()=>$('#message-dialog').close());
 $('#close-sign').addEventListener('click',()=>$('#sign-dialog').close());
 $('#home-btn').addEventListener('click',home);
-$('#menu-btn').addEventListener('click',questionMenu);
+$('#menu-btn').addEventListener('click',()=>{
+ if(view==='exam'){questionMenu();return;}
+ if(view!=='home')home();
+ requestAnimationFrame(()=>$('#home-navigation')?.scrollIntoView({behavior:'smooth',block:'center'}));
+});
 $('#close-dialog').addEventListener('click',()=>$('#question-dialog').close());
-$('#finish-early').addEventListener('click',()=>{$('#question-dialog').close();finish(true);});
+$('#finish-early').addEventListener('click',()=>{$('#question-dialog').close();requestFinish();});
 $('#next-btn').addEventListener('click',next);
 window.setInterval(tick,250);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick();});
@@ -366,7 +392,7 @@ window.addEventListener('pageshow',tick);
 
 (async()=>{
  try{
-  const response=await fetch('data/questions.json?v=1.8.3');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const response=await fetch('data/questions.json?v=1.9.0');if(!response.ok)throw new Error(`HTTP ${response.status}`);
   const all=await response.json();
   questions=all.filter(q=>q.id!==153&&q.correct_option>=1&&q.correct_option<=4&&q.choices?.length===4&&q.question_text?.trim()&&q.choices.every(o=>o.text?.trim()));
   byId=new Map(questions.map(q=>[q.id,q]));

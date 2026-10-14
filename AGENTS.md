@@ -63,6 +63,12 @@ Instructions for AI coding assistants, contributors and QA engineers working on 
 - Preserve the fixed navigation footer with enough bottom padding to scroll all options into view on shorter screens.
 - Run `python tests/mobile_visibility.py` alongside other tests after any layout change.
 
+## Version 1.9 blue UI
+
+- Keep the modern blue visual system consistent across Home, exam, results, history and dialogs. The homepage prioritizes Start Practice, three compact learning statistics, progress, conditional resume, settings, history and reset.
+- Use custom accessible `<dialog>` elements for discard, reset, early submission and user-facing error messages; do not introduce native `alert()` or `confirm()` calls.
+- Preserve the user-approved three-second correct-answer auto-next and forward-only footer with no Previous control, even if an older design brief mentions five seconds or Previous navigation.
+
 ## Results-screen UX rule (v1.5.0)
 
 - By default, the user must see a **compact** result summary: score, correct / incorrect / mastered and exam actions, not a long rendered list of answers.

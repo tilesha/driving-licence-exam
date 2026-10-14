@@ -2,6 +2,8 @@
 
 A mobile-first **browser website** for studying Sinhala Sri Lanka driving licence exam questions. Runs in iPhone Safari, Android browsers, and desktop browsers. No installation, login, server database or paid services are required.
 
+Version 1.9 uses a clean blue interface with a compact progress-focused homepage, consistent cards and controls, a focused exam layout, and a circular results summary. The redesign preserves the existing question bank, learning rules, local browser progress and GitHub Pages architecture.
+
 ## Quick start
 
 Run a local web server in this folder:

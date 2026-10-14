@@ -34,7 +34,7 @@ def page_with_app(ctx, progress=None):
     window.fetch=async()=>({ok:true,json:async()=>data});
   }''',{'data':DATA,'progress':progress or {}})
   p.set_content(HTML,wait_until='domcontentloaded')
-  p.get_by_text('Practice driving theory').wait_for()
+  p.get_by_text('Ready to practise?').wait_for()
   return p
 
 def storage(p):return p.evaluate('Object.fromEntries(window.__store)')
@@ -64,7 +64,8 @@ def main():
   ctx=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True,device_scale_factor=2)
   p=page_with_app(ctx);errors=[]
   p.on('pageerror',lambda x:errors.append(str(x)))
-  assert p.locator('.stat').first.inner_text().split('\n')[0]=='171';assert_no_overflow(p,'mobile home')
+  assert '171 total questions' in p.locator('.progress-note').inner_text();assert_no_overflow(p,'mobile home')
+  assert p.locator('#submit-dialog').count()==1 and p.locator('#message-dialog').count()==1
   assert p.locator('[data-seconds="30"]').get_attribute('aria-pressed')=='true'
   assert p.locator('#time-selected').inner_text()=='30 seconds'
   p.screenshot(path=str(PREVIEW_DIR/'iphone_home.png'),full_page=True)

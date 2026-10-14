@@ -22,6 +22,7 @@ A responsive browser-based (not native, not PWA) Sinhala driving licence practic
 ## Platform/design
 
 - Compatible intent: iPhone Safari, Android Chrome, tablets, desktop Chrome/Firefox/Edge/Safari.
+- Use the v1.9 professional blue visual system: `#2563EB` primary, `#1E40AF` dark blue, `#16A34A` success, `#EF4444` error, `#F8FAFC` background, white cards, and `#E2E8F0` borders. Keep cards compact, rounded and subtly shadowed.
 - Responsive layout; iOS safe area; readable Sinhala text; no horizontal overflow. No blank illustration placeholder for text-only questions.
 - CSS `touch-action: pan-x pan-y` attempts to reduce unintentional pinch zoom while leaving scrolling enabled; OS accessibility overrides are respected.
 - Local storage on current browser only. No synced accounts, export/import or permanent backup.

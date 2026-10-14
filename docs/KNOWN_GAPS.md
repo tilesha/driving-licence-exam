@@ -7,6 +7,7 @@ Status at repository packaging. The codebase is functionally built but not yet d
 | HIGH | Only 171 usable questions, not 176 | Source PDF labels 1–172; Q153 is blank; 173–176 are absent. Q153 deliberately excluded by user decision. Supply missing source material for 176. |
 | HIGH | Answer correctness not independently verified | Each of 171 options was captured from the PDF's blue-marked answer, but the PDF is not an official current-law key. Manually validate with authoritative Sri Lankan driving materials. |
 | HIGH | Real iPhone Safari E2E not tested | Automated test executes Chromium DOM/CSS logic in isolation. Open the deployed GitHub Pages URL on actual iPhone, check screen/timers/pinch behavior. |
+| HIGH | v1.9 blue redesign browser geometry not revalidated locally | Python Playwright and an interactive browser were unavailable in the redesign environment. Re-run `tests/browser_smoke.py` and `tests/mobile_visibility.py` before treating the earlier viewport-fit figures as current. |
 | HIGH | Sinhala OCR transcripts not fully proofread | All 171 questions and 684 options are editable Unicode text, not screenshots. Automatic OCR and a few visual corrections were used; high-confidence OCR can still misread characters or numbers. Manually review `docs/TRANSCRIPTION_REVIEW.csv` against the supplied PDF before relying on exact wording. |
 | MEDIUM | Pinch zoom prevention is best-effort | CSS `touch-action: pan-x pan-y` is used. iOS may still allow zoom, especially accessibility zoom. Do not use brittle JavaScript to block OS functionality. |
 | MEDIUM | Storage is device/browser-bound | localStorage can disappear if site data is cleared, private mode or quota policy; no accounts or backup because user explicitly declined import/export. |
@@ -19,6 +20,8 @@ Status at repository packaging. The codebase is functionally built but not yet d
 User accounts, cloud sync, admin panel, offline/PWA installation, export/import, external database, payment or native iOS application. These are out of scope by design, not unfinished features.
 
 ### Mobile viewport fit — current compact Unicode build
+
+The figures below are a pre-v1.9 baseline and must be re-measured for the blue redesign; they are retained only for comparison and are not a pass claim for the new CSS.
 
 The earlier mobile UI made road signs about 340px tall and used oversized option padding, causing answer #3/#4 to appear below the footer. The compact mobile UI reduces this spacing and uses a smaller image with an accessible tap-to-enlarge dialog. Browser-harness geometry with real question text/images reports:
 

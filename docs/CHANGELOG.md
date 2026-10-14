@@ -1,4 +1,4 @@
-## Unreleased
+## v1.9.0 — Modern blue interface
 
 - Reduced the correct-answer circular auto-next countdown from 5 seconds to 3 seconds.
 - Returning to a navigation-skipped question no longer reveals the correct answer, and its timer status reads `Skipped`.
@@ -7,6 +7,8 @@
 - Randomized answer-choice positions per new paper and persisted each order across navigation, reload and resume while preserving source answer keys.
 - Changed the exam-header exit control label to English `Close`.
 - Changed the footer timer caption to English `Time` and matched its size to the countdown.
+- Reworked the homepage, exam, results, history and dialogs into a consistent mobile-first blue design with compact progress and navigation cards.
+- Added custom accessible early-submit and error dialogs, removing the remaining native `alert()` and `confirm()` interactions.
 
 ## v1.8.0 — Second source-based ten-pass QA
 

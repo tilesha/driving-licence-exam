@@ -2,7 +2,7 @@
 
 ## Automated tests
 
-- `npm test`: 14 deterministic Node tests for data count, no duplicates, question count limits, three-correct mastery, learning/unseen mix, wrong-answer repetition without credit reset, rotation, skip semantics and v1/v2 storage migration.
+- `npm test`: 15 deterministic Node tests for data count, no duplicates, question count limits, persisted answer shuffling, three-correct mastery, learning/unseen mix, wrong-answer repetition without credit reset, rotation, skip semantics and v1/v2 storage migration.
 - `python tools/validate_content.py`: 171 records; one source-marked answer per question; all referenced image files exist and open with Pillow.
 - `python tests/browser_smoke.py`: isolated inlined HTML/CSS/JS under Chromium, with mocked `fetch` and localStorage. Checks UI interaction, instant feedback, single-tap skip, menu jumping, compact collapsed results/individual question expansion/history, retry, resume, configurable 10–300-second timeout auto-advance/final auto-submit, and horizontal overflow at 320/375/390/768/1024/1440px. **It does not test real HTTP ES-module fetch or iOS.**
 
@@ -65,6 +65,7 @@ Data quality verified against official answer key, real iOS Safari and deployed 
 | ID | Action | Expected |
 |---|---|---|
 | QA-29 | Tap Discard unfinished paper | Styled in-page dialog (no browser-native confirmation). |
+| QA-29A | Use Submit paper now or trigger a user-facing error | Styled accessible in-page dialog is used; no browser-native `confirm()` or `alert()` appears. |
 | QA-30 | Tap Keep my paper, Escape or outside-dismiss | Active paper and progress unchanged. |
 | QA-31 | Confirm Yes, discard paper | Active paper deleted; earned progress/history preserved, home shown. |
 | QA-32 | Correct answer, wait 3s | Visible ring counts 3→1, next question displayed automatically; final question finishes. |
