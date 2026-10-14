@@ -1,12 +1,12 @@
 'use strict';
-import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.9.1';
+import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.10.0';
 
 // Static GitHub Pages app: no network beyond loading bundled files, no accounts/analytics.
 const $ = s => document.querySelector(s);
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let questions=[], byId=new Map(), state=freshState(), view='home', selectedCount=40, selectedSeconds=QUESTION_SECONDS, storageAvailable=true;
 let historyView=null;
-const AUTO_NEXT_DELAY_MS=3000; // Correct answer: show feedback for three seconds, then advance.
+const AUTO_NEXT_DELAY_MS=5000; // Correct answer: show feedback for five seconds, then advance.
 const formatTime = seconds => `${String(Math.floor(seconds/60)).padStart(2,'0')}:${String(seconds%60).padStart(2,'0')}`;
 const durationLabel = seconds => seconds<60?`${seconds} seconds`:seconds%60===0?`${seconds/60} minute${seconds===60?'':'s'}`:`${seconds} seconds`;
 const questionOf = id => byId.get(id);
@@ -287,7 +287,7 @@ function tick(){
   const seconds=Math.max(1,Math.ceil(remaining/1000));
   $('#auto-next-count').textContent=String(seconds);
   $('#auto-next-seconds').textContent=`${seconds}s`;
-  $('#auto-next-ring').style.setProperty('--progress',`${remaining/AUTO_NEXT_DELAY_MS*100}%`);
+  $('#auto-next-slider').style.setProperty('--slide-scale',String(Math.max(0,Math.min(1,1-remaining/AUTO_NEXT_DELAY_MS))));
   $('.timer-stack').setAttribute('aria-label',`Next question in ${seconds} seconds. Press Cancel to stay here.`);
  }else{
   const completedLabel=record?.reason==='skipped'?'Skipped':record?.reason==='timeout'?'Time expired':'Answered';
@@ -392,7 +392,7 @@ window.addEventListener('pageshow',tick);
 
 (async()=>{
  try{
-  const response=await fetch('data/questions.json?v=1.9.1');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const response=await fetch('data/questions.json?v=1.10.0');if(!response.ok)throw new Error(`HTTP ${response.status}`);
   const all=await response.json();
   questions=all.filter(q=>q.id!==153&&q.correct_option>=1&&q.correct_option<=4&&q.choices?.length===4&&q.question_text?.trim()&&q.choices.every(o=>o.text?.trim()));
   byId=new Map(questions.map(q=>[q.id,q]));

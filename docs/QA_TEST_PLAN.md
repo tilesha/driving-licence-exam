@@ -68,9 +68,9 @@ Data quality verified against official answer key, real iOS Safari and deployed 
 | QA-29A | Use Submit paper now or trigger a user-facing error | Styled accessible in-page dialog is used; no browser-native `confirm()` or `alert()` appears. |
 | QA-30 | Tap Keep my paper, Escape or outside-dismiss | Active paper and progress unchanged. |
 | QA-31 | Confirm Yes, discard paper | Active paper deleted; earned progress/history preserved, home shown. |
-| QA-32 | Correct answer, wait 3s | Visible ring counts 3→1, next question displayed automatically; final question finishes. |
-| QA-33 | Correct answer, tap Cancel | No auto-advance after 3s; question stays until Next. |
+| QA-32 | Correct answer, wait 5s | Slide-to-next fill and shimmer run while the visible count changes 5→1; next question displays only after the full deadline, and the final question finishes. |
+| QA-33 | Correct answer, tap Cancel | Animation stops immediately; no auto-advance after 5s, cancellation survives refresh, and the question stays until Next. |
 | QA-34 | Correct answer, refresh mid-countdown | Saved remaining delay is respected; Cancelled countdown stays cancelled. |
-| QA-35 | Wrong answer | Wrong red/correct green; no 3-second auto-next; manual Next works. |
+| QA-35 | Wrong answer | Wrong red/correct green; no slide-to-next animation; manual Next works. |
 | QA-36 | Timeout on unanswered question | Existing configured timeout still advances immediately. |
 | QA-37 | Open road sign or question menu while auto-next pending | Auto-next cancelled; no unexpected background navigation. |

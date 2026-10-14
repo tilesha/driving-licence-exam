@@ -1,4 +1,4 @@
-"""Browser QA for custom discard modal and 3s correct-answer auto-next."""
+"""Browser QA for custom discard modal and 5s slide-to-next feedback."""
 from pathlib import Path
 import importlib.util
 import json
@@ -39,8 +39,13 @@ with sync_playwright() as pw:
  start(p,2)
  first,ans=correct(p)
  assert p.locator('.answer.correct').count()==1
- assert p.locator('#auto-next-ui').is_visible(), 'Correct answer must display three-second circular UI'
- assert p.locator('#auto-next-count').inner_text()=='3'
+ assert p.locator('#auto-next-ui').is_visible(), 'Correct answer must display five-second slide-to-next UI'
+ assert p.locator('#auto-next-slider').is_visible()
+ assert p.locator('.slide-shimmer').inner_text()=='slide to next →'
+ assert p.locator('#auto-next-count').inner_text()=='5'
+ p.evaluate('''() => {state.active.autoAdvance.deadline=Date.now()+2500;tick();}''')
+ progress=float(p.locator('#auto-next-slider').evaluate("el=>getComputedStyle(el).getPropertyValue('--slide-scale')"))
+ assert .45<=progress<=.55, f'Halfway slider progress should be near 0.5, got {progress}'
  m.assert_no_overflow(p,'390px auto-next footer')
  m.embed_displayed_assets(p)
  p.screenshot(path=str(OUT/'iphone_correct_countdown.png'))
