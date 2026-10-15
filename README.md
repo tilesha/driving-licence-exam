@@ -79,8 +79,8 @@ See [docs/CHANGELOG.md](docs/CHANGELOG.md) for the 3-correct mastery rule, confi
 
 ## Version 1.6 — Updated exam navigation
 
-- A correct response shows **Correct!**, a smooth five-second horizontal progress bar, **Cancel**, and **Next**, then automatically shows the next question. At the last question it opens Results. Cancel persists across refresh and leaves manual Next available.
-- Incorrect answers wait for manual Next; unanswered question deadline still triggers automatic advance.
+- A correct response shows **Correct!** with a smooth green three-second progress bar; an incorrect response shows **Incorrect answer** with a red five-second bar. Both keep **Cancel** and **Next**, then advance automatically. At the last question, auto-advance opens Results. Cancel persists across refresh and leaves manual Next available.
+- An unanswered question deadline still triggers automatic advance immediately.
 - Discarding an unfinished exam shows an in-page dialog with **Keep my paper** and **Yes, discard paper**. It removes only that unfinished paper and keeps previously earned learning progress.
 
 

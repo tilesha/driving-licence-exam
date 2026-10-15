@@ -168,8 +168,8 @@ h2 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.27; letter-spacing: -.0
 .question-time-ui strong.urgent { color: #ef4444; }
 .answer-status-ui { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-width: 0; }
 .answer-status-ui strong { color: #16a34a; font-size: 16px; white-space: nowrap; }
-.answer-status-ui span { color: #475569; font-size: 13px; text-align: right; }
-.state-incorrect .answer-status-ui strong { color: #ef4444; }
+.answer-status-ui span { color: #16a34a; font-size: 13px; font-weight: 700; text-align: right; }
+.state-incorrect .answer-status-ui strong, .state-incorrect .answer-status-ui span { color: #ef4444; }
 .footer-actions { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
 .footer-next { min-height: 46px; border: 0; border-radius: 12px; padding: 10px 17px; background: #2563eb; color: #fff; font: inherit; font-weight: 750; white-space: nowrap; }
 .footer-next:focus-visible, .auto-next-cancel:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
@@ -397,7 +397,8 @@ h2 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.27; letter-spacing: -.0
 /* Correct-answer auto-next uses a timestamp-driven five-second progress bar. */
 .auto-next-progress { height: 6px; overflow: hidden; border-radius: 999px; background: #e2e8f0; }
 .auto-next-progress[hidden] { display: none; }
-.auto-next-progress span { display: block; width: 0; height: 100%; border-radius: inherit; background: #2563eb; transition: width 100ms linear; }
+.auto-next-progress span { display: block; width: 0; height: 100%; border-radius: inherit; background: #16a34a; transition: width 100ms linear; }
+.state-incorrect .auto-next-progress span { background: #ef4444; }
 .auto-next-cancel { min-height: 44px; padding: 9px 12px; background: #fff; border: 1px solid #cbd5e1; border-radius: 11px; font: inherit; font-size: 14px; font-weight: 700; color: #334155; }
 .auto-next-cancel[hidden] { display: none; }
 @media (max-width: 359px) {

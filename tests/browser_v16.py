@@ -1,4 +1,4 @@
-"""Browser QA for custom discard modal and 5s correct-answer auto-next."""
+"""Browser QA for discard modal and answer-specific auto-next."""
 from pathlib import Path
 import importlib.util
 import json
@@ -39,8 +39,9 @@ with sync_playwright() as pw:
  start(p,2)
  first,ans=correct(p)
  assert p.locator('.answer.correct').count()==1
- assert p.locator('#auto-next-progress').is_visible(), 'Correct answer must display five-second progress UI'
- assert p.locator('#answer-status-detail').inner_text()=='Next in 5s'
+ assert p.locator('#auto-next-progress').is_visible(), 'Correct answer must display progress UI'
+ assert p.locator('#answer-status-detail').inner_text()=='Next in 3s'
+ assert p.locator('#auto-next-progress span').evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(22, 163, 74)'
  m.assert_no_overflow(p,'390px auto-next footer')
  m.embed_displayed_assets(p)
  p.screenshot(path=str(OUT/'iphone_correct_countdown.png'))
@@ -57,7 +58,9 @@ with sync_playwright() as pw:
  p.locator('#next-btn').click()
  assert m.state(p)['active']['index']==1
  wrongid=wrong(p)
- assert not p.locator('#auto-next-progress').is_visible(), 'Wrong answer must not start auto-next'
+ assert p.locator('#auto-next-progress').is_visible(), 'Wrong answer must start auto-next'
+ assert p.locator('#answer-status-detail').inner_text()=='Next in 5s'
+ assert p.locator('#auto-next-progress span').evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(239, 68, 68)'
  p.wait_for_timeout(900)
  assert m.state(p)['active']['index']==1
  p.locator('#next-btn').click()
@@ -76,6 +79,13 @@ with sync_playwright() as pw:
  assert m.state(ap)['active'] is None
  assert m.state(ap)['history'][0]['correct']==2
  ap.close()
+
+ # Incorrect countdown advances exactly once, even if tick runs again after expiry.
+ wp=m.page_with_app(ctx);start(wp,2);wrong(wp)
+ wp.evaluate('''() => {state.active.autoAdvance.deadline=Date.now()-50;tick();tick();}''')
+ assert m.state(wp)['active']['index']==1
+ assert not m.state(wp)['active'].get('autoAdvance'), 'Expired countdown must be cleared after navigation'
+ wp.close()
 
  # Discard: Cancel and Escape keep active paper, confirm clears only active paper.
  dp=m.page_with_app(ctx);start(dp,3)
@@ -133,4 +143,4 @@ with sync_playwright() as pw:
  sp.close();small.close()
  assert not errors,errors
  ctx.close();browser.close()
-print('PASS browser: correct progress, cancel, reload, last result, wrong manual, discard + Escape, sign/menu cancel, 320px + 390px overflow')
+print('PASS browser: green 3s correct, red 5s incorrect, cancel, reload, exactly-once advance, discard, and responsive footer')

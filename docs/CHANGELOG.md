@@ -1,3 +1,9 @@
+## 1.10.1 — Answer-specific auto-next timing
+
+- Correct answers now use a green `#16A34A` three-second progress bar and countdown.
+- Incorrect answers now use a red `#EF4444` five-second progress bar and countdown before advancing automatically.
+- Both states retain Cancel and blue Next controls, persisted cancellation, and timestamp-based exactly-once navigation.
+
 ## 1.10.0 — Three-state exam footer
 
 - Replaced the circular countdown with a smooth, timestamp-driven five-second horizontal progress bar.

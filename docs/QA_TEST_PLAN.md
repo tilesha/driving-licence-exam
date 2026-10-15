@@ -68,9 +68,9 @@ Data quality verified against official answer key, real iOS Safari and deployed 
 | QA-29A | Use Submit paper now or trigger a user-facing error | Styled accessible in-page dialog is used; no browser-native `confirm()` or `alert()` appears. |
 | QA-30 | Tap Keep my paper, Escape or outside-dismiss | Active paper and progress unchanged. |
 | QA-31 | Confirm Yes, discard paper | Active paper deleted; earned progress/history preserved, home shown. |
-| QA-32 | Correct answer, wait 5s | Correct status and horizontal bar progress smoothly to completion; next question displays exactly once and the final question finishes. |
-| QA-33 | Correct answer, tap Cancel | Progress stops, `Auto-next cancelled` appears, and the question stays until Next, including after refresh. |
+| QA-32 | Correct answer, wait 3s | Green Correct status and horizontal bar progress smoothly to completion; next question displays exactly once and the final question finishes. |
+| QA-33 | Correct or incorrect answer, tap Cancel | Progress stops, `Auto-next cancelled` appears, and the question stays until Next, including after refresh. |
 | QA-34 | Correct answer, refresh mid-countdown | Saved remaining delay is respected; Cancelled countdown stays cancelled. |
-| QA-35 | Wrong answer | Wrong red/correct green; `Incorrect answer` and review message display; no auto-next bar; manual Next works. |
+| QA-35 | Wrong answer, wait 5s | Wrong red/correct green; red `Incorrect answer` status and progress bar display, then advance exactly once. Cancel and manual Next remain available. |
 | QA-36 | Timeout on unanswered question | Existing configured timeout still advances immediately. |
 | QA-37 | Open road sign or question menu while auto-next pending | Auto-next cancelled; no unexpected background navigation. |

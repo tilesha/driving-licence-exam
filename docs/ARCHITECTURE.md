@@ -52,6 +52,6 @@ Everything stays on device except the normal static file requests to GitHub Page
 
 ## Auto-next UI and discard state (v1.6)
 
-The UI stores `active.autoAdvance = {questionId, deadline, cancelled}` using the same existing `sl-driving-quiz-v3` localStorage state. It is set only after a **correct** submitted answer. `tick()` checks the absolute wall-clock `deadline` and advances once. The `Cancel` action persists `cancelled=true` and stops automation until manual Next. Navigation away clears stale auto-next state. Opening the sign viewer or question menu cancels the pending transition. No separate timers, accounts, or storage keys are used.
+The UI stores `active.autoAdvance = {questionId, deadline, cancelled}` using the same existing `sl-driving-quiz-v3` localStorage state. It is set after a submitted answer, with a 3-second deadline for correct answers and a 5-second deadline for incorrect answers. `tick()` checks the absolute wall-clock deadline and advances once. The `Cancel` action persists `cancelled=true` and stops automation until manual Next. Navigation away clears stale auto-next state. Opening the sign viewer or question menu cancels the pending transition. No separate timers, accounts, or storage keys are used.
 
 The `#discard-dialog` is a native HTML `<dialog>` styled inside the web app, with the safe option initially focused. Cancel leaves state and storage untouched; confirmation deletes only `state.active`. Answered progress and history remain stored.

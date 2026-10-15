@@ -1,12 +1,14 @@
 'use strict';
-import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.10.0';
+import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.10.1';
 
 // Static GitHub Pages app: no network beyond loading bundled files, no accounts/analytics.
 const $ = s => document.querySelector(s);
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let questions=[], byId=new Map(), state=freshState(), view='home', selectedCount=40, selectedSeconds=QUESTION_SECONDS, storageAvailable=true;
 let historyView=null;
-const AUTO_NEXT_DELAY_MS=5000; // Correct answer: show feedback for five seconds, then advance.
+const CORRECT_AUTO_NEXT_MS=3000;
+const INCORRECT_AUTO_NEXT_MS=5000;
+const autoNextDelay = record => record?.correct ? CORRECT_AUTO_NEXT_MS : INCORRECT_AUTO_NEXT_MS;
 const formatTime = seconds => `${String(Math.floor(seconds/60)).padStart(2,'0')}:${String(seconds%60).padStart(2,'0')}`;
 const durationLabel = seconds => seconds<60?`${seconds} seconds`:seconds%60===0?`${seconds/60} minute${seconds===60?'':'s'}`:`${seconds} seconds`;
 const questionOf = id => byId.get(id);
@@ -162,7 +164,7 @@ function clearAutoNext(){
 }
 function activeAutoNext(){
  const a=state.active,q=current(),pending=a?.autoAdvance;
- if(!q||!hasAnswer(q.id)||!a.answers[q.id]?.correct||!pending||pending.questionId!==q.id||pending.cancelled)return null;
+ if(!q||!hasAnswer(q.id)||!pending||pending.questionId!==q.id||pending.cancelled)return null;
  return pending;
 }
 function stampCurrent(){
@@ -194,11 +196,8 @@ function answer(choice){
  // Check the actual deadline, not just the timer label, to avoid late-click races.
  if(remainingSeconds()<=0){expireCurrent();return;}
  recordAnswer(state,q.id,choice,q.correct_option,'answer');
- // Only a CORRECT submitted answer starts the auto-next countdown.
- // Wrong answers remain displayed until the user manually selects Next.
- if(state.active.answers[q.id]?.correct){
-  state.active.autoAdvance={questionId:q.id,deadline:Date.now()+AUTO_NEXT_DELAY_MS,cancelled:false};
- }else{delete state.active.autoAdvance;}
+ const record=state.active.answers[q.id];
+ state.active.autoAdvance={questionId:q.id,deadline:Date.now()+autoNextDelay(record),cancelled:false};
  save();renderExam(false);
 }
 function optionHtml(q,o,record=null,interactive=true){
@@ -278,7 +277,7 @@ function tick(){
  const auto=activeAutoNext();
  if(auto&&Date.now()>=auto.deadline){next();return;}
  if(!record&&remainingSeconds()===0){expireCurrent();return;}
- const cancelled=Boolean(record?.correct&&a.autoAdvance?.questionId===q.id&&a.autoAdvance.cancelled);
+ const cancelled=Boolean(record&&a.autoAdvance?.questionId===q.id&&a.autoAdvance.cancelled);
  const showAuto=Boolean(auto);
  const questionTime=$('#question-time-ui'),status=$('#answer-status-ui'),progress=$('#auto-next-progress'),cancel=$('#cancel-auto-next');
  questionTime.hidden=Boolean(record);
@@ -287,18 +286,20 @@ function tick(){
  cancel.hidden=!showAuto;
  if(showAuto){
   const remaining=Math.max(0,auto.deadline-Date.now());
+  const duration=autoNextDelay(record);
   const seconds=Math.max(1,Math.ceil(remaining/1000));
-  const elapsedPercent=Math.min(100,Math.max(0,(AUTO_NEXT_DELAY_MS-remaining)/AUTO_NEXT_DELAY_MS*100));
-  $('#answer-status-title').textContent='✓ Correct!';
+  const elapsedPercent=Math.min(100,Math.max(0,(duration-remaining)/duration*100));
+  $('#answer-status-title').textContent=record.correct?'✓ Correct!':'✕ Incorrect answer';
   $('#answer-status-detail').textContent=`Next in ${seconds}s`;
   progress.firstElementChild.style.width=`${elapsedPercent}%`;
-  progress.setAttribute('aria-valuenow',String(Math.min(5,Math.max(0,(AUTO_NEXT_DELAY_MS-remaining)/1000))));
-  $('.footer-status').setAttribute('aria-label',`Correct answer. Next question in ${seconds} seconds. Press Cancel to stay here.`);
+  progress.setAttribute('aria-valuemax',String(duration/1000));
+  progress.setAttribute('aria-valuenow',String(Math.min(duration/1000,Math.max(0,(duration-remaining)/1000))));
+  $('.footer-status').setAttribute('aria-label',`${record.correct?'Correct':'Incorrect'} answer. Next question in ${seconds} seconds. Press Cancel to stay here.`);
  }else{
   $('#time-display').textContent=formatTime(remainingSeconds());
   $('#time-display').classList.toggle('urgent',!record&&remainingSeconds()<=20);
   if(record){
-   $('#answer-status-title').textContent=cancelled?'✓ Correct!':record.correct?'✓ Correct!':'✕ Incorrect answer';
+   $('#answer-status-title').textContent=record.correct?'✓ Correct!':'✕ Incorrect answer';
    $('#answer-status-detail').textContent=cancelled?'Auto-next cancelled':record.correct?'Ready for the next question':record.reason==='skipped'?'No answer submitted':'Review the correct answer';
   }
   const completedAria=record?.reason==='skipped'?'Question skipped. Press Next to continue.':record?.reason==='timeout'?'Question time expired. Press Next to continue.':record?.correct?'Correct answer. Press Next to continue.':'Incorrect answer. Review the correct answer, then press Next.';
@@ -402,7 +403,7 @@ window.addEventListener('pageshow',tick);
 
 (async()=>{
  try{
-  const response=await fetch('data/questions.json?v=1.10.0');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const response=await fetch('data/questions.json?v=1.10.1');if(!response.ok)throw new Error(`HTTP ${response.status}`);
   const all=await response.json();
   questions=all.filter(q=>q.id!==153&&q.correct_option>=1&&q.correct_option<=4&&q.choices?.length===4&&q.question_text?.trim()&&q.choices.every(o=>o.text?.trim()));
   byId=new Map(questions.map(q=>[q.id,q]));
