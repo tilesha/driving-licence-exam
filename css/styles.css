@@ -45,23 +45,33 @@ button:focus-visible, input:focus-visible, dialog button:focus-visible {
 }
 .topbar {
   min-height: 80px;
-  padding: calc(12px + env(safe-area-inset-top, 0px)) clamp(16px, 3.2vw, 46px) 12px;
+  padding: calc(12px + env(safe-area-inset-top, 0px)) 0 12px;
+  border-bottom: 1px solid transparent;
+}
+.topbar-inner {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  padding-inline: clamp(16px, 3.2vw, 46px);
   display: grid;
-  grid-template-columns: minmax(72px, 1fr) minmax(0, auto) minmax(72px, 1fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   column-gap: 12px;
-  border-bottom: 1px solid transparent;
+}
+.topbar.exam-mode .topbar-inner {
+  grid-template-columns: minmax(72px, 1fr) minmax(0, auto) minmax(72px, 1fr);
 }
 .topbar h1 {
   min-width: 0;
   margin: 0;
-  text-align: center;
+  text-align: left;
   line-height: 1.2;
   letter-spacing: -.035em;
   font-weight: 750;
   font-size: clamp(19px, 3.5vw, 27px);
   overflow-wrap: anywhere;
 }
+.topbar.exam-mode h1 { text-align: center; }
+.title-mobile { display: none; }
 .nav-text, .icon-btn {
   border: 0;
   background: transparent;
@@ -191,7 +201,8 @@ h2 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.27; letter-spacing: -.0
 .loading { padding: 22vh 0; text-align: center; color: #666; }
 /* Small iPhones: avoid horizontal clipping and keep touch targets reachable. */
 @media (max-width: 390px) {
-  .topbar { grid-template-columns: minmax(62px, 1fr) minmax(0, auto) minmax(62px, 1fr); column-gap: 6px; padding-left: 13px; padding-right: 13px; }
+  .topbar-inner { column-gap: 6px; padding-inline: 13px; }
+  .topbar.exam-mode .topbar-inner { grid-template-columns: minmax(62px, 1fr) minmax(0, auto) minmax(62px, 1fr); }
   .nav-text { font-size: 15px; }
   .icon-btn { font-size: 27px; }
   .main-content { padding-left: 15px; padding-right: 15px; }
@@ -307,9 +318,9 @@ h2 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.27; letter-spacing: -.0
 @media (max-width: 649px) and (orientation: portrait) {
   .topbar {
     min-height: 58px;
-    padding: calc(6px + env(safe-area-inset-top, 0px)) 14px 6px;
-    column-gap: 6px;
+    padding: calc(6px + env(safe-area-inset-top, 0px)) 0 6px;
   }
+  .topbar-inner { padding-inline: 14px; column-gap: 6px; }
   .topbar h1 { font-size: 19px; }
   .nav-text { font-size: 14px; padding: 4px 0; }
   .icon-btn { font-size: 25px; padding: 4px 0; }
@@ -536,6 +547,14 @@ body { background: #f8fafc; color: #0f172a; }
 .home-hero .lead { margin: 0; color: #eaf2ff; }
 .hero-action { width: min(100%, 250px); background: #fff; color: #1e40af; box-shadow: 0 8px 20px #0f2e782b; }
 .hero-action:hover:not(:disabled) { background: #eff6ff; }
+.home-hero-active h2 { margin-bottom: 5px; }
+.paper-position { margin: 0; color: #eaf2ff; font-weight: 700; }
+.paper-progress { width: 100%; height: 8px; margin-top: 14px; overflow: hidden; border-radius: 999px; background: #ffffff45; }
+.paper-progress span { display: block; height: 100%; border-radius: inherit; background: #fff; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.hero-actions .hero-action { margin: 0; }
+.hero-secondary { min-height: 52px; border-color: #bfdbfe; color: #fff; background: #ffffff12; }
+.hero-secondary:hover { background: #ffffff24; }
 .progress-card, .card {
   border: 1px solid #e2e8f0; border-radius: 16px; background: #fff;
   box-shadow: 0 7px 22px #0f172a0a;
@@ -544,7 +563,7 @@ body { background: #f8fafc; color: #0f172a; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 15px; }
 .section-heading h3 { margin: 1px 0 0; font-size: clamp(18px, 3vw, 22px); }
 .section-heading .eyebrow { margin-bottom: 3px; }
-.progress-percent { color: #2563eb; font-size: 22px; }
+.progress-percent { color: #2563eb; font-size: 17px; white-space: nowrap; }
 .home-stats { margin: 0 0 15px; }
 .stat { border: 1px solid #e2e8f0; background: #f8fafc; }
 .stat.green strong { color: #16a34a; }
@@ -553,12 +572,8 @@ body { background: #f8fafc; color: #0f172a; }
 .mastery-progress { height: 8px; overflow: hidden; border-radius: 99px; background: #e2e8f0; }
 .mastery-progress span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #2563eb, #3b82f6); }
 .progress-note { margin: 10px 0 0; color: #64748b; font-size: 13px; }
-.resume-card { border-color: #bfdbfe; background: #eff6ff; }
-.resume-copy { display: flex; align-items: flex-start; gap: 13px; }
-.resume-copy h3, .resume-copy p { margin: 0; }
 .card-icon, .settings-badge { display: grid; place-items: center; width: 40px; height: 40px; flex: 0 0 40px; border-radius: 12px; background: #dbeafe; color: #1d4ed8; }
-.resume-actions { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 10px; margin-top: 15px; }
-.resume-actions .button-primary, .resume-actions .button-secondary { margin: 0; }
+.active-paper-note { margin: 4px 0 0; padding: 12px; border-radius: 10px; background: #eff6ff; color: #1e3a8a; font-size: 13px; line-height: 1.5; }
 .settings-card:focus { outline: 3px solid #93c5fd; outline-offset: 3px; }
 .count-picks button, .time-picks button { border-color: #cbd5e1; color: #334155; transition: border-color .16s, background-color .16s, color .16s; }
 .count-picks button.active, .time-picks button.active { background: #eff6ff; border-color: #2563eb; color: #1e40af; box-shadow: inset 0 0 0 1px #2563eb; }
@@ -609,11 +624,14 @@ body { background: #f8fafc; color: #0f172a; }
 
 @media (max-width: 649px) {
   .topbar h1 { font-size: 16px; line-height: 1.25; }
+  .title-desktop { display: none; }
+  .title-mobile { display: inline; }
   .main-content:not(.is-exam) { padding: 16px 13px 34px; }
   .home-hero { padding: 23px 19px; }
   .home-hero h2 { font-size: 28px; }
   .home-actions { grid-template-columns: 1fr; }
-  .resume-actions { grid-template-columns: 1fr; }
+  .hero-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions .hero-action, .hero-secondary { width: 100%; }
   .result-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .question-block { padding: 10px; }
   .answer { margin-top: 7px; padding: 9px 8px; }

@@ -66,6 +66,9 @@ Instructions for AI coding assistants, contributors and QA engineers working on 
 ## Version 1.9 blue UI
 
 - Keep the modern blue visual system consistent across Home, exam, results, history and dialogs. The homepage prioritizes Start Practice, three compact learning statistics, progress, conditional resume, settings, history and reset.
+- With no active paper, show one enabled Start Practice action. With an active paper, replace it with one compact hero progress panel containing Continue Paper and confirmed Start New Paper; do not duplicate the unfinished-paper card or render a disabled Start button.
+- Homepage Mastered percentage is `mastered / 171`; Practiced is the count of distinct question IDs present in progress. `mastered + wrong + seen + unseen` must reconcile to the total bank.
+- On Home, align the responsive title left and the menu control right inside the shared constrained header container. Mobile uses the shorter `Driving Licence Exam` title.
 - Use custom accessible `<dialog>` elements for discard, reset, early submission and user-facing error messages; do not introduce native `alert()` or `confirm()` calls.
 - Preserve the user-approved answer auto-next footer: green 3-second progress for correct answers, red 5-second progress for incorrect answers, and no Previous control.
 

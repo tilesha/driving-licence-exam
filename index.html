@@ -6,15 +6,17 @@
   <meta name="theme-color" content="#2563EB">
   <meta name="description" content="Practice Sri Lanka driving licence questions with a timed, random Sinhala quiz and automatic wrong-answer review.">
   <title>Driving Licence Practice | රියදුරු බලපත්‍ර පුහුණුව</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.10.1">
-  <script type="module" src="js/app.js?v=1.10.1"></script>
+  <link rel="stylesheet" href="css/styles.css?v=1.11.0">
+  <script type="module" src="js/app.js?v=1.11.0"></script>
 </head>
 <body>
   <div id="app" class="app-shell">
     <header class="topbar">
-      <button id="home-btn" class="nav-text" type="button" hidden>Close</button>
-      <h1 id="page-title">Driving Exam</h1>
-      <button id="menu-btn" class="icon-btn" type="button" aria-label="Open question navigation" hidden>☰</button>
+      <div class="topbar-inner">
+        <button id="home-btn" class="nav-text" type="button" hidden>Close</button>
+        <h1 id="page-title">Driving Exam</h1>
+        <button id="menu-btn" class="icon-btn" type="button" aria-label="Open question navigation" hidden>☰</button>
+      </div>
     </header>
     <main id="main" class="main-content" aria-live="polite"><p class="loading">Loading questions…</p></main>
     <footer id="exam-footer" class="exam-footer" hidden>

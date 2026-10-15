@@ -6,7 +6,7 @@ A responsive browser-based (not native, not PWA) Sinhala driving licence practic
 
 ## Core flow
 
-1. Home displays total questions, mastered (3/3 correct), available, wrong-for-review, learning (1–2/3 correct) and unseen counts.
+1. Home displays total questions, mastered (3/3 correct), available, wrong-for-review, learning (1–2/3 correct), unseen and distinct practiced counts. Mastered percentage is mastered divided by all 171 eligible questions; Practiced counts each question ID in progress once.
 2. User chooses 10, 20, 40 or any valid custom count, then starts a randomly built paper.
 3. Every paper prioritizes previously wrong questions first, then mixes questions answered correctly only 1–2 times with never-seen questions. If unseen questions exist, reserve up to half of the remaining slots for them. A question is mastered only after 3 correct answers in distinct papers and is then excluded.
 4. Current question displays Sinhala Unicode text, four Unicode answer choices and an optional road-sign/diagram image.
@@ -18,6 +18,7 @@ A responsive browser-based (not native, not PWA) Sinhala driving licence practic
 9. End of paper shows percentage, correct/incorrect/mastered totals, with **incorrect-answer review collapsed by default**. The user explicitly expands **Review incorrect answers**, then expands individual questions to see their selected and correct answers, plus images when present. No list of answers may auto-expand on first render. Exam history is saved locally (up to 50 completed papers) and uses the same collapsed review UI. A perfect paper instead displays a short success note.
 10. Users can explicitly **Reset all progress** at any time from Home, including with an unfinished attempt (after navigating Home). An accessible warning states it is irreversible; **Cancel** leaves all data intact; only **Yes, reset everything** deletes learning/mastery progress, wrong-answer review queue, previous results, active paper and timer preference and reopens a fresh Home with 171 available questions. Clear legacy app storage keys too, but never unrelated site storage.
 11. After all questions have reached three correct answers, the same confirmed reset allows a brand-new learning cycle. Incorrect answers do not reset previously earned correct-answer credits, but cause priority repetition.
+12. Home shows Start Practice only without an active paper. An active paper is represented once in the hero with its saved position, Continue Paper, and Start New Paper. Start New Paper uses the discard confirmation and clears only the active paper before focusing the existing setup controls.
 
 ## Platform/design
 

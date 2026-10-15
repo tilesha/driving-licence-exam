@@ -85,7 +85,7 @@ export function normalizeState(input,questions){
  return data;
 }
 export function counts(state,questions){
- const c={total:questions.length,mastered:0,wrong:0,unseen:0,seen:0,learning:0,available:0};
+ const c={total:questions.length,mastered:0,wrong:0,unseen:0,seen:0,learning:0,practiced:0,available:0};
  for(const q of questions){
   const entry=state.progress[q.id],status=entry?.status;
   if(status==='mastered')c.mastered++;
@@ -94,6 +94,7 @@ export function counts(state,questions){
   else c.unseen++;
   if(status!=='mastered'&&correctCountOf(entry)>0)c.learning++;
  }
+ c.practiced=c.total-c.unseen;
  c.available=c.total-c.mastered;return c;
 }
 export function selectQuestions(state,questions,count,random=Math.random){

@@ -64,7 +64,10 @@ def main():
   ctx=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True,device_scale_factor=2)
   p=page_with_app(ctx);errors=[]
   p.on('pageerror',lambda x:errors.append(str(x)))
-  assert '171 total questions' in p.locator('.progress-note').inner_text();assert_no_overflow(p,'mobile home')
+  assert 'Practiced: 0 / 171' in p.locator('.progress-note').inner_text();assert_no_overflow(p,'mobile home')
+  assert p.locator('#start-practice').is_visible()
+  assert p.locator('.progress-percent').inner_text()=='Mastered: 0%'
+  assert p.locator('.title-mobile').is_visible() and not p.locator('.title-desktop').is_visible()
   assert p.locator('#submit-dialog').count()==1 and p.locator('#message-dialog').count()==1
   assert p.locator('[data-seconds="30"]').get_attribute('aria-pressed')=='true'
   assert p.locator('#time-selected').inner_text()=='30 seconds'
@@ -96,7 +99,19 @@ def main():
   assert p.locator('#time-display').inner_text()=='Skipped'
   assert p.locator('.footer-status').get_attribute('aria-label')=='Question skipped. Press Next to continue.'
   # Continue the existing score test with a fresh paper.
-  p.locator('#home-btn').click();p.locator('#discard').click();p.locator('#confirm-discard').click()
+  p.locator('#home-btn').click()
+  saved_before_discard=state(p)
+  assert p.locator('#resume').is_visible() and p.locator('#discard').is_visible()
+  assert p.locator('#start-practice').count()==0 and p.locator('#start').count()==0
+  assert p.locator('.paper-position').inner_text()=='Question 1 of 3'
+  p.locator('#resume').click()
+  resumed=state(p)['active'];saved_active=saved_before_discard['active']
+  assert resumed['ids']==saved_active['ids'] and resumed['index']==saved_active['index'] and resumed['answers']==saved_active['answers']
+  p.locator('#home-btn').click()
+  p.locator('#discard').click();assert p.locator('#discard-dialog').is_visible()
+  p.locator('#cancel-discard').click();assert state(p)==saved_before_discard
+  p.locator('#discard').click();p.locator('#confirm-discard').click()
+  assert state(p)['active'] is None and p.locator('#start').is_visible()
   p.locator('[data-count="custom"]').click();p.locator('#custom-count').fill('3')
   p.locator('#start').click();p.locator('.answer').first.wait_for()
   first=state(p)['active']['ids'][0];correct=next(q['correct_option'] for q in DATA if q['id']==first)
@@ -291,7 +306,13 @@ def main():
   rp.close();reset_ctx.close()
   for width,height in [(320,650),(375,812),(768,1024),(1024,768),(1440,900)]:
     c=browser.new_context(viewport={'width':width,'height':height})
-    pg=page_with_app(c);pg.locator('#start').click();pg.locator('.answer').first.wait_for()
+    pg=page_with_app(c);assert_no_overflow(pg,f'{width}px home')
+    title_box=pg.locator('#page-title').bounding_box();menu_box=pg.locator('#menu-btn').bounding_box()
+    assert title_box and menu_box and menu_box['x']>title_box['x']+title_box['width']
+    if width<650: assert pg.locator('.title-mobile').is_visible()
+    else: assert pg.locator('.title-desktop').is_visible()
+    if width==1440: pg.screenshot(path=str(PREVIEW_DIR/'desktop_home.png'),full_page=True)
+    pg.locator('#start').click();pg.locator('.answer').first.wait_for()
     assert_no_overflow(pg,f'{width}px exam')
     if width==1440:
       embed_displayed_assets(pg);pg.screenshot(path=str(PREVIEW_DIR/'desktop_exam.png'),full_page=True)

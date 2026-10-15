@@ -1,11 +1,11 @@
 'use strict';
-import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.10.1';
+import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.11.0';
 
 // Static GitHub Pages app: no network beyond loading bundled files, no accounts/analytics.
 const $ = s => document.querySelector(s);
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let questions=[], byId=new Map(), state=freshState(), view='home', selectedCount=40, selectedSeconds=QUESTION_SECONDS, storageAvailable=true;
-let historyView=null;
+let historyView=null,discardDestination='home';
 const CORRECT_AUTO_NEXT_MS=3000;
 const INCORRECT_AUTO_NEXT_MS=5000;
 const autoNextDelay = record => record?.correct ? CORRECT_AUTO_NEXT_MS : INCORRECT_AUTO_NEXT_MS;
@@ -37,9 +37,13 @@ function showMessage(message,title='Something went wrong'){
  $('#close-message').focus();
 }
 function header(title,exam=false){
- $('#page-title').textContent=title;
+ const titleNode=$('#page-title');
+ if(!exam&&title==='Sri Lanka Driving Licence Exam'){
+  titleNode.innerHTML='<span class="title-desktop">Sri Lanka Driving Licence Exam</span><span class="title-mobile">Driving Licence Exam</span>';
+ }else titleNode.textContent=title;
  $('#home-btn').hidden=!exam;
  $('#menu-btn').hidden=false;
+ $('.topbar').classList.toggle('exam-mode',exam);
  $('#menu-btn').setAttribute('aria-label',exam?'Open question navigation':'Open home navigation');
  $('#exam-footer').hidden=!exam;
  $('#main').classList.toggle('is-exam',exam);
@@ -52,15 +56,20 @@ function home(){
  selectedCount=Math.min(Math.max(1,selectedCount),Math.max(1,c.available));
  selectedSeconds=getQuestionSeconds({questionSeconds:state.settings?.questionSeconds});
  const masteredPercent=c.total?Math.round(c.mastered/c.total*100):0;
- $('#main').innerHTML=`<section class="home-hero"><p class="eyebrow">LEARN • PRACTICE • MASTER</p><h2>Ready to practise?</h2>
+ const activeIndex=active?.ids?.length?Math.min(Math.max(0,Number(active.index)||0),active.ids.length-1):0;
+ const paperPercent=active?.ids?.length?(activeIndex+1)/active.ids.length*100:0;
+ const hero=active?`<section class="home-hero home-hero-active"><p class="eyebrow">PAPER IN PROGRESS</p><h2>Continue where you stopped</h2>
+ <p class="paper-position">Question ${activeIndex+1} of ${active.ids.length}</p>
+ <div class="paper-progress" role="progressbar" aria-label="Current paper position" aria-valuemin="1" aria-valuemax="${active.ids.length}" aria-valuenow="${activeIndex+1}"><span style="width:${paperPercent}%"></span></div>
+ <div class="hero-actions"><button id="resume" class="button-primary hero-action" type="button">Continue Paper →</button><button id="discard" class="button-secondary hero-secondary" type="button">Start New Paper</button></div></section>`:
+ `<section class="home-hero"><p class="eyebrow">LEARN • PRACTICE • MASTER</p><h2>Ready to practise?</h2>
  <p class="lead">Build confidence with focused Sri Lankan driving-licence questions. Your learning progress stays on this device.</p>
- <button id="start-practice" class="button-primary hero-action" type="button">Start Practice</button></section>
- <section class="progress-card" aria-labelledby="learning-progress-heading"><div class="section-heading"><div><p class="eyebrow">YOUR PROGRESS</p><h3 id="learning-progress-heading">Learning progress</h3></div><strong class="progress-percent">${masteredPercent}%</strong></div>
+ <button id="start-practice" class="button-primary hero-action" type="button">Start Practice →</button></section>`;
+ $('#main').innerHTML=`${hero}
+ <section class="progress-card" aria-labelledby="learning-progress-heading"><div class="section-heading"><div><p class="eyebrow">YOUR PROGRESS</p><h3 id="learning-progress-heading">Learning progress</h3></div><strong class="progress-percent">Mastered: ${masteredPercent}%</strong></div>
  <div class="stats home-stats">${stat(c.mastered,'Mastered','green')}${stat(c.wrong,'Need review','red')}${stat(c.unseen,'Unseen','blue')}</div>
  <div class="mastery-progress" role="progressbar" aria-label="Questions mastered" aria-valuemin="0" aria-valuemax="${c.total}" aria-valuenow="${c.mastered}"><span style="width:${masteredPercent}%"></span></div>
- <p class="progress-note">${c.learning} learning · ${c.available} available · ${c.total} total questions</p></section>
- ${active?`<section class="card resume-card"><div class="resume-copy"><span class="card-icon" aria-hidden="true">▶</span><div><p class="eyebrow">UNFINISHED PAPER</p><h3>Continue where you stopped</h3><p class="muted">Question ${active.index+1} of ${active.ids.length} · Saved on this device</p></div></div>
- <div class="resume-actions"><button id="resume" class="button-primary" type="button">Resume Exam</button><button id="discard" class="button-secondary" type="button">Discard</button></div></section>`:''}
+ <p class="progress-note"><strong>Practiced: ${c.practiced} / ${c.total}</strong> · ${c.seen} learning · ${c.available} available</p></section>
  <section class="card settings-card" id="practice-settings" tabindex="-1"><div class="section-heading"><div><p class="eyebrow">PAPER SETTINGS</p><h3>Set up your practice</h3></div><span class="settings-badge" aria-hidden="true">⚙</span></div>
  ${c.available?`<label for="custom-count"><strong>How many questions?</strong> <span class="muted tiny">(1–${c.available} available)</span></label>
  <div class="count-picks">${[10,20,40].map(n=>`<button type="button" data-count="${n}" ${n>c.available?'disabled':''} class="${selectedCount===n?'active':''}">${n}</button>`).join('')}<button type="button" data-count="custom" class="${![10,20,40].includes(selectedCount)?'active':''}">Custom</button></div>
@@ -70,7 +79,7 @@ function home(){
  <div class="seconds-field"><input id="custom-seconds" class="count-input" type="number" inputmode="numeric" min="${MIN_QUESTION_SECONDS}" max="${MAX_QUESTION_SECONDS}" step="1" value="${selectedSeconds}" aria-label="Seconds per question"><span class="muted">seconds per question</span></div>
  <div class="row time-row"><span class="muted">Selected time</span><strong id="time-selected">${durationLabel(selectedSeconds)}</strong></div>
  <div class="row time-row"><span class="muted">Total question time</span><strong id="time-total">${formatTime(selectedCount*selectedSeconds)} (mm:ss)</strong></div>
- <button id="start" class="button-primary" type="button" ${active?'disabled':''}>Start Practice →</button>`:
+ ${active?'<p class="active-paper-note">To use these settings, choose <strong>Start New Paper</strong> above and confirm.</p>':'<button id="start" class="button-primary" type="button">Start Practice →</button>'}`:
  `<p class="lead">You have mastered every question in the available bank.</p><button id="reset-cycle" class="button-secondary block-action" type="button">Reset progress and start again</button>`}</section>
  <nav class="home-actions" id="home-navigation" aria-label="Additional navigation"><button id="history" type="button" class="nav-card"><span aria-hidden="true">▤</span><span><strong>Exam History</strong><small>${state.history.length} saved attempt${state.history.length===1?'':'s'}</small></span></button>
  <button id="settings" type="button" class="nav-card"><span aria-hidden="true">⚙</span><span><strong>Settings</strong><small>Questions and timing</small></span></button>
@@ -79,7 +88,7 @@ function home(){
  $('#start-practice')?.addEventListener('click',()=>{$('#practice-settings')?.scrollIntoView({behavior:'smooth',block:'start'});$('#practice-settings')?.focus({preventScroll:true});});
  $('#settings')?.addEventListener('click',()=>{$('#practice-settings')?.scrollIntoView({behavior:'smooth',block:'start'});$('#practice-settings')?.focus({preventScroll:true});});
  $('#resume')?.addEventListener('click',()=>renderExam(true));
- $('#discard')?.addEventListener('click',()=>{if(state.active){$('#discard-dialog').showModal();$('#cancel-discard').focus();}});
+ $('#discard')?.addEventListener('click',()=>openDiscardDialog('new-paper'));
  $('#reset')?.addEventListener('click', resetProgress);
  $('#reset-cycle')?.addEventListener('click', resetProgress);
  $('#history')?.addEventListener('click',historyScreen);
@@ -95,10 +104,10 @@ function home(){
  }));
  $('#custom-seconds')?.addEventListener('input',()=>{
   const entered=Number($('#custom-seconds').value);
-  if(!Number.isInteger(entered)||entered<MIN_QUESTION_SECONDS||entered>MAX_QUESTION_SECONDS){$('#start').disabled=true;return;}
+  if(!Number.isInteger(entered)||entered<MIN_QUESTION_SECONDS||entered>MAX_QUESTION_SECONDS){if($('#start'))$('#start').disabled=true;return;}
   selectedSeconds=entered;secondsChanged();
  });
- $('#custom-seconds')?.addEventListener('blur',()=>{$('#custom-seconds').value=selectedSeconds;$('#start').disabled=Boolean(state.active);});
+ $('#custom-seconds')?.addEventListener('blur',()=>{$('#custom-seconds').value=selectedSeconds;if($('#start'))$('#start').disabled=false;});
  $('#start')?.addEventListener('click',()=>{
   if(!c.available||state.active)return;
   try{startPaper(state,questions,selectedCount,Math.random,Date.now(),selectedSeconds);save();renderExam(true);}
@@ -119,13 +128,19 @@ function secondsChanged(){
  });
  state.settings={...state.settings,questionSeconds:selectedSeconds};save();
  $('#time-selected').textContent=durationLabel(selectedSeconds);
- $('#start').disabled=Boolean(state.active);
+ if($('#start'))$('#start').disabled=false;
  updateTimeEstimate();
 }
 function resetProgress(){
  // Do not modify state or browser storage until the user explicitly confirms.
  const dialog=$('#reset-dialog');
  if(!dialog.open){dialog.showModal();$('#cancel-reset').focus();}
+}
+function openDiscardDialog(destination='home'){
+ if(!state.active)return;
+ discardDestination=destination;
+ const dialog=$('#discard-dialog');
+ if(!dialog.open){dialog.showModal();$('#cancel-discard').focus();}
 }
 function confirmResetProgress(){
  const dialog=$('#reset-dialog');
@@ -151,7 +166,10 @@ function confirmDiscardPaper(){
  if(!dialog.open)return;
  // Do not erase answered questions or learning credits, only the unfinished paper.
  if(state.active){state.active=null;save();}
+ const destination=discardDestination;
+ discardDestination='home';
  dialog.close();home();
+ if(destination==='new-paper')requestAnimationFrame(()=>{$('#practice-settings')?.scrollIntoView({behavior:'smooth',block:'start'});$('#practice-settings')?.focus({preventScroll:true});});
 }
 function cancelAutoNext(){
  const a=state.active,q=current();
@@ -403,7 +421,7 @@ window.addEventListener('pageshow',tick);
 
 (async()=>{
  try{
-  const response=await fetch('data/questions.json?v=1.10.1');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const response=await fetch('data/questions.json?v=1.11.0');if(!response.ok)throw new Error(`HTTP ${response.status}`);
   const all=await response.json();
   questions=all.filter(q=>q.id!==153&&q.correct_option>=1&&q.correct_option<=4&&q.choices?.length===4&&q.question_text?.trim()&&q.choices.every(o=>o.text?.trim()));
   byId=new Map(questions.map(q=>[q.id,q]));

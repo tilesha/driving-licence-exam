@@ -96,6 +96,16 @@ test('Learning papers mix previously correct questions with never-seen questions
  const seen=batch.filter(id=>id<=questions[5].id).length;
  assert.ok(seen>0&&seen<8,`Expected learning+unseen mix, got ${seen}/8`);
 });
+test('Homepage counts practiced questions once and keeps status categories exclusive',()=>{
+ const s=freshState();
+ s.progress[questions[0].id]={status:'mastered',attempts:3,correctCount:3,lastAttemptAt:100};
+ s.progress[questions[1].id]={status:'wrong',attempts:2,correctCount:1,lastAttemptAt:200};
+ s.progress[questions[2].id]={status:'seen',attempts:1,correctCount:1,lastAttemptAt:300};
+ const c=counts(s,questions);
+ assert.equal(c.practiced,3);
+ assert.equal(c.mastered+c.wrong+c.seen+c.unseen,c.total);
+ assert.equal(c.unseen,questions.length-3);
+});
 test('Review queue rotates oldest mistakes when it exceeds requested count',()=>{
  const s=freshState();for(let i=0;i<5;i++)s.progress[questions[i].id]={status:'wrong',attempts:1,lastAttemptAt:100+i};
  const batch=selectQuestions(s,questions,3,seeded);assert.deepEqual(new Set(batch),new Set(questions.slice(0,3).map(q=>q.id)));

@@ -2,7 +2,7 @@
 
 A mobile-first **browser website** for studying Sinhala Sri Lanka driving licence exam questions. Runs in iPhone Safari, Android browsers, and desktop browsers. No installation, login, server database or paid services are required.
 
-Version 1.9 uses a clean blue interface with a compact progress-focused homepage, consistent cards and controls, a focused exam layout, and a circular results summary. The redesign preserves the existing question bank, learning rules, local browser progress and GitHub Pages architecture.
+The current build uses a clean blue interface with a compact progress-focused homepage, consistent cards and controls, a focused exam layout, and a circular results summary. The redesign preserves the existing question bank, learning rules, local browser progress and GitHub Pages architecture.
 
 ## Quick start
 
@@ -37,6 +37,7 @@ No build step, npm install, tokens or environment variables are necessary. See `
 - Automatically store/resume using `localStorage` on the same browser/device. Progress saved by earlier versions is migrated to the 3-correct rule, using available history and otherwise crediting previously mastered questions with at least 1/3. No export/import.
 - Release-version query parameters on CSS, JavaScript modules and question data prevent mobile browsers from remaining on stale builds. They do not change or clear the `sl-driving-quiz-v3` progress key.
 - Responsive portrait, landscape and desktop design; attempt at accidental pinch zoom reduction via CSS.
+- The homepage shows **Start Practice** when no paper is active. An unfinished paper instead appears once inside the hero with its actual position, **Continue Paper**, and a confirmed **Start New Paper** action. Learning progress labels Mastered percentage and counts each distinct attempted question once under Practiced.
 
 ## Important constraints
 

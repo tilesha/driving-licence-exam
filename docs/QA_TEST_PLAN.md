@@ -2,7 +2,7 @@
 
 ## Automated tests
 
-- `npm test`: 15 deterministic Node tests for data count, no duplicates, question count limits, persisted answer shuffling, three-correct mastery, learning/unseen mix, wrong-answer repetition without credit reset, rotation, skip semantics and v1/v2 storage migration.
+- `npm test`: deterministic Node tests for data count, no duplicates, question count limits, persisted answer shuffling, three-correct mastery, mutually exclusive homepage counts and distinct Practiced totals, learning/unseen mix, wrong-answer repetition without credit reset, rotation, skip semantics and v1/v2 storage migration.
 - `python tools/validate_content.py`: 171 records; one source-marked answer per question; all referenced image files exist and open with Pillow.
 - `python tests/browser_smoke.py`: isolated inlined HTML/CSS/JS under Chromium, with mocked `fetch` and localStorage. Checks UI interaction, instant feedback, single-tap skip, menu jumping, compact collapsed results/individual question expansion/history, retry, resume, configurable 10–300-second timeout auto-advance/final auto-submit, and horizontal overflow at 320/375/390/768/1024/1440px. **It does not test real HTTP ES-module fetch or iOS.**
 
@@ -74,3 +74,15 @@ Data quality verified against official answer key, real iOS Safari and deployed 
 | QA-35 | Wrong answer, wait 5s | Wrong red/correct green; red `Incorrect answer` status and progress bar display, then advance exactly once. Cancel and manual Next remain available. |
 | QA-36 | Timeout on unanswered question | Existing configured timeout still advances immediately. |
 | QA-37 | Open road sign or question menu while auto-next pending | Auto-next cancelled; no unexpected background navigation. |
+
+## 1.11 homepage scenarios
+
+| ID | Action | Expected |
+|---|---|---|
+| QA-38 | Open Home without an active paper | One enabled Start Practice action is visible; no Continue or Start New actions. |
+| QA-39 | Return Home during a paper | Hero shows the actual question position and one Continue Paper / Start New Paper action pair; no duplicate card or disabled Start button. |
+| QA-40 | Select Continue Paper | Exact IDs, index, answers, timer timestamps and shuffled choice orders remain unchanged. |
+| QA-41 | Select Start New Paper, then Cancel or Escape | Confirmation closes and the entire active paper remains unchanged. |
+| QA-42 | Confirm Start New Paper | Only the active paper is removed; learning progress and history remain, and paper settings receive focus. |
+| QA-43 | Seed mastered, wrong and seen progress | Mastered percentage uses total bank; Practiced counts three distinct IDs; mastered + wrong + seen + unseen equals total. |
+| QA-44 | Compare Home at mobile and desktop widths | Short mobile title/full desktop title align left; hamburger aligns right with no overflow. |

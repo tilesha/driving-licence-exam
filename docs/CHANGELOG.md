@@ -1,3 +1,11 @@
+## 1.11.0 — Homepage and unfinished-paper clarity
+
+- Replaced the duplicate unfinished-paper card and disabled Start action with a compact hero progress panel.
+- Added enabled Continue Paper and outlined Start New Paper actions; Start New Paper reuses the safe discard confirmation and then focuses paper setup.
+- Labelled mastery explicitly as `Mastered: N%` and added `Practiced: X / 171`, counting distinct attempted question IDs once.
+- Kept Mastered, Need review, Learning and Unseen categories mutually exclusive and reconcilable with the question-bank total.
+- Added a shared constrained header container with left-aligned responsive Home title and right-aligned menu control.
+
 ## 1.10.1 — Answer-specific auto-next timing
 
 - Correct answers now use a green `#16A34A` three-second progress bar and countdown.
