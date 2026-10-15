@@ -1,3 +1,10 @@
+## 1.10.0 — Three-state exam footer
+
+- Replaced the circular countdown with a smooth, timestamp-driven five-second horizontal progress bar.
+- Added compact footer states for the unanswered timer, correct answer, cancelled auto-next, and incorrect answer.
+- Added text-labelled Cancel and Next controls while retaining forward-only navigation and persisted cancellation.
+- Preserved the existing question timer, timeout advance, scoring, mastery, retry, localStorage key, history, and results behavior.
+
 ## v1.9.0 — Modern blue interface
 
 - Reduced the correct-answer circular auto-next countdown from 5 seconds to 3 seconds.

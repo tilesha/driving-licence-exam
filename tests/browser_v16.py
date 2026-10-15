@@ -1,4 +1,4 @@
-"""Browser QA for custom discard modal and 3s correct-answer auto-next."""
+"""Browser QA for custom discard modal and 5s correct-answer auto-next."""
 from pathlib import Path
 import importlib.util
 import json
@@ -39,25 +39,25 @@ with sync_playwright() as pw:
  start(p,2)
  first,ans=correct(p)
  assert p.locator('.answer.correct').count()==1
- assert p.locator('#auto-next-ui').is_visible(), 'Correct answer must display three-second circular UI'
- assert p.locator('#auto-next-count').inner_text()=='3'
+ assert p.locator('#auto-next-progress').is_visible(), 'Correct answer must display five-second progress UI'
+ assert p.locator('#answer-status-detail').inner_text()=='Next in 5s'
  m.assert_no_overflow(p,'390px auto-next footer')
  m.embed_displayed_assets(p)
  p.screenshot(path=str(OUT/'iphone_correct_countdown.png'))
  p.locator('#cancel-auto-next').click()
- assert not p.locator('#auto-next-ui').is_visible(), 'Cancelled ring must disappear'
- assert 'Auto-next off' in p.locator('#time-display').inner_text()
+ assert not p.locator('#auto-next-progress').is_visible(), 'Cancelled progress must disappear'
+ assert p.locator('#answer-status-detail').inner_text()=='Auto-next cancelled'
  assert m.state(p)['active']['autoAdvance']['cancelled']
  p.evaluate('''() => {state.active.autoAdvance.deadline=Date.now()-10000;tick();}''')
  assert m.state(p)['active']['index']==0, 'Cancel must prevent auto-navigation'
  snapshot=m.storage(p);p.close()
  p=m.page_with_app(ctx,snapshot);p.locator('#resume').click()
  assert m.state(p)['active']['index']==0, 'Cancelled answer must remain current after refresh'
- assert not p.locator('#auto-next-ui').is_visible()
+ assert not p.locator('#auto-next-progress').is_visible()
  p.locator('#next-btn').click()
  assert m.state(p)['active']['index']==1
  wrongid=wrong(p)
- assert not p.locator('#auto-next-ui').is_visible(), 'Wrong answer must not start auto-next'
+ assert not p.locator('#auto-next-progress').is_visible(), 'Wrong answer must not start auto-next'
  p.wait_for_timeout(900)
  assert m.state(p)['active']['index']==1
  p.locator('#next-btn').click()
@@ -122,7 +122,7 @@ with sync_playwright() as pw:
  mp.locator('#menu-btn').click()
  assert mp.locator('#question-dialog').is_visible()
  mp.locator('#close-dialog').click()
- assert not mp.locator('#auto-next-ui').is_visible()
+ assert not mp.locator('#auto-next-progress').is_visible()
  mp.close()
 
  # Very narrow small-screen footer must not overflow horizontally.
@@ -133,4 +133,4 @@ with sync_playwright() as pw:
  sp.close();small.close()
  assert not errors,errors
  ctx.close();browser.close()
-print('PASS v1.6 browser: correct ring, cancel, reload, last result, wrong manual, discard + Escape, sign/menu cancel, 320px + 390px overflow')
+print('PASS browser: correct progress, cancel, reload, last result, wrong manual, discard + Escape, sign/menu cancel, 320px + 390px overflow')

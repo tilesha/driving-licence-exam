@@ -1,12 +1,12 @@
 'use strict';
-import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.9.1';
+import { STORAGE_KEY, LEGACY_STORAGE_KEY, OLDEST_STORAGE_KEY, MASTERY_CORRECT_REQUIRED, QUESTION_SECONDS, MIN_QUESTION_SECONDS, MAX_QUESTION_SECONDS, getQuestionSeconds, freshState, resetAllStoredProgress, normalizeState, counts, startPaper, recordAnswer, summarize, ensureChoiceOrders } from './quiz-core.mjs?v=1.10.0';
 
 // Static GitHub Pages app: no network beyond loading bundled files, no accounts/analytics.
 const $ = s => document.querySelector(s);
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let questions=[], byId=new Map(), state=freshState(), view='home', selectedCount=40, selectedSeconds=QUESTION_SECONDS, storageAvailable=true;
 let historyView=null;
-const AUTO_NEXT_DELAY_MS=3000; // Correct answer: show feedback for three seconds, then advance.
+const AUTO_NEXT_DELAY_MS=5000; // Correct answer: show feedback for five seconds, then advance.
 const formatTime = seconds => `${String(Math.floor(seconds/60)).padStart(2,'0')}:${String(seconds%60).padStart(2,'0')}`;
 const durationLabel = seconds => seconds<60?`${seconds} seconds`:seconds%60===0?`${seconds/60} minute${seconds===60?'':'s'}`:`${seconds} seconds`;
 const questionOf = id => byId.get(id);
@@ -240,6 +240,7 @@ function renderExam(scroll=false){
  $('#next-btn').disabled=false;
  $('#next-btn').setAttribute('aria-label',a.index===a.ids.length-1?'Submit paper':'Next question');
  $('#next-btn').title=a.index===a.ids.length-1?'Finish paper':'Next question';
+ $('#next-btn').innerHTML=a.index===a.ids.length-1?'Finish <span aria-hidden="true">→</span>':'Next <span aria-hidden="true">→</span>';
  tick();if(scroll)window.scrollTo({top:0,behavior:'instant'});
 }
 function markSkipped(){
@@ -279,23 +280,32 @@ function tick(){
  if(!record&&remainingSeconds()===0){expireCurrent();return;}
  const cancelled=Boolean(record?.correct&&a.autoAdvance?.questionId===q.id&&a.autoAdvance.cancelled);
  const showAuto=Boolean(auto);
- $('#auto-next-ui').hidden=!showAuto;
- $('#timer-caption').hidden=showAuto;
- $('#time-display').hidden=showAuto;
+ const questionTime=$('#question-time-ui'),status=$('#answer-status-ui'),progress=$('#auto-next-progress'),cancel=$('#cancel-auto-next');
+ questionTime.hidden=Boolean(record);
+ status.hidden=!record;
+ progress.hidden=!showAuto;
+ cancel.hidden=!showAuto;
  if(showAuto){
   const remaining=Math.max(0,auto.deadline-Date.now());
   const seconds=Math.max(1,Math.ceil(remaining/1000));
-  $('#auto-next-count').textContent=String(seconds);
-  $('#auto-next-seconds').textContent=`${seconds}s`;
-  $('#auto-next-ring').style.setProperty('--progress',`${remaining/AUTO_NEXT_DELAY_MS*100}%`);
-  $('.timer-stack').setAttribute('aria-label',`Next question in ${seconds} seconds. Press Cancel to stay here.`);
+  const elapsedPercent=Math.min(100,Math.max(0,(AUTO_NEXT_DELAY_MS-remaining)/AUTO_NEXT_DELAY_MS*100));
+  $('#answer-status-title').textContent='✓ Correct!';
+  $('#answer-status-detail').textContent=`Next in ${seconds}s`;
+  progress.firstElementChild.style.width=`${elapsedPercent}%`;
+  progress.setAttribute('aria-valuenow',String(Math.min(5,Math.max(0,(AUTO_NEXT_DELAY_MS-remaining)/1000))));
+  $('.footer-status').setAttribute('aria-label',`Correct answer. Next question in ${seconds} seconds. Press Cancel to stay here.`);
  }else{
-  const completedLabel=record?.reason==='skipped'?'Skipped':record?.reason==='timeout'?'Time expired':'Answered';
-  $('#time-display').textContent=cancelled?'Auto-next off':record?completedLabel:formatTime(remainingSeconds());
+  $('#time-display').textContent=formatTime(remainingSeconds());
   $('#time-display').classList.toggle('urgent',!record&&remainingSeconds()<=20);
-  const completedAria=record?.reason==='skipped'?'Question skipped. Press Next to continue.':record?.reason==='timeout'?'Question time expired. Press Next to continue.':'Question answered. Press Next to continue.';
-  $('.timer-stack').setAttribute('aria-label',cancelled?'Auto-next cancelled. Press Next to continue.':record?completedAria:'Time remaining for current question');
+  if(record){
+   $('#answer-status-title').textContent=cancelled?'✓ Correct!':record.correct?'✓ Correct!':'✕ Incorrect answer';
+   $('#answer-status-detail').textContent=cancelled?'Auto-next cancelled':record.correct?'Ready for the next question':record.reason==='skipped'?'No answer submitted':'Review the correct answer';
+  }
+  const completedAria=record?.reason==='skipped'?'Question skipped. Press Next to continue.':record?.reason==='timeout'?'Question time expired. Press Next to continue.':record?.correct?'Correct answer. Press Next to continue.':'Incorrect answer. Review the correct answer, then press Next.';
+  $('.footer-status').setAttribute('aria-label',cancelled?'Auto-next cancelled. Press Next to continue.':record?completedAria:'Time remaining for current question');
  }
+ $('#exam-footer').classList.toggle('state-correct',Boolean(record?.correct));
+ $('#exam-footer').classList.toggle('state-incorrect',Boolean(record&&!record.correct));
 }
 function questionMenu(){
  if(!state.active)return;
@@ -392,7 +402,7 @@ window.addEventListener('pageshow',tick);
 
 (async()=>{
  try{
-  const response=await fetch('data/questions.json?v=1.9.1');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const response=await fetch('data/questions.json?v=1.10.0');if(!response.ok)throw new Error(`HTTP ${response.status}`);
   const all=await response.json();
   questions=all.filter(q=>q.id!==153&&q.correct_option>=1&&q.correct_option<=4&&q.choices?.length===4&&q.question_text?.trim()&&q.choices.every(o=>o.text?.trim()));
   byId=new Map(questions.map(q=>[q.id,q]));

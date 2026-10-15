@@ -94,7 +94,7 @@ def main():
   assert skipped['reason']=='skipped' and skipped['correct'] is False and skipped['choice'] is None
   assert p.locator('.answer.correct').count()==0
   assert p.locator('#time-display').inner_text()=='Skipped'
-  assert p.locator('.timer-stack').get_attribute('aria-label')=='Question skipped. Press Next to continue.'
+  assert p.locator('.footer-status').get_attribute('aria-label')=='Question skipped. Press Next to continue.'
   # Continue the existing score test with a fresh paper.
   p.locator('#home-btn').click();p.locator('#discard').click();p.locator('#confirm-discard').click()
   p.locator('[data-count="custom"]').click();p.locator('#custom-count').fill('3')
